@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="9Lz-Hf-t8A" customClass="ArtistImageTableViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Lz-Hf-t8A" id="2GZ-n4-PDb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="226"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="grn-lK-8n6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="226"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="grn-lK-8n6" secondAttribute="height" multiplier="160:113" id="nRV-t2-drh"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lV8-ah-g7H">
+                        <rect key="frame" x="0.0" y="166" width="320" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dE9-nc-Rz8">
+                                <rect key="frame" x="16" y="15" width="288" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="color-light1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="color-dark1-half-alpha"/>
+                        <constraints>
+                            <constraint firstItem="dE9-nc-Rz8" firstAttribute="leading" secondItem="lV8-ah-g7H" secondAttribute="leading" constant="16" id="3L9-Ek-IgT"/>
+                            <constraint firstAttribute="trailing" secondItem="dE9-nc-Rz8" secondAttribute="trailing" constant="16" id="3mD-SN-2uw"/>
+                            <constraint firstItem="dE9-nc-Rz8" firstAttribute="top" secondItem="lV8-ah-g7H" secondAttribute="top" constant="15" id="EW9-dj-rbk"/>
+                            <constraint firstAttribute="bottom" secondItem="dE9-nc-Rz8" secondAttribute="bottom" constant="16" id="QoE-fK-ERN"/>
+                            <constraint firstAttribute="width" secondItem="lV8-ah-g7H" secondAttribute="height" multiplier="16:3" id="vtP-cm-SkF"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiH-eT-9cP" customClass="FollowButton" customModule="Portl" customModuleProvider="target">
+                        <rect key="frame" x="16" y="110" width="69" height="24"/>
+                        <color key="backgroundColor" name="color-dark1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="3HT-hR-7Qy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                        <state key="normal" title="Follow">
+                            <color key="titleColor" name="color-light1"/>
+                        </state>
+                        <connections>
+                            <action selector="followButtonPressed:" destination="9Lz-Hf-t8A" eventType="touchUpInside" id="m6C-Wu-dgK"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="grn-lK-8n6" secondAttribute="bottom" id="1ah-ur-BoE"/>
+                    <constraint firstItem="lV8-ah-g7H" firstAttribute="leading" secondItem="2GZ-n4-PDb" secondAttribute="leading" id="M2j-nk-wfK"/>
+                    <constraint firstAttribute="trailing" secondItem="lV8-ah-g7H" secondAttribute="trailing" id="hPZ-CA-X6Q"/>
+                    <constraint firstItem="grn-lK-8n6" firstAttribute="top" secondItem="2GZ-n4-PDb" secondAttribute="top" id="hnP-LS-lTG"/>
+                    <constraint firstItem="lV8-ah-g7H" firstAttribute="top" secondItem="tiH-eT-9cP" secondAttribute="bottom" constant="32" id="iUk-UB-70k"/>
+                    <constraint firstItem="grn-lK-8n6" firstAttribute="leading" secondItem="2GZ-n4-PDb" secondAttribute="leading" id="r2t-4P-RmL"/>
+                    <constraint firstAttribute="bottom" secondItem="lV8-ah-g7H" secondAttribute="bottom" id="tuF-bp-mGE"/>
+                    <constraint firstAttribute="trailing" secondItem="grn-lK-8n6" secondAttribute="trailing" id="zpa-td-kif"/>
+                    <constraint firstItem="tiH-eT-9cP" firstAttribute="leading" secondItem="2GZ-n4-PDb" secondAttribute="leading" constant="16" id="zrN-sc-7bW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="artistImageView" destination="grn-lK-8n6" id="SBX-0C-wbd"/>
+                <outlet property="artistNameLabel" destination="dE9-nc-Rz8" id="s1w-kM-S4o"/>
+                <outlet property="followButton" destination="tiH-eT-9cP" id="lrJ-fx-wCJ"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-dark1-half-alpha">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-light1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,27 @@
+aws_access_key_id: "{{ vault_aws_access_key_id }}"
+aws_secret_access_key: "{{ vault_aws_secret_access_key }}"
+
+database_name: "{{ vault_database_name }}"
+database_user: "{{ vault_database_user }}"
+database_source: "{{ vault_database_source }}"
+database_host: "127.0.0.1"
+database_password: "{{ vault_database_password }}"
+database_root_user: "{{ vault_database_root_user }}"
+database_root_password: "{{ vault_database_root_password }}"
+
+grafana_admin_user: "{{ vault_grafana_admin_user }}"
+grafana_admin_password: "{{ vault_grafana_admin_password }}"
+grafana_ldap_host: ldap.concentricsky.com
+grafana_ldap_base_dn: "dc=concentricsky,dc=com"
+grafana_ldap_bind_dn: "{{ vault_grafana_ldap_bind_dn }}"
+grafana_ldap_bind_password: "{{ vault_grafana_ldap_bind_password }}"
+grafana_ldap_user_search_base_dns:
+  - "ou=users,{{ grafana_ldap_base_dn }}"
+  - "ou=contractors,{{ grafana_ldap_base_dn }}"
+grafana_ldap_group_map:
+  - { dn: "it", role: Admin }
+  - { dn: "portl", role: Admin }
+grafana_secret_key: "{{ vault_grafana_secret_key }}"
+mysql_local_install: yes
+
+grafana_s3_bucket: "grafana.portl"

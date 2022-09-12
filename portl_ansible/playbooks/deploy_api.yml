@@ -1,0 +1,18 @@
+---
+
+- name: Deploy API Backend
+  hosts: local
+  gather_facts: no
+
+  vars:
+  - docker_image_version: "{{ api_version }}"
+
+  vars_files:
+  - "{{ inventory_dir }}/group_vars/{{ limit_environment }}/vars"
+  - "{{ inventory_dir }}/group_vars/{{ limit_region }}/vars"
+
+  tasks:
+    - name: Deploy API Backend
+      include_role:
+        name: aws_resources
+        tasks_from: deploy_ecs_daemon_with_alb.yml

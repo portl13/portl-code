@@ -1,0 +1,3393 @@
+[
+  {
+    "start_date_time": 1507775400,
+    "artist": {
+      "full_data": {
+        "classifications": [
+          {
+            "segment": {
+              "id": "KZFzniwnSyZfZ7v7na",
+              "name": "Arts & Theatre"
+            },
+            "primary": true
+          }
+        ],
+        "name": "Beautiful",
+        "locale": "en-us",
+        "test": false,
+        "_links": {
+          "self": {
+            "href": "/discovery/v2/attractions/Z7r9jZa61d?locale=en-us"
+          }
+        },
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_CUSTOM.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "4_3",
+            "height": 225
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 683
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 115
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 1152
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 427
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 360
+          }
+        ],
+        "upcomingEvents": {
+          "_total": 410,
+          "tmr": 264,
+          "ticketmaster": 146
+        },
+        "type": "attraction",
+        "id": "Z7r9jZa61d"
+      },
+      "name": "Beautiful",
+      "url": "",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "images": [
+            {
+              "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_CUSTOM.jpg",
+              "width": 305,
+              "fallback": true,
+              "ratio": "4_3",
+              "height": 225
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "fallback": true,
+              "ratio": "3_2",
+              "height": 683
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 115
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "fallback": true,
+              "ratio": "3_2",
+              "height": 203
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 1152
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 639
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "fallback": true,
+              "ratio": "3_2",
+              "height": 427
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 56
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 576
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 360
+            }
+          ]
+        },
+        "main_cover": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+        "thumb": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_CUSTOM.jpg"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "Z7r9jZa61d"
+      }
+    },
+    "url": {
+      "full_url": "http://www.ticketsnow.com/InventoryBrowse/TicketList.aspx?PID=2185691"
+    },
+    "image": {
+      "using_default_image": false,
+      "extra_information": {
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_CUSTOM.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "4_3",
+            "height": 225
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 683
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 115
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 1152
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 427
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 360
+          }
+        ]
+      },
+      "main_cover": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "thumb": "https://s1.ticketm.net/dam/c/2a8/2e8badd2-d540-49e6-9273-09e813c412a8_105741_CUSTOM.jpg"
+    },
+    "title": "Beautiful",
+    "venue": {
+      "address": {
+        "city": "Eugene",
+        "country": "",
+        "full_address": "One Eugene Center",
+        "state": "Oregon",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.0685,
+          "lng": -123.082
+        },
+        "shorten_address": "One Eugene Center"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "ZFr9jZekA1"
+      },
+      "name": "Silva Concert Hall"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 1,
+      "id_on_source": "Z7r9jZ1AekAQo"
+    },
+    "categories": [
+      "Arts & Theatre"
+    ]
+  },
+  {
+    "start_date_time": 1508022000,
+    "description": {
+      "text": "XCAPE DANCE ACADEMY is thrilled to welcome LA Choreographer and Instructor, Dana Alexa! Join us for an amazing evening of dance and inspiration from one of the best in the industry. Dana will be offering two classes. Take one or take BOTH WITH A SPECIAL DISCOUNT!\n\nHip Hop/ Jazz Funk\n\nFirst Class: 4:00pm\n\nSecond Class: 6:00pm\n\n\n\n\n\n\n\nABOUT DANA\n\nDana Alexa was born in Brooklyn, NY and started her dance training at 2 years old. She quickly fell in love with dance and began training seriously and pursuing a professional career at the age of 21. She has trained with the best instructors in the world in hip hop, jazz, street jazz, tap and ballet on both coasts. She has taught hip hop and street jazz to students of all ages and levels, for HS and college dance teams, studios, pro teams, semi-pro teams and more. Dana now has a permanent teaching slot at IDA Hollywood in Los Angeles and travels the world teaching master classes. She is on staff for multiple conventions like Epic Dance Showcase and Revel Dance Convention and this year will join as guest faculty for Dance Workshop Paris, Just For Kix and One Million Camp in Seoul, Korea.\n\nDana began her professional dance career by representing the NBA in NYC as a Knicks City Dancer. She went on to dance with recording artist Kat Deluna on her world promo tour. In addition, Dana became Kat's choreographer and artistic director and choreographed Kat\u2019s world tour for her album Inside Out and also two music videos. Dana then relocated to Los Angeles to pursue her career on the west coast.\n\n Dana has choreographed and performed on Bravo TV's Watch What Happens Live and The Real Housewives of NJ. She has worked with artists like Tyga and Wiz Khalifa and toured as a dancer and assistant choreographer in China, where she performed, danced in a national commercial, choreographed a nightly show and taught workshops. Dana was cast as a dancer for a national Lexus commercial and also in a Skyy Vodka commercial under the direction of Tucker Barkley. Dana assisted choreography for the opening number of the Radio Disney Awards in 2015 for recording artist Natalie LaRose's hit single \"Somebody\" as well as for the opening number of the finale episode of So You Think You Can Dance: POLAND. Dana was featured in a Pepsi Commercial for the superbowl starring Joey Lawrence and Donald Faison and in May 2016 Dana won season 28 of CBS's The Amazing Race. She has choreographed numerous viral youtube videos and partnered with artists like Spencer Ludwig and Fergie to create exclusive youtube videos to their hit songs.\n\nDana has amassed a massive social media following, totaling over a million followers across all of her platforms. She is an active vlogger and produces an original series called \"The Other Side\" that follows her while she teaches classes internationally and adventures into the unknown to explore foreign cultures as well as take part in extreme adrenaline junkie activities! Dana is represented by The Movement Talent Agency and will continue to pursue her dream with relentless passion and drive."
+    },
+    "title": "Workshop with Dana Alexa at Xcape Dance Academy",
+    "url": {
+      "full_url": "https://www.eventbrite.com/e/workshop-with-dana-alexa-at-xcape-dance-academy-tickets-36662821486?aff=efbevent"
+    },
+    "image": {
+      "thumb": "https://scontent.xx.fbcdn.net/v/t1.0-0/c100.0.200.200/p200x200/20526341_10159139182155261_8484331061703737171_n.jpg?oh=a041631db4d9afd6a9be1ac7cef401ac&oe=5A3BFAE9",
+      "main_cover": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/20449353_10159139182155261_8484331061703737171_o.jpg?oh=b2c1f6c18e35d7c9b14057b60a84ddb9&oe=5A495040",
+      "using_default_image": false
+    },
+    "venue": {
+      "description": "",
+      "address": {
+        "city": "Eugene",
+        "country": "United States",
+        "full_address": "420 W 12th Ave Eugene OR, 97401",
+        "state": "OR",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.04648,
+          "lng": -123.0991
+        },
+        "shorten_address": "Eugene OR, 97401"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "1432554920313058"
+      },
+      "name": "Xcape Dance Academy"
+    },
+    "time_unspecified_or_all_day": false,
+    "end_date_time": 1508032800,
+    "id": {
+      "source_type": 2,
+      "id_on_source": "1439188476160299"
+    },
+    "categories": [
+      "THEATER_EVENT"
+    ]
+  },
+  {
+    "start_date_time": 1505890800,
+    "artist": {
+      "name": "Motorcoat",
+      "url": "http://www.songkick.com/artists/8773179-motorcoat?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8773179/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8773179/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "8773179"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/31274114-motorcoat-at-old-nicks-pub?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8773179/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8773179/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Motorcoat at Old Nick's Pub (September 20, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05746,
+          "lng": -123.0999
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "2869728"
+      },
+      "name": "Old Nick's Pub"
+    },
+    "time_unspecified_or_all_day": true,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "31274114"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1505890800,
+    "artist": {
+      "name": "George Winston",
+      "url": "http://www.songkick.com/artists/506398-george-winston?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/506398/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/506398/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "506398"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/30867279-george-winston-at-tsunami-books?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/506398/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/506398/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "George Winston at Tsunami Books (September 20, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.03082,
+          "lng": -123.0904
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "645061"
+      },
+      "name": "Tsunami Books"
+    },
+    "time_unspecified_or_all_day": true,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "30867279"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1505977200,
+    "artist": {
+      "name": "Explosions in the Sky",
+      "url": "http://www.songkick.com/artists/561284-explosions-in-the-sky?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/561284/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/561284/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "561284"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/29747409-explosions-in-the-sky-at-mcdonald-theatre?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/561284/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/561284/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Explosions in the Sky at McDonald Theatre (September 21, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.04861,
+          "lng": -123.0928
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "4690"
+      },
+      "name": "McDonald Theatre"
+    },
+    "time_unspecified_or_all_day": true,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "29747409"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1505977200,
+    "artist": {
+      "name": "Lia Menaker",
+      "url": "http://www.songkick.com/artists/9052539-lia-menaker?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/9052539/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/9052539/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "9052539"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/30222559-lia-menaker-at-black-forest?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/9052539/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/9052539/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Lia Menaker at The Black Forest (September 21, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.04759,
+          "lng": -123.0918
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "740971"
+      },
+      "name": "The Black Forest"
+    },
+    "time_unspecified_or_all_day": true,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "30222559"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506052800,
+    "artist": {
+      "name": "Devy Metal",
+      "url": "http://www.songkick.com/artists/9064304-devy-metal?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/9064304/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/9064304/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "9064304"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/31295804-devy-metal-at-hifi-music-hall?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/9064304/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/9064304/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Devy Metal at HiFi Music Hall (September 21, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05181,
+          "lng": -123.0923
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "2942628"
+      },
+      "name": "HiFi Music Hall"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "31295804"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506051000,
+    "artist": {
+      "name": "Jay Critch",
+      "url": "http://www.songkick.com/artists/8978234-jay-critch?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8978234/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8978234/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "8978234"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/31064989-jay-critch-at-whirled-pies-at-cosmic?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8978234/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8978234/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Jay Critch at Whirled Pies at Cosmic (September 21, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05127,
+          "lng": -123.0955
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "3290974"
+      },
+      "name": "Whirled Pies at Cosmic"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "31064989"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1505977200,
+    "artist": {
+      "name": "thom simon",
+      "url": "http://www.songkick.com/artists/8451833-thom-simon?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8451833/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8451833/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "8451833"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/30888039-thom-simon-at-old-nicks-pub?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8451833/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8451833/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "thom simon and Velvet (LA) at Old Nick's Pub (September 21, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05746,
+          "lng": -123.0999
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "2869728"
+      },
+      "name": "Old Nick's Pub"
+    },
+    "time_unspecified_or_all_day": true,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "30888039"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506052800,
+    "artist": {
+      "name": "Dead Meadow",
+      "url": "http://www.songkick.com/artists/471526-dead-meadow?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/471526/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/471526/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "471526"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/31184719-dead-meadow-at-sam-bonds-garage?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/471526/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/471526/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Dead Meadow at Sam Bond's Garage (September 21, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05527,
+          "lng": -123.1089
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "11612"
+      },
+      "name": "Sam Bond's Garage"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "31184719"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506049200,
+    "artist": {
+      "full_data": {
+        "classifications": [
+          {
+            "segment": {
+              "id": "KZFzniwnSyZfZ7v7nJ",
+              "name": "Music"
+            },
+            "primary": true,
+            "subType": {
+              "id": "KZFzBErXgnZfZ7v7lJ",
+              "name": "Undefined"
+            },
+            "genre": {
+              "id": "KnvZfZ7vAeA",
+              "name": "Rock"
+            },
+            "subGenre": {
+              "id": "KZazBEonSMnZfZ7v6dt",
+              "name": "Alternative Rock"
+            },
+            "type": {
+              "id": "KZAyXgnZfZ7v7nI",
+              "name": "Undefined"
+            }
+          }
+        ],
+        "name": "Explosions In the Sky",
+        "locale": "en-us",
+        "test": false,
+        "_links": {
+          "self": {
+            "href": "/discovery/v2/attractions/K8vZ9171B17?locale=en-us"
+          }
+        },
+        "url": "http://www.ticketmaster.com/artist/886226",
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 360
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 115
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 1152
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 427
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_CUSTOM.jpg",
+            "width": 305,
+            "fallback": false,
+            "ratio": "4_3",
+            "height": 225
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 683
+          }
+        ],
+        "upcomingEvents": {
+          "_total": 12,
+          "tmr": 9,
+          "ticketmaster": 3
+        },
+        "type": "attraction",
+        "id": "K8vZ9171B17"
+      },
+      "name": "Explosions In the Sky",
+      "url": "http://www.ticketmaster.com/artist/886226",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "images": [
+            {
+              "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 360
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 115
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 1152
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "fallback": false,
+              "ratio": "3_2",
+              "height": 427
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_CUSTOM.jpg",
+              "width": 305,
+              "fallback": false,
+              "ratio": "4_3",
+              "height": 225
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 639
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 576
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "fallback": false,
+              "ratio": "3_2",
+              "height": 203
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 56
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "fallback": false,
+              "ratio": "3_2",
+              "height": 683
+            }
+          ]
+        },
+        "main_cover": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+        "thumb": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_CUSTOM.jpg"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "K8vZ9171B17"
+      }
+    },
+    "url": {
+      "full_url": "http://www.ticketsnow.com/InventoryBrowse/TicketList.aspx?PID=2138296"
+    },
+    "image": {
+      "using_default_image": false,
+      "extra_information": {
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 360
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 115
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 1152
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 427
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_CUSTOM.jpg",
+            "width": 305,
+            "fallback": false,
+            "ratio": "4_3",
+            "height": 225
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 683
+          }
+        ]
+      },
+      "main_cover": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "thumb": "https://s1.ticketm.net/dam/a/177/328719a9-df48-49d9-ae83-8bb82d7ad177_113731_CUSTOM.jpg"
+    },
+    "title": "Explosions In the Sky",
+    "venue": {
+      "address": {
+        "city": "Eugene",
+        "country": "",
+        "full_address": "1010 Willamette Street",
+        "state": "Oregon",
+        "postal_code": "97402",
+        "location": {
+          "lat": 44.0318,
+          "lng": -123.2352
+        },
+        "shorten_address": "1010 Willamette Street"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "ZFr9jZ7e77"
+      },
+      "name": "McDonald Theatre"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 1,
+      "id_on_source": "Z7r9jZ1Ae7z1p"
+    },
+    "categories": [
+      "Music",
+      "Undefined",
+      "Undefined"
+    ]
+  },
+  {
+    "start_date_time": 1506142800,
+    "artist": {
+      "name": "Jojo Mayer & Nerve",
+      "url": "http://www.songkick.com/artists/2486991-jojo-mayer-and-nerve?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/2486991/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/2486991/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "2486991"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/30428339-jojo-mayer-and-nerve-at-hifi-music-hall?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/2486991/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/2486991/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Jojo Mayer & Nerve at HiFi Music Hall (September 22, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05181,
+          "lng": -123.0923
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "2942628"
+      },
+      "name": "HiFi Music Hall"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "30428339"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506141000,
+    "artist": {
+      "name": "Manchino",
+      "url": "http://www.songkick.com/artists/7636484-manchino?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/7636484/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/7636484/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "7636484"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/30634134-manchino-at-whirled-pies-at-cosmic?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/7636484/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/7636484/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Manchino at Whirled Pies at Cosmic (September 22, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05127,
+          "lng": -123.0955
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "3290974"
+      },
+      "name": "Whirled Pies at Cosmic"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "30634134"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506139200,
+    "artist": {
+      "full_data": {
+        "classifications": [
+          {
+            "segment": {
+              "id": "KZFzniwnSyZfZ7v7nJ",
+              "name": "Music"
+            },
+            "primary": true,
+            "subType": {
+              "id": "KZFzBErXgnZfZ7v7lJ",
+              "name": "Undefined"
+            },
+            "genre": {
+              "id": "KnvZfZ7vAv1",
+              "name": "Hip-Hop/Rap"
+            },
+            "subGenre": {
+              "id": "KZazBEonSMnZfZ7vkdA",
+              "name": "Urban"
+            },
+            "type": {
+              "id": "KZAyXgnZfZ7v7nI",
+              "name": "Undefined"
+            }
+          }
+        ],
+        "name": "Curren$y",
+        "locale": "en-us",
+        "test": false,
+        "url": "http://www.ticketmaster.com/artist/1466394",
+        "_links": {
+          "self": {
+            "href": "/discovery/v2/attractions/K8vZ917Glw0?locale=en-us"
+          }
+        },
+        "externalLinks": {
+          "wiki": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Currensy"
+            }
+          ],
+          "twitter": [
+            {
+              "url": "https://twitter.com/CurrenSy_Spitta"
+            }
+          ],
+          "youtube": [
+            {
+              "url": "https://www.youtube.com/user/CurrensySpittaTV"
+            }
+          ],
+          "facebook": [
+            {
+              "url": "https://www.facebook.com/CurrenSy"
+            }
+          ],
+          "musicbrainz": [
+            {
+              "id": "4ce1c576-305a-4b82-82fa-5e5359056219"
+            }
+          ],
+          "lastfm": [
+            {
+              "url": "http://www.last.fm/music/Curren$y"
+            }
+          ],
+          "homepage": [
+            {
+              "url": "http://www.currensyspitta.com/"
+            }
+          ]
+        },
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 683
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 360
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_CUSTOM.jpg",
+            "width": 305,
+            "fallback": false,
+            "ratio": "4_3",
+            "height": 225
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 427
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 1152
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 115
+          }
+        ],
+        "upcomingEvents": {
+          "_total": 0
+        },
+        "type": "attraction",
+        "id": "K8vZ917Glw0"
+      },
+      "name": "Curren$y",
+      "url": "http://www.ticketmaster.com/artist/1466394",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "images": [
+            {
+              "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 639
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 576
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "fallback": false,
+              "ratio": "3_2",
+              "height": 203
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "fallback": false,
+              "ratio": "3_2",
+              "height": 683
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 360
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_CUSTOM.jpg",
+              "width": 305,
+              "fallback": false,
+              "ratio": "4_3",
+              "height": 225
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "fallback": false,
+              "ratio": "3_2",
+              "height": 427
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 56
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 1152
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "fallback": false,
+              "ratio": "16_9",
+              "height": 115
+            }
+          ]
+        },
+        "main_cover": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+        "thumb": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_ARTIST_PAGE_3_2.jpg"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "K8vZ917Glw0"
+      }
+    },
+    "url": {
+      "full_url": "http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&eventId=7603215&REFERRAL_ID=tmfeed"
+    },
+    "image": {
+      "using_default_image": false,
+      "extra_information": {
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 683
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 360
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_CUSTOM.jpg",
+            "width": 305,
+            "fallback": false,
+            "ratio": "4_3",
+            "height": 225
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": false,
+            "ratio": "3_2",
+            "height": 427
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 1152
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": false,
+            "ratio": "16_9",
+            "height": 115
+          }
+        ]
+      },
+      "main_cover": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "thumb": "https://s1.ticketm.net/dam/a/a1f/9e31434d-1d93-4626-981a-78d20f0cba1f_295451_ARTIST_PAGE_3_2.jpg"
+    },
+    "title": "Curren$y, Ski Beatz & Jet Life, Watrcup, Ox, Todddie B",
+    "venue": {
+      "address": {
+        "city": "Eugene",
+        "country": "",
+        "full_address": "291 W 8th Avenue",
+        "state": "Oregon",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.05121,
+          "lng": -123.0971
+        },
+        "shorten_address": "291 W 8th Avenue"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "KovZpZA1keEA"
+      },
+      "name": "Wow Hall"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 1,
+      "id_on_source": "1718v3G62c21A79"
+    },
+    "categories": [
+      "Music",
+      "Hip-Hop/Rap",
+      "Urban"
+    ]
+  },
+  {
+    "start_date_time": 1506139200,
+    "artist": {
+      "name": "Curren$y",
+      "url": "http://www.songkick.com/artists/5334228-currensy?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/5334228/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/5334228/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "5334228"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/30874129-currensy-at-wow-hall?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/5334228/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/5334228/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Curren$y at WOW Hall (September 22, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05121,
+          "lng": -123.0971
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "404"
+      },
+      "name": "WOW Hall"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "30874129"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506063600,
+    "artist": {
+      "name": "Sara and Kenny",
+      "url": "http://www.songkick.com/artists/8867084-sara-and-kenny?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8867084/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8867084/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "8867084"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/31235884-sara-and-kenny-at-sofar-sounds-eugene?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8867084/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8867084/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Sara and Kenny at Sofar Sounds Eugene (September 22, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05207,
+          "lng": -123.0868
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "3664064"
+      },
+      "name": "Sofar Sounds Eugene"
+    },
+    "time_unspecified_or_all_day": true,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "31235884"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506063600,
+    "artist": {
+      "name": "Zeds Dead",
+      "url": "http://www.songkick.com/artists/1725975-zeds-dead?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/1725975/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/1725975/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "1725975"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/festivals/193056-transition/id/31028874-transition-festival-2017?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/1725975/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/1725975/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "TRANSITION FESTIVAL 2017",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05359,
+          "lng": -123.0649
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "46513"
+      },
+      "name": "Cuthbert Amphitheater"
+    },
+    "time_unspecified_or_all_day": true,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "31028874"
+    },
+    "categories": [
+      "music",
+      "festival"
+    ]
+  },
+  {
+    "start_date_time": 1506121200,
+    "artist": {
+      "name": "Kaskade",
+      "url": "http://www.songkick.com/artists/64023-kaskade?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/64023/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/64023/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "64023"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/31390589-kaskade-at-cuthbert-amphitheater?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/64023/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/64023/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Kaskade with Vanic at Cuthbert Amphitheater (September 22, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05359,
+          "lng": -123.0649
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "46513"
+      },
+      "name": "Cuthbert Amphitheater"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "31390589"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506193200,
+    "artist": {
+      "name": "Japanese Breakfast",
+      "url": "http://www.songkick.com/artists/8413103-japanese-breakfast?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8413103/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8413103/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "8413103"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/30685699-japanese-breakfast-at-hifi-music-hall?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8413103/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8413103/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Japanese Breakfast with Mannequin Pussy and Spirit of the Beehive at HiFi Music Hall (September 23, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05181,
+          "lng": -123.0923
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "2942628"
+      },
+      "name": "HiFi Music Hall"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "30685699"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506220200,
+    "title": "Black Hare, Vial...experiment, Black Bell, Dead Kingmaker",
+    "url": {
+      "full_url": "http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&eventId=7507445&REFERRAL_ID=tmfeed"
+    },
+    "image": {
+      "using_default_image": false,
+      "extra_information": {
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_CUSTOM.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "4_3",
+            "height": 225
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 683
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 360
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 1152
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 115
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 427
+          }
+        ]
+      },
+      "main_cover": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "thumb": "https://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_ARTIST_PAGE_3_2.jpg"
+    },
+    "venue": {
+      "address": {
+        "city": "Eugene",
+        "country": "",
+        "full_address": "291 W 8th Avenue",
+        "state": "Oregon",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.05121,
+          "lng": -123.0971
+        },
+        "shorten_address": "291 W 8th Avenue"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "KovZpZA1keEA"
+      },
+      "name": "Wow Hall"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 1,
+      "id_on_source": "1718v3G6ui_3gk6"
+    },
+    "categories": [
+      "Music",
+      "Rock",
+      "Pop"
+    ]
+  },
+  {
+    "start_date_time": 1506312000,
+    "artist": {
+      "name": "Bizio",
+      "url": "http://www.songkick.com/artists/8765889-bizio?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8765889/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8765889/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "8765889"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/31240954-bizio-at-hifi-music-hall?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8765889/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8765889/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Bizio at HiFi Music Hall (September 24, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05181,
+          "lng": -123.0923
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "2942628"
+      },
+      "name": "HiFi Music Hall"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "31240954"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506294000,
+    "artist": {
+      "name": "Cathedral Hills",
+      "url": "http://www.songkick.com/artists/9226374-cathedral-hills?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/9226374/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/9226374/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "9226374"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/31218869-cathedral-hills-at-unknown-venue?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/9226374/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/9226374/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Cathedral Hills with Day Of Rest at Unknown venue (September 24, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Lebanon, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.53651,
+          "lng": -122.907
+        },
+        "city": "Lebanon, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": ""
+      },
+      "name": "Unknown venue"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "31218869"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506394800,
+    "artist": {
+      "name": "Day Wave",
+      "url": "http://www.songkick.com/artists/8545954-day-wave?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8545954/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8545954/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "8545954"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/30376599-day-wave-at-mcdonald-theatre?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8545954/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8545954/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Day Wave and The Shins at McDonald Theatre (September 25, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.04861,
+          "lng": -123.0928
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "4690"
+      },
+      "name": "McDonald Theatre"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "30376599"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506394800,
+    "artist": {
+      "full_data": {
+        "classifications": [
+          {
+            "genre": {
+              "id": "KnvZfZ7vAe6",
+              "name": "Undefined"
+            },
+            "subGenre": {
+              "id": "KZazBEonSMnZfZ7v6JI",
+              "name": "Undefined"
+            },
+            "segment": {
+              "id": "KZFzniwnSyZfZ7v7nJ",
+              "name": "Music"
+            },
+            "primary": true
+          }
+        ],
+        "name": "The Shins",
+        "locale": "en-us",
+        "test": false,
+        "_links": {
+          "self": {
+            "href": "/discovery/v2/attractions/ZFr9jZkev6?locale=en-us"
+          }
+        },
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_CUSTOM.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "4_3",
+            "height": 225
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 360
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 427
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 115
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 683
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 1152
+          }
+        ],
+        "upcomingEvents": {
+          "_total": 35,
+          "tmr": 9,
+          "ticketmaster": 26
+        },
+        "type": "attraction",
+        "id": "ZFr9jZkev6"
+      },
+      "name": "The Shins",
+      "url": "",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "images": [
+            {
+              "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_CUSTOM.jpg",
+              "width": 305,
+              "fallback": true,
+              "ratio": "4_3",
+              "height": 225
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 360
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 639
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "fallback": true,
+              "ratio": "3_2",
+              "height": 427
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 576
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "fallback": true,
+              "ratio": "3_2",
+              "height": 203
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 56
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 115
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "fallback": true,
+              "ratio": "3_2",
+              "height": 683
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 1152
+            }
+          ]
+        },
+        "main_cover": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+        "thumb": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_CUSTOM.jpg"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "ZFr9jZkev6"
+      }
+    },
+    "url": {
+      "full_url": "http://www.ticketsnow.com/InventoryBrowse/TicketList.aspx?PID=2139010"
+    },
+    "image": {
+      "using_default_image": false,
+      "extra_information": {
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_CUSTOM.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "4_3",
+            "height": 225
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 360
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 427
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 115
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 683
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 1152
+          }
+        ]
+      },
+      "main_cover": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "thumb": "https://s1.ticketm.net/dam/c/ab4/6367448e-7474-4650-bd2d-02a8f7166ab4_106161_CUSTOM.jpg"
+    },
+    "title": "The Shins",
+    "venue": {
+      "address": {
+        "city": "Eugene",
+        "country": "",
+        "full_address": "1010 Willamette Street",
+        "state": "Oregon",
+        "postal_code": "97402",
+        "location": {
+          "lat": 44.0318,
+          "lng": -123.2352
+        },
+        "shorten_address": "1010 Willamette Street"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "ZFr9jZ7e77"
+      },
+      "name": "McDonald Theatre"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 1,
+      "id_on_source": "Z7r9jZ1Ae7yZ8"
+    },
+    "categories": [
+      "Music",
+      "Undefined",
+      "Undefined"
+    ]
+  },
+  {
+    "start_date_time": 1506484800,
+    "title": "Whethan, Bearson, Opia",
+    "url": {
+      "full_url": "http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&eventId=7507525&REFERRAL_ID=tmfeed"
+    },
+    "image": {
+      "using_default_image": false,
+      "extra_information": {
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 115
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 360
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 1152
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 683
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_CUSTOM.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "4_3",
+            "height": 225
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 427
+          }
+        ]
+      },
+      "main_cover": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "thumb": "https://s1.ticketm.net/dam/c/df8/81eadad8-4449-412e-a2b1-3d8bbb78edf8_106181_ARTIST_PAGE_3_2.jpg"
+    },
+    "venue": {
+      "address": {
+        "city": "Eugene",
+        "country": "",
+        "full_address": "291 W 8th Avenue",
+        "state": "Oregon",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.05121,
+          "lng": -123.0971
+        },
+        "shorten_address": "291 W 8th Avenue"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "KovZpZA1keEA"
+      },
+      "name": "Wow Hall"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 1,
+      "id_on_source": "1718v3G6ui_fgFC"
+    },
+    "categories": [
+      "Music",
+      "Dance/Electronic",
+      "Club Dance"
+    ]
+  },
+  {
+    "start_date_time": 1506484800,
+    "artist": {
+      "name": "Whethan",
+      "url": "http://www.songkick.com/artists/8865854-whethan?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8865854/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8865854/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "8865854"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/30593934-whethan-at-wow-hall?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/8865854/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/8865854/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Whethan at WOW Hall (September 26, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.05121,
+          "lng": -123.0971
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "404"
+      },
+      "name": "WOW Hall"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "30593934"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506477600,
+    "artist": {
+      "name": "Louis Landon",
+      "url": "http://www.songkick.com/artists/332718-louis-landon?utm_source=43141&utm_medium=partner",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "thumb": "https://images.sk-static.com/images/media/profile_images/artists/332718/large_avatar",
+        "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/332718/huge_avatar",
+        "using_default_image": false
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "332718"
+      }
+    },
+    "url": {
+      "full_url": "http://www.songkick.com/concerts/31213209-louis-landon-at-unity-church-of-the-valley?utm_source=43141&utm_medium=partner"
+    },
+    "image": {
+      "thumb": "https://images.sk-static.com/images/media/profile_images/artists/332718/large_avatar",
+      "main_cover": "https://images.sk-static.com/images/media/profile_images/artists/332718/huge_avatar",
+      "using_default_image": false
+    },
+    "title": "Louis Landon at Unity Church of the Valley (September 26, 2017)",
+    "venue": {
+      "address": {
+        "shorten_address": "Eugene, OR, US",
+        "state": "OR",
+        "location": {
+          "lat": 44.01362,
+          "lng": -123.0817
+        },
+        "city": "Eugene, OR, US",
+        "country": "US"
+      },
+      "id": {
+        "source_type": 6,
+        "id_on_source": "1195911"
+      },
+      "name": "Unity Church of the Valley"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 6,
+      "id_on_source": "31213209"
+    },
+    "categories": [
+      "music",
+      "concert"
+    ]
+  },
+  {
+    "start_date_time": 1506731400,
+    "description": {
+      "text": "1 mic, 5 minutes, 300 peers in the audience... no pressure, right?\n\nWhat is Ignite TAO: SWV?\n\nIgnite is a high-energy evening of 5-minute talks by local people who have a burning idea and the guts to get onstage and share their personal and professional passions. Quick, fun, thought-provoking, social, local, and global - Ignite is all of these and more.\n\nIgnite TAO: SWV will focus on topics around all kinds of tech.  What new products, services or research can really take technology to the next level?   Speakers are from the Southern Willamette Valley community with representatives across many verticals - we want to hear from you!\n\nApply\n\nProposals should be submitted online by August 4th, 2017.  Once submitted, your proposal will be reviewed by the Ignite team.  Please include your contact information in case the team has questions about your proposal. Everyone who submits a proposal will be notified on the status of their application by September 8th.  Click on the application link to get started! \nhttps://docs.google.com/forms/d/e/1FAIpQLSedpi99GWff5AIsjbjujX269jvBC6ps7GrP0mSJK_iUC4kfAA/viewform\n\nWhy attend Ignite TAO: SWV?\n\nAs an attendee, you'll learn about emerging, innovative, unconventional, inspiring, locally-sourced concepts and tools, and connect with a diverse and passionate crowd of like-minded innovation enthusiasts.  Most of all, you will have fun!"
+    },
+    "artist": {
+      "description": {
+        "text": "TAO helps technology companies grow. We do this through programs that focus on industry promotion, advocacy, professional networks, and talent development."
+      },
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "source": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21462547_1941038502809813_7408503212103076334_n.jpg?oh=0eae927cf44b2d28bff9842e4116113d&oe=5A499ADF",
+          "cover_id": "1941038502809813",
+          "offset_x": 0,
+          "offset_y": 0,
+          "id": "1941038502809813"
+        },
+        "main_cover": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21462547_1941038502809813_7408503212103076334_n.jpg?oh=0eae927cf44b2d28bff9842e4116113d&oe=5A499ADF",
+        "thumb": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21462547_1941038502809813_7408503212103076334_n.jpg?oh=0eae927cf44b2d28bff9842e4116113d&oe=5A499ADF"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "1659948380918828"
+      },
+      "name": "Technology Association of Oregon in the Southern Willamette Valley"
+    },
+    "url": {
+      "full_url": "https://impactflow.com/event/3788/checkout/tickets"
+    },
+    "image": {
+      "thumb": "https://scontent.xx.fbcdn.net/v/t1.0-0/c50.0.200.200/p200x200/20046508_1917575578489439_6456251474234592740_n.jpg?oh=c0e01627d34b399310f7cc2350bb2a6f&oe=5A437648",
+      "main_cover": "https://scontent.xx.fbcdn.net/v/t31.0-0/p480x480/19983985_1917575578489439_6456251474234592740_o.jpg?oh=faceacd8f2d0ca10c0cd9f7ec408f882&oe=5A459287",
+      "using_default_image": false
+    },
+    "title": "Ignite TAO: Southern Willamette Valley",
+    "venue": {
+      "description": "",
+      "address": {
+        "city": "Eugene",
+        "country": "United States",
+        "full_address": "99 West 10th Ave, Suite 398 Eugene OR, 97401",
+        "state": "OR",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.04912,
+          "lng": -123.0938
+        },
+        "shorten_address": "Eugene OR, 97401"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "1659948380918828"
+      },
+      "name": "Technology Association of Oregon in the Southern Willamette Valley"
+    },
+    "time_unspecified_or_all_day": false,
+    "end_date_time": 1506742200,
+    "id": {
+      "source_type": 2,
+      "id_on_source": "1970131593208357"
+    },
+    "categories": [
+      "EVENT_NETWORKING"
+    ]
+  },
+  {
+    "start_date_time": 1506814200,
+    "description": {
+      "text": "Please join us for the TAO Tailgate: Oregon v. California\n\nHOSTED BAR and BBQ: Ninkasi Brewing and Swallowtail Spirits\n\nEvent Sponsors: XS Media and The Warehouse\n\nIn-tent TV\u2019s to follow all the college football action around the country. FUN parking lot games. Mingle and get to know get to know the tech community in greater Eugene\n\nEVENT SCHEDULE:\n4:30pm TAILGATE OPENS\n1 hour before kickoff HELLO FROM TAO\nKick-off GO DUCKS!\n\nThis tailgate is located in \u2018tailgate alley\u2019, just outside the Autzen Stadium East Gate Entrance."
+    },
+    "artist": {
+      "description": {
+        "text": "TAO helps technology companies grow. We do this through programs that focus on industry promotion, advocacy, professional networks, and talent development."
+      },
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "source": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21462547_1941038502809813_7408503212103076334_n.jpg?oh=0eae927cf44b2d28bff9842e4116113d&oe=5A499ADF",
+          "cover_id": "1941038502809813",
+          "offset_x": 0,
+          "offset_y": 0,
+          "id": "1941038502809813"
+        },
+        "main_cover": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21462547_1941038502809813_7408503212103076334_n.jpg?oh=0eae927cf44b2d28bff9842e4116113d&oe=5A499ADF",
+        "thumb": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21462547_1941038502809813_7408503212103076334_n.jpg?oh=0eae927cf44b2d28bff9842e4116113d&oe=5A499ADF"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "1659948380918828"
+      },
+      "name": "Technology Association of Oregon in the Southern Willamette Valley"
+    },
+    "url": {
+      "full_url": "https://impactflow.com/event/tao-tailgate-oregon-v-california-4962"
+    },
+    "image": {
+      "thumb": "https://scontent.xx.fbcdn.net/v/t1.0-0/c37.0.200.200/p200x200/21432983_1941921362721527_4441479513030652198_n.jpg?oh=c415e105c606f9d45ad134ba4ca3cf4d&oe=5A5435F0",
+      "main_cover": "https://scontent.xx.fbcdn.net/v/t31.0-8/q82/s720x720/21427446_1941921362721527_4441479513030652198_o.jpg?oh=db16c916f1402b0e681edd83ba6b1dee&oe=5A59E737",
+      "using_default_image": false
+    },
+    "title": "TAO Tailgate: Oregon v. California",
+    "venue": {
+      "description": "",
+      "address": {
+        "city": "Eugene",
+        "country": "United States",
+        "full_address": "99 West 10th Ave, Suite 398 Eugene OR, 97401",
+        "state": "OR",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.04912,
+          "lng": -123.0938
+        },
+        "shorten_address": "Eugene OR, 97401"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "1659948380918828"
+      },
+      "name": "Technology Association of Oregon in the Southern Willamette Valley"
+    },
+    "time_unspecified_or_all_day": false,
+    "end_date_time": 1506825000,
+    "id": {
+      "source_type": 2,
+      "id_on_source": "493642354324384"
+    },
+    "categories": [
+      "EVENT_NETWORKING"
+    ]
+  },
+  {
+    "start_date_time": 1506884400,
+    "description": {
+      "text": "Cash in on your parts bin!\nFind the final piece for your project!\nLook at cool/old/weird bike stuff!\nTell stories and make jokes!\n\nBRING YOUR OWN TABLES OR TENTS! Last year was a huge hit: we filled our back parking lot with vendors and tables, many deals were made, and everybody had a great time!\n\nIn the back parking lot of our downtown shop (555 Lincoln). Vendors are encouraged to RSVP and show up early to get a primo spot!"
+    },
+    "artist": {
+      "description": {
+        "text": "Racing bikes, touring bikes, hybrids, folders, mtb bikes, commuters, cargo bikes, juvenile bikes, & BIKE RENTAL.\nMore than a bike shop; it's a way of life!"
+      },
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "source": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/13147348_1150360051661254_9094647273383517363_o.jpg?oh=84f537e6f158b97ac3167551b2363967&oe=5A40DB3C",
+          "cover_id": "1150360051661254",
+          "offset_x": 50,
+          "offset_y": 0,
+          "id": "1150360051661254"
+        },
+        "main_cover": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/13147348_1150360051661254_9094647273383517363_o.jpg?oh=84f537e6f158b97ac3167551b2363967&oe=5A40DB3C",
+        "thumb": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/13147348_1150360051661254_9094647273383517363_o.jpg?oh=84f537e6f158b97ac3167551b2363967&oe=5A40DB3C"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "218903041473631"
+      },
+      "name": "Bicycle Way of Life - Charnelton St."
+    },
+    "url": {
+      "full_url": "https://www.facebook.com/events/1573440182677434"
+    },
+    "image": {
+      "thumb": "https://scontent.xx.fbcdn.net/v/t1.0-0/c115.0.200.200/p200x200/21728426_1617382964958958_5766606440306877697_n.jpg?oh=aa6d0f160b80536900b06c0e7e0055f5&oe=5A3E7327",
+      "main_cover": "https://scontent.xx.fbcdn.net/v/t1.0-9/21728426_1617382964958958_5766606440306877697_n.jpg?oh=37dadd600d3f7012ff8c03bf6b7a24bc&oe=5A41BB56",
+      "using_default_image": false
+    },
+    "title": "2nd Annual BWOL Community Bicycle Swap Meet",
+    "venue": {
+      "description": "",
+      "address": {
+        "city": "Eugene",
+        "country": "United States",
+        "full_address": "556 Charnelton St Eugene OR, 97401",
+        "state": "OR",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.05371,
+          "lng": -123.096
+        },
+        "shorten_address": "Eugene OR, 97401"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "218903041473631"
+      },
+      "name": "Bicycle Way of Life - Charnelton St."
+    },
+    "time_unspecified_or_all_day": false,
+    "end_date_time": 1506898800,
+    "id": {
+      "source_type": 2,
+      "id_on_source": "1573440182677434"
+    },
+    "categories": [
+      "EVENT_SHOPPING"
+    ]
+  },
+  {
+    "start_date_time": 1507077000,
+    "description": {
+      "text": "RAIN Eugene presents:\nThe Secret Ingredient\nWhy startups are the key to growing our community\n\nJoin us at the Hult Center to see the final presentations from the RAIN Eugene Accelerator Summer 2017 Cohort.  The companies presenting will be:\n\nLight Shield  - creating eSports travel gear and accessories. \n\nVeraison Solutions -  providing marketing automation and customer engagement solutions for wineries.\n\nLocal Traffic -  an electronic concierge service for hotel guests.\n\nAulaine Enterprises - a personal care products company focusing on specialty markets and products, beginning with Ink Defense Tattoo Care.\n\nCollobos - The Presto platform protects up to 25% of IT's time and budget from waste.\n\nBliss Bridal -  creating a better wedding experience.\n\nRthiwir - Hardware devices for full body Virtual Reality immersion.\n\nOur keynote presentation will talk about the research into job creation, which indicates that Startups are the main driver of job creation in the United States.  Creating job growth means focusing on Startups and creating the conditions where they can thrive.  \n\nKeynote speaker Ian Hathaway is an experienced economist, strategic advisor, and writer. He is an expert in entrepreneurship, technology, and innovation. His data-driven insights and communication style makes this complex material entertaining and thought-provoking to diverse audiences. \n\nTickets are available free when you RSVP: https://www.eventbrite.com/e/the-secret-ingredient-2017-rain-eugene-accelerator-cohort-final-presentations-tickets-37876682176"
+    },
+    "artist": {
+      "description": {
+        "text": "RAIN Eugene is a network connecting ideas and investors and linking together the Eugene-Springfield entrepreneurial community."
+      },
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "source": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/19055791_1941296749467572_5505506124422876172_o.jpg?oh=df641cc8b34167a48868a5e087d40970&oe=5A54E79A",
+          "cover_id": "1941296749467572",
+          "offset_x": 0,
+          "offset_y": 47,
+          "id": "1941296749467572"
+        },
+        "main_cover": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/19055791_1941296749467572_5505506124422876172_o.jpg?oh=df641cc8b34167a48868a5e087d40970&oe=5A54E79A",
+        "thumb": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/19055791_1941296749467572_5505506124422876172_o.jpg?oh=df641cc8b34167a48868a5e087d40970&oe=5A54E79A"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "1427805867483332"
+      },
+      "name": "RAIN Eugene"
+    },
+    "url": {
+      "full_url": "https://www.eventbrite.com/e/the-secret-ingredient-2017-rain-eugene-accelerator-cohort-final-presentations-tickets-37876682176"
+    },
+    "image": {
+      "thumb": "https://scontent.xx.fbcdn.net/v/t1.0-0/c182.0.200.200/p200x200/21728115_1986974168233163_6079276551701965232_n.jpg?oh=b479f718c1b072b434edd8072851062d&oe=5A5E91C0",
+      "main_cover": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/21728685_1986974168233163_6079276551701965232_o.jpg?oh=350fcfbb091000e9c941cb7f68f0caad&oe=5A55D2AF",
+      "using_default_image": false
+    },
+    "title": "RAIN Eugene Annual Showcase - The Secret Ingredient",
+    "venue": {
+      "description": "",
+      "address": {
+        "city": "Eugene",
+        "country": "United States",
+        "full_address": "942 Olive Street Eugene OR, 97401",
+        "state": "OR",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.04944,
+          "lng": -123.0945
+        },
+        "shorten_address": "Eugene OR, 97401"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "1427805867483332"
+      },
+      "name": "RAIN Eugene"
+    },
+    "time_unspecified_or_all_day": false,
+    "end_date_time": 1507084200,
+    "id": {
+      "source_type": 2,
+      "id_on_source": "1730484137252901"
+    },
+    "categories": [
+      "EVENT_NETWORKING"
+    ]
+  },
+  {
+    "start_date_time": 1507132800,
+    "description": {
+      "text": "On the 1st Wednesday of every month, mentors will be available to take 'walk up' 1:1 meetings with founders. If you have an idea and are not sure where to go next, show up and take advantage of some free consulting."
+    },
+    "artist": {
+      "description": {
+        "text": "RAIN Eugene is a network connecting ideas and investors and linking together the Eugene-Springfield entrepreneurial community."
+      },
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "source": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/19055791_1941296749467572_5505506124422876172_o.jpg?oh=df641cc8b34167a48868a5e087d40970&oe=5A54E79A",
+          "cover_id": "1941296749467572",
+          "offset_x": 0,
+          "offset_y": 47,
+          "id": "1941296749467572"
+        },
+        "main_cover": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/19055791_1941296749467572_5505506124422876172_o.jpg?oh=df641cc8b34167a48868a5e087d40970&oe=5A54E79A",
+        "thumb": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/19055791_1941296749467572_5505506124422876172_o.jpg?oh=df641cc8b34167a48868a5e087d40970&oe=5A54E79A"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "1427805867483332"
+      },
+      "name": "RAIN Eugene"
+    },
+    "url": {
+      "full_url": "https://www.facebook.com/events/1695772037131409"
+    },
+    "image": {
+      "thumb": "https://scontent.xx.fbcdn.net/v/t1.0-0/c194.0.200.200/p200x200/21730992_1987370394860207_286829022010114751_n.jpg?oh=6c117f5707bdd18c38a42e94f8c33e4e&oe=5A51FF36",
+      "main_cover": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/21740894_1987370394860207_286829022010114751_o.jpg?oh=e15c6b87f577ac612c08e28190647e3a&oe=5A5AEDF2",
+      "using_default_image": false
+    },
+    "title": "Open Mentor Hours - Fertilab, Eugene",
+    "venue": {
+      "description": "",
+      "address": {
+        "city": "Eugene",
+        "country": "United States",
+        "full_address": "942 Olive Street Eugene OR, 97401",
+        "state": "OR",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.04944,
+          "lng": -123.0945
+        },
+        "shorten_address": "Eugene OR, 97401"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "1427805867483332"
+      },
+      "name": "RAIN Eugene"
+    },
+    "time_unspecified_or_all_day": false,
+    "end_date_time": 1507147200,
+    "id": {
+      "source_type": 2,
+      "id_on_source": "1695772037131409"
+    },
+    "categories": [
+      "EVENT_NETWORKING"
+    ]
+  },
+  {
+    "start_date_time": 1507489200,
+    "description": {
+      "text": "RSVP NOW!! Call 541 485-1124\n\nJoin us for a mini drag show included during your Sunday brunch! Also meet some of the local Kings and Queens, learn about some local nonprofit organizations, and hear about all sorts of upcoming events around Eugene.\n\nOur menu includes:\n$5 Day Drinking Classics! Bourbon & Honey French 75, Rossini , and of course Bloody Mary!! \nCheck out out specials on non-alcoholic brunch concoctions as well!"
+    },
+    "artist": {
+      "description": {
+        "text": "The Imperial Sovereign Court of the Emerald Empire (ISCEE) is a 501 (c) (4) non-profit LGBTQ organization in Lane County, Oregon."
+      },
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "source": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/21457392_1476511832648098_5316520600923287750_o.jpg?oh=aecc6b903e83c6ee5f8126fb68eddd3f&oe=5A47231C",
+          "cover_id": "1476511832648098",
+          "offset_x": 0,
+          "offset_y": 50,
+          "id": "1476511832648098"
+        },
+        "main_cover": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/21457392_1476511832648098_5316520600923287750_o.jpg?oh=aecc6b903e83c6ee5f8126fb68eddd3f&oe=5A47231C",
+        "thumb": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/21457392_1476511832648098_5316520600923287750_o.jpg?oh=aecc6b903e83c6ee5f8126fb68eddd3f&oe=5A47231C"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "1431062787193003"
+      },
+      "name": "Imperial Sovereign Court of the Emerald Empire"
+    },
+    "url": {
+      "full_url": "https://www.facebook.com/events/168588680384457"
+    },
+    "image": {
+      "thumb": "https://scontent.xx.fbcdn.net/v/t1.0-0/c59.0.200.200/p200x200/21752105_1477440252555256_3159218528767630833_n.jpg?oh=39593152b3ec1c1d93a68f170405ee3a&oe=5A4D1448",
+      "main_cover": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/21740804_1477440252555256_3159218528767630833_o.jpg?oh=6e2e27d8a316aea694a3413c6b13f1e2&oe=5A571EF0",
+      "using_default_image": false
+    },
+    "title": "What's For Brunch? ~ALL AGES~",
+    "venue": {
+      "description": "",
+      "address": {
+        "city": "Eugene",
+        "country": "United States",
+        "full_address": "94 W Broadway Eugene OR, 97401",
+        "state": "OR",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.04983,
+          "lng": -123.0941
+        },
+        "shorten_address": "Eugene OR, 97401"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "1459582677623229"
+      },
+      "name": "The Davis Restaurant & Bar"
+    },
+    "time_unspecified_or_all_day": false,
+    "end_date_time": 1507491000,
+    "id": {
+      "source_type": 2,
+      "id_on_source": "168588680384457"
+    },
+    "categories": [
+      "EVENT_NETWORKING"
+    ]
+  },
+  {
+    "start_date_time": 1507251600,
+    "description": {
+      "text": "Living on the Land is a workshop series tailored for small acreage landowners and those new to managing land. There are 5 classes in the series. This program is sponsored by the OSU Extension Service in Lane County and Eugene Water and Electric Board.\n\nOctober 5 \u2013 Land Stewardship Planning, Soils & Water Resources\n>Learn the basics of planning for natural resource management, including soil health and water rights.\n\nOctober 12 \u2013 Wells & Septic Systems\n>Bring well water for nitrate screening. \n\nOctober 19 \u2013 Woodlands and Wildlife \n> Look at the woodlands and natural areas on your property and consider options to enhance and manage for healthy trees and wildlife habitat.\n\nOctober 26 \u2013 Pasture & Grazing Management\n>Make the most of your pasture by learning how grass plants grow, \nrotational grazing, nutrient and winter-time management. \n\nNovember 2 \u2013 Weed Management \n> Learn about management strategies for common weeds on your land.\nCost:  $10/CLASS,  $30 FOR SERIES or $35 FOR 2 Farm Partners\nClasses to be held at the Walterville Grange, 39259 Camp Creek Road, Springfield, OR 97478\nPre -registration required:  http://bit.ly/LaneSmallFarms"
+    },
+    "artist": {
+      "description": {
+        "text": "The Oregon State University Extension Service provides research-based knowledge and education that strengthens local economies, sustains natural resources, and promotes healthy communities, families, and individuals."
+      },
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "source": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/12553053_1033878849991223_2152186307703027038_n.png?oh=86a7d40fad1ff1f89f649ac613a819aa&oe=5A4BACFF",
+          "cover_id": "1033878849991223",
+          "offset_x": 0,
+          "offset_y": 0,
+          "id": "1033878849991223"
+        },
+        "main_cover": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/12553053_1033878849991223_2152186307703027038_n.png?oh=86a7d40fad1ff1f89f649ac613a819aa&oe=5A4BACFF",
+        "thumb": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/12553053_1033878849991223_2152186307703027038_n.png?oh=86a7d40fad1ff1f89f649ac613a819aa&oe=5A4BACFF"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "393915987320849"
+      },
+      "name": "Oregon State University Extension - Lane County"
+    },
+    "url": {
+      "full_url": "http://bit.ly/LaneSmallFarms"
+    },
+    "image": {
+      "thumb": "https://scontent.xx.fbcdn.net/v/t1.0-0/c54.0.200.200/p200x200/20994014_1547073842005052_6954495394026685451_n.jpg?oh=201d2a19e51cee5eefa737b725f0c46d&oe=5A4AE0F3",
+      "main_cover": "https://scontent.xx.fbcdn.net/v/t31.0-8/q82/s720x720/21055301_1547073842005052_6954495394026685451_o.jpg?oh=1db49861ab4e9fdfb8584d66c38f0ea6&oe=5A3E7B23",
+      "using_default_image": false
+    },
+    "title": "Living on the Land - 5 Class Series",
+    "venue": {
+      "description": "",
+      "address": {
+        "city": "Eugene",
+        "country": "United States",
+        "full_address": "500 E 4th Ave Eugene OR, 97401",
+        "state": "OR",
+        "postal_code": "97401",
+        "location": {
+          "lat": 44.05531,
+          "lng": -123.0854
+        },
+        "shorten_address": "Eugene OR, 97401"
+      },
+      "id": {
+        "source_type": 2,
+        "id_on_source": "127816605668"
+      },
+      "name": "Eugene Water & Electric Board"
+    },
+    "time_unspecified_or_all_day": false,
+    "end_date_time": 1509678000,
+    "id": {
+      "source_type": 2,
+      "id_on_source": "1411534485598445"
+    },
+    "categories": [
+      "EVENT_HOME"
+    ]
+  },
+  {
+    "start_date_time": 1506816000,
+    "artist": {
+      "full_data": {
+        "classifications": [
+          {
+            "segment": {
+              "id": "KZFzniwnSyZfZ7v7nE",
+              "name": "Sports"
+            },
+            "primary": true
+          }
+        ],
+        "name": "Oregon State Beavers Football",
+        "locale": "en-us",
+        "test": false,
+        "_links": {
+          "self": {
+            "href": "/discovery/v2/attractions/ZFr9jZedAF?locale=en-us"
+          }
+        },
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 427
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 360
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 683
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 115
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 1152
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_CUSTOM.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "4_3",
+            "height": 225
+          }
+        ],
+        "upcomingEvents": {
+          "_total": 0
+        },
+        "type": "attraction",
+        "id": "ZFr9jZedAF"
+      },
+      "name": "Oregon State Beavers Football",
+      "url": "",
+      "past_events": 0,
+      "upcoming_events": 0,
+      "logo": {
+        "using_default_image": false,
+        "extra_information": {
+          "images": [
+            {
+              "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RETINA_PORTRAIT_3_2.jpg",
+              "width": 640,
+              "fallback": true,
+              "ratio": "3_2",
+              "height": 427
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_ARTIST_PAGE_3_2.jpg",
+              "width": 305,
+              "fallback": true,
+              "ratio": "3_2",
+              "height": 203
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RETINA_PORTRAIT_16_9.jpg",
+              "width": 640,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 360
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_TABLET_LANDSCAPE_3_2.jpg",
+              "width": 1024,
+              "fallback": true,
+              "ratio": "3_2",
+              "height": 683
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RECOMENDATION_16_9.jpg",
+              "width": 100,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 56
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_EVENT_DETAIL_PAGE_16_9.jpg",
+              "width": 205,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 115
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+              "width": 2048,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 1152
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RETINA_LANDSCAPE_16_9.jpg",
+              "width": 1136,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 639
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_TABLET_LANDSCAPE_16_9.jpg",
+              "width": 1024,
+              "fallback": true,
+              "ratio": "16_9",
+              "height": 576
+            },
+            {
+              "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_CUSTOM.jpg",
+              "width": 305,
+              "fallback": true,
+              "ratio": "4_3",
+              "height": 225
+            }
+          ]
+        },
+        "main_cover": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+        "thumb": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_ARTIST_PAGE_3_2.jpg"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "ZFr9jZedAF"
+      }
+    },
+    "url": {
+      "full_url": "http://www.ticketsnow.com/InventoryBrowse/TicketList.aspx?PID=2061928"
+    },
+    "image": {
+      "using_default_image": false,
+      "extra_information": {
+        "images": [
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 427
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 203
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 360
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "3_2",
+            "height": 683
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 56
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 115
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 1152
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 639
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "fallback": true,
+            "ratio": "16_9",
+            "height": 576
+          },
+          {
+            "url": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_CUSTOM.jpg",
+            "width": 305,
+            "fallback": true,
+            "ratio": "4_3",
+            "height": 225
+          }
+        ]
+      },
+      "main_cover": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+      "thumb": "https://s1.ticketm.net/dam/c/25d/09139288-a226-487d-a98d-6136663e325d_106551_ARTIST_PAGE_3_2.jpg"
+    },
+    "title": "Washington Huskies Football at Oregon State Beavers Football",
+    "venue": {
+      "address": {
+        "city": "Corvallis",
+        "country": "",
+        "full_address": "Oregon State University",
+        "state": "Oregon",
+        "postal_code": "97333",
+        "location": {
+          "lat": 44.4633,
+          "lng": -123.3142
+        },
+        "shorten_address": "Oregon State University"
+      },
+      "id": {
+        "source_type": 1,
+        "id_on_source": "ZFr9jZeAva"
+      },
+      "name": "Reser Stadium"
+    },
+    "time_unspecified_or_all_day": false,
+    "id": {
+      "source_type": 1,
+      "id_on_source": "Z7r9jZ1Aev-0I"
+    },
+    "categories": [
+      "Sports"
+    ]
+  }
+]

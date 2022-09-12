@@ -1,0 +1,17 @@
+elasticsearch_bind_ip: 127.0.0.1
+
+elasticsearch_data_device: /dev/xvdb
+
+elasticsearch_memory: 1024M
+
+graylog_password_sha2: "{{ vault_graylog_password_sha2 }}"
+
+graylog_password_secret: "{{ vault_graylog_password_secret }}"
+
+graylog_memory: 2048M
+
+graylog_server_name: "{{ base_hostname }}"
+
+mongodb_data_device: /dev/xvdc
+
+mongodb_auth_enabled: no

@@ -1,0 +1,54 @@
+---
+
+- name: ACTIVATE_UI_CONFIG | Set aws_service_prefix
+  set_fact:
+    aws_service_prefix: "{{ services[service_name].aws_service_prefix }}"
+
+- name: ACTIVATE_UI_CONFIG | Create stage_dir
+  tempfile:
+    state: directory
+  register: stage_dir
+
+- name: ACTIVATE_UI_CONFIG | Remove config.js if it exists
+  aws_s3:
+    region: "{{ aws_region }}"
+    bucket: "{{ lookup('csky_aws_parameter', key='aws_s3_bucket') }}"
+    ec2_region: "{{ aws_region }}"
+    object: /assets/config.js
+    mode: delobj
+    profile: "{{ aws_profile }}"
+
+- name: ACTIVATE_UI_CONFIG | Download /assets/config.{{ limit_environment }}.js
+  aws_s3:
+    bucket: "{{ lookup('csky_aws_parameter', key='aws_s3_bucket') }}"
+    region: "{{ aws_region }}"
+    ec2_region: "{{ aws_region }}"
+    object: "/assets/config.{{ limit_environment }}.json"
+    dest: "{{ stage_dir.path }}/config.{{ limit_environment }}.json"
+    mode: get
+    profile: "{{ aws_profile }}"
+
+- name: ACTIVATE_UI_CONFIG | Download /index.html
+  aws_s3:
+    region: "{{ aws_region }}"
+    bucket: "{{ lookup('csky_aws_parameter', key='aws_s3_bucket') }}"
+    ec2_region: "{{ aws_region }}"
+    object: "/index.html"
+    dest: "{{ stage_dir.path }}/index.html"
+    mode: get
+    profile: "{{ aws_profile }}"
+
+- name: ACTIVATE_UI_CONFIG | Upload files
+  aws_s3:
+    bucket: "{{ lookup('csky_aws_parameter', key='aws_s3_bucket') }}"
+    ec2_region: "{{ aws_region }}"
+    mode: put
+    metadata: 'Cache-Control=no-cache'
+    object: "{{ item.0 }}"
+    overwrite: always
+    profile: "{{ aws_profile }}"
+    region: "{{ aws_region }}"
+    src: "{{ stage_dir.path }}/{{ item.1 }}"
+  with_together:
+    - [ "/assets/config.json", "/index.html"]
+    - [ "config.{{ limit_environment }}.json", "index.html"]

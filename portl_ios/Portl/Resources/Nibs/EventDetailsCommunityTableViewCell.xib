@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="Tpi-06-pPx" customClass="EventDetailsCommunityTableViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tpi-06-pPx" id="vm6-E9-pKi">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="COMMUNITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lde-Ah-rnl">
+                        <rect key="frame" x="16" y="16" width="79" height="15"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" name="color-dark4"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0 POSTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIP-6T-LTP">
+                        <rect key="frame" x="16" y="47" width="319" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="1QV-du-ZEa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" name="color-light1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="abW-vx-eei">
+                        <rect key="frame" x="335" y="39.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="VgX-MA-Gew"/>
+                            <constraint firstAttribute="width" constant="24" id="X3h-uT-Xok"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0 Images • 0 Comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rr-W7-pzU">
+                        <rect key="frame" x="16" y="71" width="136" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="VU0-aw-fSY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="color-light1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Add the first post." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqx-qx-tBy">
+                        <rect key="frame" x="16" y="47" width="102" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="color-light1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Lde-Ah-rnl" firstAttribute="leading" secondItem="vm6-E9-pKi" secondAttribute="leading" constant="16" id="4ZC-Hq-vso"/>
+                    <constraint firstItem="uqx-qx-tBy" firstAttribute="leading" secondItem="vm6-E9-pKi" secondAttribute="leading" constant="16" id="64p-v1-Qmf"/>
+                    <constraint firstAttribute="trailing" secondItem="abW-vx-eei" secondAttribute="trailing" constant="16" id="EGG-1i-ZE6"/>
+                    <constraint firstAttribute="bottom" secondItem="uqx-qx-tBy" secondAttribute="bottom" constant="40" id="Ebe-7c-aRA"/>
+                    <constraint firstAttribute="trailing" secondItem="rIP-6T-LTP" secondAttribute="trailing" constant="40" id="KMH-U2-so7"/>
+                    <constraint firstItem="uqx-qx-tBy" firstAttribute="top" secondItem="Lde-Ah-rnl" secondAttribute="bottom" constant="16" id="Oxo-cj-efC"/>
+                    <constraint firstItem="Lde-Ah-rnl" firstAttribute="top" secondItem="vm6-E9-pKi" secondAttribute="top" constant="16" id="STc-Tu-zDK"/>
+                    <constraint firstItem="0Rr-W7-pzU" firstAttribute="top" secondItem="rIP-6T-LTP" secondAttribute="bottom" id="SiS-Vg-dl4"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Rr-W7-pzU" secondAttribute="trailing" constant="40" id="grB-ID-mMK"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Lde-Ah-rnl" secondAttribute="trailing" constant="16" id="n5f-IQ-0gX"/>
+                    <constraint firstItem="rIP-6T-LTP" firstAttribute="leading" secondItem="vm6-E9-pKi" secondAttribute="leading" constant="16" id="sos-u8-HBF"/>
+                    <constraint firstItem="abW-vx-eei" firstAttribute="centerY" secondItem="vm6-E9-pKi" secondAttribute="centerY" id="ssf-kG-jhV"/>
+                    <constraint firstItem="0Rr-W7-pzU" firstAttribute="leading" secondItem="vm6-E9-pKi" secondAttribute="leading" constant="16" id="ui5-dy-3Kt"/>
+                    <constraint firstItem="rIP-6T-LTP" firstAttribute="top" secondItem="Lde-Ah-rnl" secondAttribute="bottom" constant="16" id="yrb-ir-fCm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="color-dark1"/>
+            <connections>
+                <outlet property="communityLabel" destination="Lde-Ah-rnl" id="BHL-q5-K3y"/>
+                <outlet property="detailsLabel" destination="0Rr-W7-pzU" id="NWr-fV-mH5"/>
+                <outlet property="emptyLabel" destination="uqx-qx-tBy" id="iz5-sd-vQu"/>
+                <outlet property="emptyLabelBottomConstraint" destination="Ebe-7c-aRA" id="LNb-rV-eCi"/>
+                <outlet property="postsLabel" destination="rIP-6T-LTP" id="qtx-py-UfT"/>
+            </connections>
+            <point key="canvasLocation" x="111" y="46"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_more" width="24" height="24"/>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-dark4">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-light1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

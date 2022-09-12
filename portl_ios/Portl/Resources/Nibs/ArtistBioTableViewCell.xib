@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="130" id="vPB-R0-2sV" customClass="ArtistBioTableViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vPB-R0-2sV" id="uTr-GA-OmO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xod-ts-TyK" userLabel="About Label">
+                        <rect key="frame" x="16" y="39.5" width="319" height="58"/>
+                        <string key="text">Plaid ramps viral humblebrag neutra tote bag beard unicorn venmo. Cronut brunch meditation small batch taiyaki gentrify swag single-origin coffee. Photo booth kitsch pok pok tattooed lumbersexual portland lo-fi forage. Post-ironic copper mug 8-bit, pitchfork deep v farm-to-table microdosing messenger bag fingerstache helvetica la croix synth tote bag.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="color-light1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NoP-Od-zdf">
+                        <rect key="frame" x="16" y="94.5" width="64" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="cJd-BU-eOl"/>
+                        </constraints>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="Show More">
+                                    <attributes>
+                                        <color key="NSColor" name="color-interactive1"/>
+                                        <font key="NSFont" metaFont="cellTitle"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                        <connections>
+                            <action selector="toggleShowMore:" destination="vPB-R0-2sV" eventType="touchUpInside" id="dx9-R7-dfC"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ci0-ft-D2b">
+                        <rect key="frame" x="16" y="16" width="25" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" name="color-light1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xod-ts-TyK" secondAttribute="trailing" constant="40" id="5o5-Ie-Rpl"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ci0-ft-D2b" secondAttribute="trailing" constant="16" id="8cD-FR-pCF"/>
+                    <constraint firstAttribute="bottom" secondItem="NoP-Od-zdf" secondAttribute="bottom" constant="15.5" id="8ch-rT-eia"/>
+                    <constraint firstItem="NoP-Od-zdf" firstAttribute="leading" secondItem="uTr-GA-OmO" secondAttribute="leading" constant="16" id="DYk-lY-eGK"/>
+                    <constraint firstItem="Ci0-ft-D2b" firstAttribute="leading" secondItem="uTr-GA-OmO" secondAttribute="leading" constant="16" id="Mwk-lZ-vL1"/>
+                    <constraint firstItem="xod-ts-TyK" firstAttribute="top" secondItem="Ci0-ft-D2b" secondAttribute="bottom" constant="4" id="d7y-eN-Mby"/>
+                    <constraint firstAttribute="bottom" secondItem="xod-ts-TyK" secondAttribute="bottom" constant="39.5" id="iJL-UL-Ag5"/>
+                    <constraint firstItem="Ci0-ft-D2b" firstAttribute="top" secondItem="uTr-GA-OmO" secondAttribute="top" constant="16" id="w3j-Y0-A6u"/>
+                    <constraint firstItem="xod-ts-TyK" firstAttribute="leading" secondItem="uTr-GA-OmO" secondAttribute="leading" constant="16" id="zGW-S7-qf4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="color-dark1"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="expandableLabel" destination="xod-ts-TyK" id="Nmc-QW-ESS"/>
+                <outlet property="showMoreButton" destination="NoP-Od-zdf" id="lIb-xG-Pln"/>
+            </connections>
+            <point key="canvasLocation" x="-476.08695652173918" y="-16.741071428571427"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-interactive1">
+            <color red="0.92941176470588238" green="0.11764705882352941" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-light1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

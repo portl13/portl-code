@@ -1,0 +1,82 @@
+pipeline {
+    agent any
+    environment {
+        // treat master differently
+        // on master,
+        // - inspect version.sbt for target build version
+        // - generate tag from <build version>-<build number>
+        // - build rpm and docker image with this tag
+        // - publish the result
+        // - tag the commit
+        //
+        // otherwise,
+        // - docker image uses git hash
+        // - rpm uses <build version>-SNAPSHOT
+        // - do not publish
+        // - do not tag the commit
+        publishBranch = 'master'
+
+        projectName = 'portl-admin-ui'
+    }
+    stages {
+        stage('Setup') {
+            steps {
+                script {
+                    shouldPublish = env.BRANCH_NAME == publishBranch
+
+                    if (shouldPublish) {
+                      // if master, inspect version.sbt and generate tag
+                      baseVersion = readFile "${env.WORKSPACE}/version.txt"
+                      buildVersion = baseVersion.trim() + "-" + env.BUILD_NUMBER
+                      env.BUILD_VERSION = buildVersion
+                    } else {
+                      // otherwise, use git hash
+                      buildVersion = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
+                    }
+                    echo 'buildVersion: ' + buildVersion
+
+                    nodeVersion = sh(returnStdout: true, script: "cat .nvmrc").trim()
+                    archiveName = "${projectName}-${buildVersion}.tar.gz"
+                    nexusGroupId = 'com.portl'
+                    nexusRepoId = 'portl-releases'
+                    nexusServerId = 'portl-nexus'
+                    nexusServer = 'http://nexus.portl.com:8081'
+                }
+            }
+        }
+        stage('Install node modules') {
+            steps {
+                nodejs(nodeJSInstallationName: '8.9.0') { sh "npm install" }
+            }
+        }
+        stage('Build') {
+            steps {
+                nodejs(nodeJSInstallationName: '8.9.0') { sh "npm run ng -- build --prod" }
+            }
+        }
+        stage('Generate artifact') {
+            when { equals expected: true, actual: shouldPublish }
+            steps {
+                sh "echo ${buildVersion} > ./dist/version.txt"
+                sh "tar -czf ${archiveName} ./dist/*"
+            }
+        }
+        stage('Publish') {
+            when { equals expected: true, actual: shouldPublish }
+            steps {
+                withMaven(maven: 'apache-maven-3.5.3', mavenSettingsConfig: 'nexus-maven2-hosted') {
+                    sh "mvn deploy:deploy-file \
+                      -DgroupId=${nexusGroupId} \
+                      -DartifactId=${projectName} \
+                      -Dversion=${buildVersion} \
+                      -DgeneratePom=true \
+                      -DrepositoryId=${nexusServerId} \
+                      -Durl=${nexusServer}/repository/${nexusRepoId} \
+                      -Dfile=${archiveName}"
+                }
+                sh("git tag ${buildVersion}")
+                sh('git push origin --tags')
+            }
+        }
+    }
+}

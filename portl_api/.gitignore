@@ -1,0 +1,17 @@
+logs
+target/
+.sbtserver
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+
+/src/main/resources/local.conf
+/src/main/main.iml
+
+/src/test/test.iml
+
+# build process started generating native/libsigar-universal64-macosx.dylib
+/native

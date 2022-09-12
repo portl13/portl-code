@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ArtistResultCell" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArtistSearchItemTableViewCell" rowHeight="101" id="Lhs-7Y-SW1" customClass="ArtistSearchItemTableViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lhs-7Y-SW1" id="gnN-bb-9E6">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Leb-NV-4c5">
+                        <rect key="frame" x="16" y="16" width="48" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="5Yt-d2-Ibc"/>
+                            <constraint firstAttribute="height" constant="64" id="MYb-O4-s5F"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGk-ET-KqP">
+                        <rect key="frame" x="80" y="19.5" width="223" height="57.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pif-5y-MxL">
+                                <rect key="frame" x="0.0" y="0.0" width="93" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="n upcoming events on source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRU-10-a2f">
+                                <rect key="frame" x="0.0" y="24" width="166.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="n past events on source" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRW-qF-wBA">
+                                <rect key="frame" x="0.0" y="43" width="135" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pRW-qF-wBA" secondAttribute="bottom" id="2Ck-TX-p4h"/>
+                            <constraint firstItem="wRU-10-a2f" firstAttribute="top" secondItem="pif-5y-MxL" secondAttribute="bottom" constant="4" id="C5q-vU-71E"/>
+                            <constraint firstItem="pif-5y-MxL" firstAttribute="top" secondItem="gGk-ET-KqP" secondAttribute="top" id="FGV-6i-IGP"/>
+                            <constraint firstItem="wRU-10-a2f" firstAttribute="leading" secondItem="gGk-ET-KqP" secondAttribute="leading" id="Km9-We-HSm"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pRW-qF-wBA" secondAttribute="trailing" constant="16" id="PL2-0I-h1V"/>
+                            <constraint firstItem="pif-5y-MxL" firstAttribute="leading" secondItem="gGk-ET-KqP" secondAttribute="leading" id="S6J-xe-fSl"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wRU-10-a2f" secondAttribute="trailing" constant="16" id="WbH-PY-3JM"/>
+                            <constraint firstItem="pRW-qF-wBA" firstAttribute="leading" secondItem="gGk-ET-KqP" secondAttribute="leading" id="aRU-oj-ubr"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pif-5y-MxL" secondAttribute="trailing" constant="16" id="hrq-bu-qpC"/>
+                            <constraint firstItem="pRW-qF-wBA" firstAttribute="top" secondItem="wRU-10-a2f" secondAttribute="bottom" constant="4" id="yLd-z7-Kn5"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="xPU-NS-oTV">
+                        <rect key="frame" x="311" y="24" width="48" height="48"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qen-SF-1KW" userLabel="HR">
+                        <rect key="frame" x="16" y="95" width="359" height="1"/>
+                        <color key="backgroundColor" name="color-light1-quarter-alpha"/>
+                        <color key="tintColor" name="color-light1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0zx-y4-hRs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UU4-29-fyr"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qen-SF-1KW" secondAttribute="trailing" id="8fR-MY-Tg4"/>
+                    <constraint firstAttribute="bottom" secondItem="qen-SF-1KW" secondAttribute="bottom" id="Ixc-Fx-MUx"/>
+                    <constraint firstAttribute="bottom" secondItem="Leb-NV-4c5" secondAttribute="bottom" constant="16" id="JO2-WG-4UM"/>
+                    <constraint firstItem="Leb-NV-4c5" firstAttribute="top" secondItem="gnN-bb-9E6" secondAttribute="top" constant="16" id="NUL-Cn-gDk"/>
+                    <constraint firstItem="xPU-NS-oTV" firstAttribute="centerY" secondItem="Leb-NV-4c5" secondAttribute="centerY" id="UTQ-bm-IHL"/>
+                    <constraint firstItem="gGk-ET-KqP" firstAttribute="leading" secondItem="Leb-NV-4c5" secondAttribute="trailing" constant="16" id="jMX-79-kn4"/>
+                    <constraint firstItem="Leb-NV-4c5" firstAttribute="leading" secondItem="gnN-bb-9E6" secondAttribute="leading" constant="16" id="ruh-NI-2RV"/>
+                    <constraint firstItem="qen-SF-1KW" firstAttribute="leading" secondItem="gnN-bb-9E6" secondAttribute="leading" constant="16" id="tjI-qZ-tDw"/>
+                    <constraint firstItem="xPU-NS-oTV" firstAttribute="leading" secondItem="gGk-ET-KqP" secondAttribute="trailing" constant="8" id="uLz-XG-TIO"/>
+                    <constraint firstAttribute="trailing" secondItem="xPU-NS-oTV" secondAttribute="trailing" constant="16" id="uW6-md-3i1"/>
+                    <constraint firstItem="gGk-ET-KqP" firstAttribute="centerY" secondItem="Leb-NV-4c5" secondAttribute="centerY" id="wSs-Cj-s5y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="color-dark1"/>
+            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="artistImageView" destination="Leb-NV-4c5" id="X4H-0x-Iqd"/>
+                <outlet property="hr" destination="qen-SF-1KW" id="jH8-NH-GOH"/>
+                <outlet property="nameLabel" destination="pif-5y-MxL" id="sfw-fX-5Rt"/>
+                <outlet property="pastLabel" destination="pRW-qF-wBA" id="rwW-yv-B6p"/>
+                <outlet property="upcomingLabel" destination="wRU-10-a2f" id="mT4-ee-1me"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="158.32083958020991"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_more" width="24" height="24"/>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-light1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-light1-quarter-alpha">
+            <color red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

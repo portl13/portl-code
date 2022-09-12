@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/dark.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+@import '../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css';
+
+body {
+  background-color: #e9ecef;
+}
+
+.form-group {
+  &.has-error {
+    label, .errortext {
+      color: red;
+    }
+
+    input, select {
+      border: 1px solid red;
+    }
+  }
+}
+
+// https://github.com/skynet2/ngx-google-places-autocomplete
+// Push z-index above that of ngx-bootstrap's modal, which is 1050.
+.pac-container {
+  z-index: 1051;
+}

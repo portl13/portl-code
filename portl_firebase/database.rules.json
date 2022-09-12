@@ -1,0 +1,142 @@
+{
+    "rules": {
+        "device": {
+            "$uid": {
+                ".write": "auth.uid == $uid"
+              },
+              ".read": false
+        },
+        "event": {
+            ".write": "auth.uid != null",
+            ".read": true
+        },
+        "friend": {
+            ".write": "auth.uid != null",
+            ".read": true,
+            ".indexOn": ["user1", "user2"]
+        },
+        "message": {
+            ".write": "auth.uid != null",
+            ".read": "auth.uid != null"
+        },
+        "notification": {
+            ".write": "auth.uid != null",
+            ".read": "auth.uid != null"
+        },
+        "profile": {
+            ".read": true,
+            ".indexOn": ["email", "uid", "username_d", "first_last"],
+            "$uid": {
+                ".write": "auth.uid == $uid"
+            }
+        },
+        "room": {
+            ".write": "auth.uid != null",
+            ".read": "auth.uid != null"
+        },
+        "shared_event": {
+            ".write": "auth.uid != null",
+            ".read": "auth.uid != null"
+        },
+        "schema": {
+            ".write": false,
+            ".read": true
+        },
+        "v2": {
+            "conversation": {
+                "$cid": {
+                    ".read": true,
+                    "messages": {
+                        ".write": "auth.uid != null",
+                        ".read": "auth.uid != null",
+                        ".indexOn": ["profile_id"]
+                    },
+                    "overview": {
+                        ".write": false,
+                        ".read": true
+                    },
+                    "senders": {
+                        ".read": "auth.uid != null",
+                        ".write": false
+                    },
+                    "deleted": {
+                        ".read": false,
+                        ".write": false
+                    }
+                }
+            },
+            "device": {
+                "$uid": {
+                    ".write": "auth.uid == $uid"
+                  },
+                  ".read": false
+            },
+            "event": {
+                ".write": "auth.uid != null",
+                ".read": true
+            },
+            "experience": {
+                "$uid" : {
+                    ".write": "auth.uid == $uid",
+                    ".read": true
+                }
+            },
+            "friend": {
+                ".write": "auth.uid != null",
+                ".read": true,
+                ".indexOn": ["user1", "user2"]
+            },
+            "profile": {
+                ".read": true,
+                ".indexOn": ["email", "uid", "username_d", "first_last"],
+                "$uid": {
+                    ".write": "auth.uid == $uid",
+                    "email": {
+                        ".indexOn": ".value"
+                    },
+                    "uid": {
+                        ".indexOn": ".value"
+                    },
+                    "events": {
+                        "going": {
+                            ".indexOn": ["event_date"]
+                        },
+                        "shared": {
+                            ".indexOn": ["action_date"]
+                        }
+                    }
+                }
+            },
+            "profile_private": {
+                "$uid": {
+                    ".read": "auth.uid == $uid",
+                    ".write": "auth.uid == $uid",
+                    "votes": {
+                        "community": {
+                            "$conversation_id": {}    
+                        },
+                        "experience": {
+                            "$profile_id": {}
+                        }
+                    }
+                }
+            },
+            "livefeed": {
+                "$uid": {
+                    ".indexOn": ["profile_id"],
+                    ".read": "true"
+                }
+            },
+            "schema": {
+                ".write": false,
+                ".read": true
+            },
+            "delete": {
+                "$uid": {
+                    ".write": "auth.uid == $uid"
+                },
+                ".read": false
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+---
+  
+- name: Setup A Management Server
+  hosts: management
+
+  roles:
+    - base
+    - apache
+    - apache_mod_fcgid
+    - apache_mod_mpm_prefork
+    - apache_mod_ssl
+    - apache_mod_wsgi
+    - dns_forwarder
+    - mysql
+    - jenkins
+    - haversack
+    - zabbix_server

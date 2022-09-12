@@ -1,0 +1,28 @@
+{
+  "properties" : {
+    "localizable" : true
+  },
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "colors" : [
+    {
+      "idiom" : "universal",
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "red" : "0x31",
+          "alpha" : "0.492",
+          "blue" : "0x47",
+          "green" : "0x00"
+        }
+      },
+      "display-gamut" : "sRGB"
+    },
+    {
+      "idiom" : "universal",
+      "display-gamut" : "display-P3"
+    }
+  ]
+}

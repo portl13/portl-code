@@ -1,0 +1,146 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{title}}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="media" *ngIf="event">
+    <img class="mr-3" *ngIf="event.imageUrl" [src]="event.imageUrl" alt="Event image">
+    <div class="media-body">
+      <h5 class="mt-0">{{ event.title }}</h5>
+       {{ event.description }}
+    </div>
+  </div>
+  <form [formGroup]="eventForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-group" [ngClass]="{'has-error': titleField.touched && titleField.invalid}">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" placeholder="Enter Event Title" formControlName="title">
+      <p class="errortext" *ngIf="titleField.touched && titleField.invalid">
+          This field is required!
+      </p>
+    </div>
+    <div class="form-group">
+      <label for="artist">Artist</label>
+      <l-select2 id="artist" [(ngModel)]="selectedArtist" [data]="[selectedArtistData]" [ngModelOptions]="{standalone: true}" [options]="remoteArtistOptions" (valueChange)="formSelectArtist($event)"></l-select2>
+    </div>
+    <div class="form-group">
+      <label for="venue">Venue</label>
+      <l-select2 id="venue" [(ngModel)]="selectedVenue" [data]="[selectedVenueData]" [ngModelOptions]="{standalone: true}" [options]="remoteVenueOptions" (valueChange)="formSelectVenue($event)"></l-select2>
+    </div>
+    <div class="form-group col-md-6" [ngClass]="{'has-error': timezone.touched && timezone.invalid}">
+      <label for="timezone">Time Zone</label>
+      <select class="form-control" formControlName="timezone" id="timezone">
+        <option value="" hidden="hidden" disabled="disabled">Select a Time Zone</option>
+        <option *ngFor="let tz of timezoneOptions" [value]="tz.value" [attr.selected]="event?.timezone === tz.value ? 'selected' : null">{{ tz.name }}</option>
+      </select>
+      <p class="errortext" *ngIf="timezone.invalid">
+        This field is required!
+      </p>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6" [ngClass]="{'has-error': startDate.touched && startDate.invalid}">
+        <label for="startDate">Start Date</label>
+        <input type="text" 
+               class="form-control" 
+               id="startDate" 
+               placeholder="Set Start Date" 
+               placement="top"
+               bsDatepicker 
+               formControlName="startDate"
+               [bsConfig]="{ dateInputFormat: 'MM-DD-YYYY' }" />
+        <p class="errortext" *ngIf="startDate.touched && startDate.invalid">
+          This field is required!
+        </p>
+      </div>
+      <div class="form-group col-md-6" [ngClass]="{'has-error': startTime.invalid}">
+        <label for="startTime">Start Time</label>
+        <timepicker class="form-control" formControlName="startTime"></timepicker>
+        <p class="errortext" *ngIf="startTime.invalid">
+            This field is required!
+        </p>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="endDate">End Date</label>
+        <input type="text" 
+               class="form-control" 
+               id="endDate" 
+               placeholder="Set End Date" 
+               placement="top"
+               bsDatepicker 
+               formControlName="endDate"
+               [bsConfig]="{ dateInputFormat: 'MM-DD-YYYY' }" />
+      </div>
+      <div class="form-group col-md-6">
+        <label for="endTime">End Time</label>
+        <timepicker class="form-control" formControlName="endTime"></timepicker>
+      </div>
+    </div>
+    <div class="form-group" [ngClass]="{'has-error': imageUploadError}">
+      <label for="image">Image (1242 x 877)</label>
+      <input #imageField type="file"
+             [hidden]="imageChangedEvent"
+             class="form-control mb-2"
+             id="image"
+             placeholder="Upload event image"
+             accept="image/png,image/jpeg"
+             (change)="fileChangeEvent($event)" />
+      <button class="btn btn-sm btn-primary d-block"
+              *ngIf="imageUploadError || imageChangedEvent"
+              (click)="resetImageField()">Reset</button>
+      <progressbar *ngIf="imageUploadStatus"
+                   max="1"
+                   [type]="imageUploadStatus.state === 'complete' ?  'success' : 'info'"
+                   [value]="imageUploadStatus.progress">
+      </progressbar>
+      <p class="errortext" *ngIf="imageUploadError">
+        {{ imageUploadError }}
+      </p>
+      <image-cropper
+        [imageChangedEvent]="imageChangedEvent"
+        [maintainAspectRatio]="true"
+        [aspectRatio]="1242 / 877"
+        [resizeToWidth]="1242"
+        [onlyScaleDown]="true"
+        [cropperMinWidth]="1242"
+        format="jpeg"
+        outputType="file"
+        (imageCropped)="imageCropped($event)"
+      ></image-cropper>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea class="form-control" id="description" placeholder="Enter Event description" formControlName="description"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      <select class="form-control" id="category" formControlName="category">
+          <option [ngValue]="null">Select Category</option>
+          <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+      </select>
+    </div>
+    <div class="form-group" [ngClass]="{'has-error': url.touched && url.invalid}">
+      <label for="url">External URL</label>
+      <input type="text" class="form-control" id="url" placeholder="Enter Event External URL" formControlName="url">
+      <p class="errortext" *ngIf="url.touched && url.invalid">
+        Please enter a valid URL.
+      </p>
+    </div>
+    <div class="form-group" [ngClass]="{'has-error': ticketPurchaseUrl.touched && ticketPurchaseUrl.invalid}">
+      <label for="ticketPurchaseUrl">Purchase URL</label>
+      <input type="text" class="form-control" id="ticketPurchaseUrl" placeholder="Enter Event Purchase URL" formControlName="ticketPurchaseUrl">
+      <p class="errortext" *ngIf="ticketPurchaseUrl.touched && ticketPurchaseUrl.invalid">
+        Please enter a valid URL.
+      </p>
+    </div>
+    <div class="mb-4 float-left" *ngIf="event">
+      <button type="button" class="btn btn-danger" (click)="deleteEvent()">Delete</button>
+    </div>
+    <div class="mb-4 float-right">
+      <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">Cancel</button>
+      <button type="submit" class="btn btn-primary" [disabled]="!canSubmit()">Submit</button>
+    </div>
+  </form> 
+</div>

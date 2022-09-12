@@ -1,0 +1,9 @@
+---
+
+- name: Manage Application Servers
+  hosts: "{{ override_group | default('task') }}:&{{ limit_environment }}"
+
+  roles:
+    - base
+    - zabbix_agent
+    - task

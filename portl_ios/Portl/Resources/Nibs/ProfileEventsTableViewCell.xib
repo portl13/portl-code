@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="bQ6-rA-Bcs" customClass="ProfileEventsTableViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="514" height="213"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bQ6-rA-Bcs" id="6Bu-eq-bVq">
+                <rect key="frame" x="0.0" y="0.0" width="514" height="213"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="H04-J2-R3h">
+                        <rect key="frame" x="0.0" y="0.0" width="514" height="213"/>
+                        <color key="backgroundColor" name="color-dark1"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mGJ-ui-OPO">
+                            <size key="itemSize" width="155" height="209"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISj-mC-Dxp">
+                        <rect key="frame" x="16" y="16" width="47.5" height="14.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" name="color-light1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="9Iu-Tr-hHI">
+                        <rect key="frame" x="247" y="96.5" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <color key="backgroundColor" name="color-dark1"/>
+                <constraints>
+                    <constraint firstItem="H04-J2-R3h" firstAttribute="top" secondItem="6Bu-eq-bVq" secondAttribute="top" id="1X7-7w-exX"/>
+                    <constraint firstItem="9Iu-Tr-hHI" firstAttribute="centerX" secondItem="6Bu-eq-bVq" secondAttribute="centerX" id="N93-7v-cwS"/>
+                    <constraint firstAttribute="trailing" secondItem="H04-J2-R3h" secondAttribute="trailing" id="Odh-hY-1t6"/>
+                    <constraint firstItem="H04-J2-R3h" firstAttribute="leading" secondItem="6Bu-eq-bVq" secondAttribute="leading" id="VZ2-nq-KZj"/>
+                    <constraint firstItem="9Iu-Tr-hHI" firstAttribute="centerY" secondItem="6Bu-eq-bVq" secondAttribute="centerY" id="aEX-1S-p8p"/>
+                    <constraint firstAttribute="bottom" secondItem="H04-J2-R3h" secondAttribute="bottom" id="cOG-PA-Tot"/>
+                    <constraint firstItem="ISj-mC-Dxp" firstAttribute="leading" secondItem="6Bu-eq-bVq" secondAttribute="leading" constant="16" id="eTJ-DQ-W9r"/>
+                    <constraint firstItem="ISj-mC-Dxp" firstAttribute="top" secondItem="6Bu-eq-bVq" secondAttribute="top" constant="16" id="lNC-qe-RtL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="color-dark1"/>
+            <connections>
+                <outlet property="activityIndicator" destination="9Iu-Tr-hHI" id="ugU-hX-Bsc"/>
+                <outlet property="eventCollectionView" destination="H04-J2-R3h" id="BAR-lC-cdN"/>
+                <outlet property="noEventsLabel" destination="ISj-mC-Dxp" id="rMb-B3-c3O"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-light1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

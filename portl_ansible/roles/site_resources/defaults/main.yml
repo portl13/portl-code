@@ -1,0 +1,25 @@
+developers:
+  - { name: alally, key: "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA5GdvNw5IFhOYf20em1EdVqCS0W38jcOzarrcnASEp/2ODBcQv5HBGNh+yNNvYvLE76Omt93k8wlMuf3iKMK63KUL033OZ8nhMeHgDPZU6PP3qiAxBXTDTaDt4HucGBHVlrHlka9yPfA4pVEKhmp6sbKc/bfYFVVKCBvDqF8xFJ9qTR4D6vhyChnmVkV6IWgchsBj1PR9b3coTuQqYAiZALw4ynPTPGkslU67xwRpRKOZirF+r8dToXznUrzKPegMK9HV7A5Ltf8J3bR9DK8V1SJ4K0rz8g9ierdpmnmIiasy+RbJZHqQJq8sM3SFJbBLt19bzPQJ92Jltnh9EyGS+w== austinlally@Austin-Lallys-MacBook-Pro.local" }
+  - { name: anugent, key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAEAQCwUX+FGSiLX+8udgxS0V3NYM/xSVdJeJbTz3TNKtqN5e0r7YkKUd+4dGom+b7MoaRG4k6VG6F2FpUiQwLtfJ3EjfqKO23x8vy/iWzaBx3lp7clyWeEJ1uLNgLnNGnJafnAje7BjXARxH8F0M8xbysF80SDG+IW33hwn0N86TlwW4DcLGy/wu0bemtaXm0kQAzqyQlvbovCAsb+WmV9WcUJKzS2Qh0RBuSAaHONENbmRXcJEzvF+Zep/raSAuShc8dgaSwVnV/80AMnAiQAP2cDR6micw/6o43neqavSx6DcxRIXp/aVbOgXY+HEBqWVzTMQ86pb1zU7AaLpb393xcmtyNxBycP5wVI+d0d6IjeBtOo0pzy3ARCMnOWhtF26M40GiUMClhW6ZzFsWacpf3URr2GaVaSy9nLbmW/5DEC53c7lI8A5+MNLddplUsnc6bSU8sBFDR3ZbIP5E5zg8rlLUdHLYQqsRp7bwn+ChOzlldp9ZvpufzQV/StQxmIv4/d4fyS/0vu+PjRswQYjIxIy4/Nr5UHn8rDkBpBhGcn7Exc281R3/N/PWBl1BVMwInk8JhFxGK93DmvwXtxaa6KhOd3cfmetkbpUTOpyiv0U+2/IauH+nV7QltcqonxNdJS8MW/5wipG0JtMUCACB7GpxIfEbh3qH0r3c1YJaVtr1StFb+MOdJKets4WjVNOgKOKHYoWnsBLVZC4YF7TQyXH2/sZAvHCnV1ubtKBrIWjWDqjrdOQ1rUyV4cpL27RXlPNlqMQ7jofaOy51SWdgZAnp7Z0WD/M6DaCy+H6/W8Aj3vZBUBV7iWocTfzIhCMpcIWihUd+MwpRUws7rZGqytXsMkljfIzz0Fi5Ycw3C6v8zphfwS4nfdJvPs+8np6FZKPpGB6r8W/aOa4f3XkK17PubOZHfYrNUMCreH0rpfFtz3aa1eAXzHwJdrnV0nHi8NswDLfYjAyLzqWCFO3Y+zPQU2hoMUdk1gKqXgvCNnUTNX48eHB4To/1FNI7gc3S+byNJ+zEipZ4M+4r9aD27WUSNRcv+3uW6DShETCVnib/18pTpMlCUQMsxcyd64rvrViRE5RGi1V7C/QOkGOvb8l1HBrxuCPpzuXJjjWJl51QbY5KrUjxZPQJA30lKbimWr3bLKDiyJcrrxUeFwKVurQXp+4Vp7C3zwN9XomHQ9Lvs86DmgjwiUdYfXT1IIRFi/JBh094n1xfeXKCAfNNW/EMDYQNlSMF8CnXEuNBhMOknP3OUI3h0dsNZ/EoRDH4LlEB18Y9rTJDfUh7ouKghW9Ga4mBj1vMhPU1byTUKSjk85MsXh6apINGECuMARJQaH1Meo+fxpkC3JIsAvHFBV anugent" }
+
+s3_artifact_prefix: /
+
+s3_bucket: "{{ static_bucket }}"
+
+s3_cache_control: "no-cache"
+
+s3_mime_map:
+  .jpg: image/jpeg
+  .jpeg: image/jpeg
+  .json: application/json
+  .js: application/javascript
+  .css: text/css
+  .svg: image/svg+xml
+  .png: image/png
+  .html: text/html
+  .ico: image/x-icon
+  .map: application/json
+
+s3_region: "{{ aws_region }}"
+
+no_log: yes

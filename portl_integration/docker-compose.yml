@@ -1,0 +1,153 @@
+version: '3.2'
+services:
+  # App Database
+  mongo1:
+    image: "mongo:3.4"
+    ports:
+      - "30001:27017"
+    restart: on-failure
+    deploy:
+      restart_policy:
+        condition: on-failure
+    entrypoint:
+      - /usr/bin/mongod
+      - --replSet
+      - rs
+      - --rest
+      - --httpinterface
+  mongo2:
+    image: "mongo:3.4"
+    ports:
+      - "30002:27017"
+    restart: always
+    entrypoint:
+      - /usr/bin/mongod
+      - --replSet
+      - rs
+      - --rest
+      - --httpinterface
+  mongo3:
+    image: "mongo:3.4"
+    ports:
+      - "30003:27017"
+    restart: on-failure
+    deploy:
+      restart_policy:
+        condition: on-failure
+    entrypoint:
+      - /usr/bin/mongod
+      - --replSet
+      - rs
+      - --rest
+      - --httpinterface
+  mongosetup:
+    image: "mongo:3.4"
+    volumes:
+      - ./scripts:/scripts
+    restart: always
+    entrypoint:
+      - bash
+      - /scripts/mongosetup.sh
+
+  # Monitoring
+  influxdb:
+    image: "influxdb:latest"
+    ports:
+      - "8086:8086"
+    environment:
+      INFLUXDB_DB: portl_api_kamon
+      INFLUXDB_ADMIN_USER: admin
+  zipkin:
+    image: "openzipkin/zipkin:latest"
+    ports:
+      - "9411:9411"
+  chronograf:
+    image: "chronograf:latest"
+    ports:
+      - "8888:8888"
+    entrypoint:
+      - chronograf
+      - --influxdb-url=http://influxdb:8086
+
+  # Elasticsearch: https://www.elastic.co/guide/en/elasticsearch/reference/6.x/docker.html
+  # For Graylog only
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+    environment:
+      - http.host=0.0.0.0
+      - transport.host=localhost
+      - network.host=0.0.0.0
+      # Disable X-Pack security: https://www.elastic.co/guide/en/elasticsearch/reference/6.x/security-settings.html#general-security-settings
+      - xpack.security.enabled=false
+      - xpack.watcher.enabled=false
+      - xpack.monitoring.enabled=false
+      - xpack.security.audit.enabled=false
+      - xpack.ml.enabled=false
+      - xpack.graph.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+  # Graylog: https://hub.docker.com/r/graylog/graylog/
+  graylog:
+    image: graylog/graylog:2.5
+    environment:
+      - GRAYLOG_PASSWORD_SECRET=pkQuveYP(9Wwm7dz
+      # Password: admin
+      - GRAYLOG_ROOT_PASSWORD_SHA2=8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+      - GRAYLOG_WEB_ENDPOINT_URI=http://127.0.0.1:9100/api
+      - GRAYLOG_MONGODB_URI=mongodb://mongo1,mongo2,mongo3/graylog
+      - GRAYLOG_CONTENT_PACKS_AUTO_LOAD=tcp-input.json
+      - GRAYLOG_CONTENT_PACKS_LOADER_ENABLED=true
+      - GRAYLOG_CONTENT_PACKS_DIR=data/contentpacks
+    ports:
+      # Graylog web interface and REST API
+      - 9100:9000
+      # GELF TCP
+      - 12201:12201
+    volumes:
+      - ./conf/graylog/contentpacks:/usr/share/graylog/data/contentpacks
+
+  # Application
+  portl-api:
+    image: "portl/api:latest"
+    ports:
+      - "12000:9000"
+    restart: on-failure
+    deploy:
+      restart_policy:
+        condition: on-failure
+    entrypoint:
+      - /usr/share/portl-api/bin/portl-api
+      - -Dconfig.file=/opt/conf/integration.application.conf
+      - -Dlogging.graylog.env=docker_cluster
+      - -Dlogging.graylog.host=graylog
+    depends_on:
+      - mongo1
+      - mongo2
+      - mongo3
+    volumes:
+      - ./conf/portl-api:/opt/conf
+
+  admin-api:
+    image: "portl/admin-api:latest"
+    ports:
+      - "12001:9000"
+    restart: on-failure
+    deploy:
+      restart_policy:
+        condition: on-failure
+    entrypoint:
+      - /usr/share/admin-api/bin/admin-api
+      - -Dconfig.file=/opt/conf/integration.application.conf
+    depends_on:
+      - mongo1
+      - mongo2
+      - mongo3
+    volumes:
+      - ./conf/admin-api:/opt/conf

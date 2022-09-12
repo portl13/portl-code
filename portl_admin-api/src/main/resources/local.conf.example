@@ -1,0 +1,9 @@
+include "application"
+
+play.http.secret.key = "some-key"
+
+com.portl.integrations.eventbrite.token = "some-token"
+com.portl.integrations.meetup.token = "some-token"
+com.portl.integrations.songkick.token = "some-token"
+com.portl.integrations.ticketmaster.token = "some-token"
+com.portl.integrations.meetup.token = "some-token"

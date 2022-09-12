@@ -1,0 +1,36 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowKms",
+            "Effect": "Allow",
+            "Action": [
+                "kms:GetParametersForImport",
+                "kms:ListKeyPolicies",
+                "kms:GetKeyRotationStatus",
+                "kms:ListRetirableGrants",
+                "kms:GetKeyPolicy",
+                "kms:DescribeKey",
+                "kms:Decrypt",
+                "kms:ListResourceTags",
+                "kms:ListGrants"
+            ],
+            "Resource": [
+                "${all_kms_arn}",
+                "${env_kms_arn}"
+            ]
+        },
+        {
+            "Sid": "GlobalRead",
+            "Effect": "Allow",
+            "Action": [
+                "kms:ListKeys",
+                "kms:GenerateRandom",
+                "kms:ListAliases",
+                "kms:ReEncryptTo",
+                "kms:ReEncryptFrom"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

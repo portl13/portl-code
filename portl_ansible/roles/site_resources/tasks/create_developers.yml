@@ -1,0 +1,47 @@
+---
+
+- block:
+  - name: CREATE_DEVELOPERS | Create developer groups
+    group:
+      name: "{{ item.name }}"
+      state: present
+    with_items: "{{ developers }}"
+
+  - name: CREATE_DEVELOPERS | Create developer users
+    user:
+      name: "{{ item.name }}"
+      group: "{{ item.name }}"
+      groups: "{{ extra_ssh_users_group }}"
+      home: "/home/{{ item.name }}"
+      shell: /bin/bash
+      skeleton: /etc/skel
+    with_items: "{{ developers }}"
+
+  - name: CREATE_DEVELOPERS | Create developer users
+    authorized_key:
+      user: "{{ item.name }}"
+      key: "{{ item.key }}"
+      state: present
+    with_items: "{{ developers }}"
+
+  - name: CREATE_DEVELOPERS | Grant sudo rights to developers
+    sudo_rule:
+      user: "{{ item.name }}"
+    with_items: "{{ developers }}"
+
+  - name: CREATE_DEVELOPERS | Allow tcp/22 for local devs
+    iptables_raw:
+      name: "tcp_22_dev_local"
+      state: present
+      rules: "-A INPUT -s 192.168.96.0/20 -p tcp -m tcp --dport 22 -j ACCEPT"
+
+  - name: CREATE_DEVELOPERS | Allow tcp/22 for remote devs
+    iptables_raw:
+      name: "tcp_22_dev_remote"
+      state: present
+      rules: "-A INPUT -s 172.18.0.0/21 -p tcp -m tcp --dport 22 -j ACCEPT"
+  become: yes
+  become_user: root
+  tags:
+    - site
+    - task

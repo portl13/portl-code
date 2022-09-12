@@ -1,0 +1,87 @@
+pipeline {
+    agent any
+    environment {
+        // treat master differently
+        // on master,
+        // - inspect version.sbt for target build version
+        // - generate tag from <build version>-<build number>
+        // - build rpm and docker image with this tag
+        // - publish the result
+        // - tag the commit
+        //
+        // otherwise,
+        // - docker image uses git hash
+        // - rpm uses <build version>-SNAPSHOT
+        // - do not publish
+        // - do not tag the commit
+        publishBranch = 'master'
+
+        dockerImageName = 'admin-api'
+        dockerPullRegistry = 'https://016615309443.dkr.ecr.us-west-2.amazonaws.com'
+        dockerPushRegistry = 'https://031057183607.dkr.ecr.us-west-2.amazonaws.com'
+        dockerCredentials = 'ecr:us-west-2:jenkins.portl.com'
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Setup') {
+            steps {
+                script {
+                    shouldPublish = env.BRANCH_NAME == publishBranch
+
+                    if (shouldPublish) {
+                        // if master, inspect version.sbt and generate tag
+                        baseVersion = readFile "${env.WORKSPACE}/version.txt"
+                        buildVersion = baseVersion.trim() + "-" + env.BUILD_NUMBER
+                        env.BUILD_VERSION = buildVersion
+                    } else {
+                        // otherwise, use git hash
+                        buildVersion = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
+                    }
+                    echo 'buildVersion: ' + buildVersion
+                }
+            }
+        }
+        stage('Build') {
+            steps {
+                script {
+                    docker.withRegistry(dockerPullRegistry, dockerCredentials) {
+                        docker.image('mongo:3.4.14').withRun('-p 27017:27017') { container ->
+                            sh "${tool name: 'sbt-0.13.15', type: 'org.jvnet.hudson.plugins.SbtPluginBuilder$SbtInstallation'}/bin/sbt -Dsbt.repository.config=repositories -Dsbt.override.build.repos=true -Dsbt.log.noformat=true -Dconfig.resource=test.conf test publishLocal"
+                            image = docker.build("${env.dockerImageName}:${buildVersion}", ".")
+                        }
+                    }
+                }
+            }
+        }
+        stage('Publish') {
+            when { equals expected: true, actual: shouldPublish }
+            steps {
+                script {
+                    docker.withRegistry(dockerPushRegistry, dockerCredentials) {
+                        sh "${tool name: 'sbt-0.13.15', type: 'org.jvnet.hudson.plugins.SbtPluginBuilder$SbtInstallation'}/bin/sbt -Dsbt.repository.config=repositories -Dsbt.override.build.repos=true -Dsbt.log.noformat=true publish"
+                        image.push("${buildVersion}")
+                        image.push("latest")
+                    }
+                    sh("git tag ${buildVersion}")
+                    sh('git push origin --tags')
+                }
+            }
+        }
+    }
+    post {
+        cleanup {
+            script {
+                sh """
+                    echo \"deleting image ${dockerImageName}:${buildVersion}\"
+                    docker rmi ${dockerImageName}:${buildVersion}
+                    echo \"cleaning our artifacts from maven repository\"
+                    rm -r \"${JENKINS_HOME}/.m2/repository/${dockerImageName}\"
+                """
+            }
+        }
+    }
+}

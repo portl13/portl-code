@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="3">
+    <entity name="About" representedClassName=".About" syncable="YES">
+        <attribute name="markupType" attributeType="String"/>
+        <attribute name="value" attributeType="String"/>
+        <relationship name="artist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PortlArtist" inverseName="about" inverseEntity="PortlArtist"/>
+        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PortlEvent" inverseName="about" inverseEntity="PortlEvent"/>
+    </entity>
+    <entity name="Address" representedClassName=".Address" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="street" optional="YES" attributeType="String"/>
+        <attribute name="street2" optional="YES" attributeType="String"/>
+        <attribute name="zipcode" optional="YES" attributeType="String"/>
+        <relationship name="venue" maxCount="1" deletionRule="Nullify" destinationEntity="PortlVenue" inverseName="address" inverseEntity="PortlVenue"/>
+    </entity>
+    <entity name="ArtistById" representedClassName=".ArtistById" parentEntity="Identifiable" syncable="YES">
+        <relationship name="artist" maxCount="1" deletionRule="Cascade" destinationEntity="PortlArtist" inverseName="byIdQuery" inverseEntity="PortlArtist"/>
+        <relationship name="events" toMany="YES" deletionRule="Cascade" destinationEntity="PortlEvent" inverseName="artistQueries" inverseEntity="PortlEvent"/>
+        <fetchIndex name="byIndentifierIndex">
+            <fetchIndexElement property="identifier" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="ArtistKeywordSearch" representedClassName=".ArtistKeywordSearch" parentEntity="KeywordSearch" syncable="YES"/>
+    <entity name="ArtistKeywordSearchItem" representedClassName=".ArtistKeywordSearchItem" parentEntity="SearchItem" syncable="YES">
+        <attribute name="artistIdentifier" optional="YES" attributeType="String"/>
+        <relationship name="artist" maxCount="1" deletionRule="Nullify" destinationEntity="PortlArtist" inverseName="keywordSearchItems" inverseEntity="PortlArtist"/>
+        <relationship name="events" toMany="YES" deletionRule="Nullify" destinationEntity="PortlEvent" inverseName="artistKeywordSearchItems" inverseEntity="PortlEvent"/>
+    </entity>
+    <entity name="Cacheable" representedClassName=".Cacheable" isAbstract="YES" syncable="YES">
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="EventCategory" representedClassName=".EventCategory" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="orderIndex" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PortlEvent" inverseName="categories" inverseEntity="PortlEvent"/>
+    </entity>
+    <entity name="EventKeywordSearch" representedClassName=".EventKeywordSearch" parentEntity="KeywordSearch" syncable="YES"/>
+    <entity name="EventSearch" representedClassName=".EventSearch" parentEntity="Search" syncable="YES">
+        <attribute name="categories" optional="YES" attributeType="String"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="maxDistanceMiles" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="startingAfter" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startingWithinDaysValue" optional="YES" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <fetchIndex name="byParamsIndex">
+            <fetchIndexElement property="latitude" type="Binary" order="ascending"/>
+            <fetchIndexElement property="longitude" type="Binary" order="ascending"/>
+            <fetchIndexElement property="maxDistanceMiles" type="Binary" order="ascending"/>
+            <fetchIndexElement property="startingAfter" type="Binary" order="ascending"/>
+            <fetchIndexElement property="startingWithinDaysValue" type="Binary" order="ascending"/>
+            <fetchIndexElement property="totalCount" type="Binary" order="ascending"/>
+            <fetchIndexElement property="pageSize" type="Binary" order="ascending"/>
+            <fetchIndexElement property="categories" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="EventSearchItem" representedClassName=".EventSearchItem" parentEntity="SearchItem" syncable="YES">
+        <attribute name="distance" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="eventIdentifier" attributeType="String"/>
+        <attribute name="startDate" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="event" maxCount="1" deletionRule="Nullify" destinationEntity="PortlEvent" inverseName="searchItems" inverseEntity="PortlEvent"/>
+        <fetchIndex name="bySearchIDIndex">
+            <fetchIndexElement expression="searchPage.search" expressionType="Object" type="Binary" order="ascending"/>
+            <fetchIndexElement expression="event.localStartDate" expressionType="Date" type="Binary" order="ascending"/>
+            <fetchIndexElement property="distance" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="Identifiable" representedClassName=".Identifiable" isAbstract="YES" parentEntity="Cacheable" syncable="YES">
+        <attribute name="identifier" attributeType="String"/>
+        <fetchIndex name="byIdentifierIndex">
+            <fetchIndexElement property="identifier" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="KeywordSearch" representedClassName=".KeywordSearch" isAbstract="YES" parentEntity="Search" syncable="YES">
+        <attribute name="keyword" attributeType="String"/>
+        <fetchIndex name="byParamsIndex">
+            <fetchIndexElement property="keyword" type="Binary" order="ascending"/>
+            <fetchIndexElement property="pageSize" type="Binary" order="ascending"/>
+            <fetchIndexElement property="totalCount" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="PortlArtist" representedClassName=".PortlArtist" parentEntity="Identifiable" syncable="YES">
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="source" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="about" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="About" inverseName="artist" inverseEntity="About"/>
+        <relationship name="byIdQuery" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ArtistById" inverseName="artist" inverseEntity="ArtistById"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PortlEvent" inverseName="artist" inverseEntity="PortlEvent"/>
+        <relationship name="keywordSearchItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ArtistKeywordSearchItem" inverseName="artist" inverseEntity="ArtistKeywordSearchItem"/>
+    </entity>
+    <entity name="PortlCategory" representedClassName=".PortlCategory" syncable="YES">
+        <attribute name="defaultIndex" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="defaultSelected" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="display" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <fetchIndex name="byNameIndex">
+            <fetchIndexElement property="display" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="PortlEvent" representedClassName=".PortlEvent" parentEntity="Identifiable" syncable="YES">
+        <attribute name="endDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="localStartDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="source" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="startDateTime" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="ticketPurchaseUrl" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="about" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="About" inverseName="event" inverseEntity="About"/>
+        <relationship name="artist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PortlArtist" inverseName="events" inverseEntity="PortlArtist"/>
+        <relationship name="artistKeywordSearchItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ArtistKeywordSearchItem" inverseName="events" inverseEntity="ArtistKeywordSearchItem"/>
+        <relationship name="artistQueries" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ArtistById" inverseName="events" inverseEntity="ArtistById"/>
+        <relationship name="categories" toMany="YES" deletionRule="Cascade" destinationEntity="EventCategory" inverseName="events" inverseEntity="EventCategory"/>
+        <relationship name="searchItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="EventSearchItem" inverseName="event" inverseEntity="EventSearchItem"/>
+        <relationship name="searchPages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SearchPage" inverseName="events" inverseEntity="SearchPage"/>
+        <relationship name="venue" maxCount="1" deletionRule="Nullify" destinationEntity="PortlVenue" inverseName="events" inverseEntity="PortlVenue"/>
+        <relationship name="venueKeywordSearchItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="VenueKeywordSearchItem" inverseName="events" inverseEntity="VenueKeywordSearchItem"/>
+        <relationship name="venueQueries" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="VenueById" inverseName="events" inverseEntity="VenueById"/>
+        <fetchIndex name="byDateIndex">
+            <fetchIndexElement property="startDateTime" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="PortlLocation" representedClassName=".PortlLocation" syncable="YES">
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="venues" toMany="YES" deletionRule="Nullify" destinationEntity="PortlVenue" inverseName="location" inverseEntity="PortlVenue"/>
+        <fetchIndex name="byLatLngIndex">
+            <fetchIndexElement property="latitude" type="Binary" order="ascending"/>
+            <fetchIndexElement property="longitude" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="PortlVenue" representedClassName=".PortlVenue" parentEntity="Identifiable" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="source" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="address" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Address" inverseName="venue" inverseEntity="Address"/>
+        <relationship name="byIdQuery" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VenueById" inverseName="venue" inverseEntity="VenueById"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PortlEvent" inverseName="venue" inverseEntity="PortlEvent"/>
+        <relationship name="keywordSearchItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="VenueKeywordSearchItem" inverseName="venue" inverseEntity="VenueKeywordSearchItem"/>
+        <relationship name="location" maxCount="1" deletionRule="Cascade" destinationEntity="PortlLocation" inverseName="venues" inverseEntity="PortlLocation"/>
+    </entity>
+    <entity name="Search" representedClassName=".Search" isAbstract="YES" parentEntity="Cacheable" syncable="YES">
+        <attribute name="pageSize" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalCount" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <relationship name="searchPages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SearchPage" inverseName="search" inverseEntity="SearchPage"/>
+    </entity>
+    <entity name="SearchItem" representedClassName=".SearchItem" isAbstract="YES" syncable="YES">
+        <relationship name="searchPages" toMany="YES" deletionRule="Cascade" destinationEntity="SearchPage" inverseName="searchItems" inverseEntity="SearchPage"/>
+    </entity>
+    <entity name="SearchPage" representedClassName=".SearchPage" syncable="YES">
+        <attribute name="pageIndex" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pageSize" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalCount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PortlEvent" inverseName="searchPages" inverseEntity="PortlEvent"/>
+        <relationship name="search" maxCount="1" deletionRule="Cascade" destinationEntity="Search" inverseName="searchPages" inverseEntity="Search"/>
+        <relationship name="searchItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SearchItem" inverseName="searchPages" inverseEntity="SearchItem"/>
+    </entity>
+    <entity name="VenueById" representedClassName=".VenueById" parentEntity="Identifiable" syncable="YES">
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PortlEvent" inverseName="venueQueries" inverseEntity="PortlEvent"/>
+        <relationship name="venue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PortlVenue" inverseName="byIdQuery" inverseEntity="PortlVenue"/>
+        <fetchIndex name="byIdentiferIndex">
+            <fetchIndexElement property="identifier" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="VenueKeywordSearch" representedClassName=".VenueKeywordSearch" parentEntity="KeywordSearch" syncable="YES">
+        <attribute name="lat" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lng" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="withinDistance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="VenueKeywordSearchItem" representedClassName=".VenueKeywordSearchItem" parentEntity="SearchItem" syncable="YES">
+        <attribute name="distanceFromUserMeters" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="venueIdentifier" optional="YES" attributeType="String"/>
+        <relationship name="events" toMany="YES" deletionRule="Nullify" destinationEntity="PortlEvent" inverseName="venueKeywordSearchItems" inverseEntity="PortlEvent"/>
+        <relationship name="venue" maxCount="1" deletionRule="Nullify" destinationEntity="PortlVenue" inverseName="keywordSearchItems" inverseEntity="PortlVenue"/>
+    </entity>
+    <elements>
+        <element name="About" positionX="-911" positionY="-303" width="128" height="105"/>
+        <element name="Address" positionX="-882" positionY="-153" width="128" height="150"/>
+        <element name="ArtistById" positionX="-882" positionY="-162" width="128" height="75"/>
+        <element name="ArtistKeywordSearch" positionX="-882" positionY="-162" width="128" height="45"/>
+        <element name="ArtistKeywordSearchItem" positionX="-828" positionY="-108" width="128" height="88"/>
+        <element name="Cacheable" positionX="-891" positionY="-171" width="128" height="60"/>
+        <element name="EventCategory" positionX="-810" positionY="-135" width="128" height="90"/>
+        <element name="EventKeywordSearch" positionX="-864" positionY="-144" width="128" height="45"/>
+        <element name="EventSearch" positionX="-549" positionY="-297" width="128" height="135"/>
+        <element name="EventSearchItem" positionX="-551" positionY="-135" width="128" height="105"/>
+        <element name="Identifiable" positionX="-882" positionY="-162" width="128" height="60"/>
+        <element name="KeywordSearch" positionX="-891" positionY="-171" width="128" height="60"/>
+        <element name="PortlArtist" positionX="-713" positionY="-303" width="128" height="165"/>
+        <element name="PortlCategory" positionX="-882" positionY="-153" width="128" height="105"/>
+        <element name="PortlEvent" positionX="-1089" positionY="-270" width="128" height="315"/>
+        <element name="PortlLocation" positionX="-684" positionY="54" width="128" height="90"/>
+        <element name="PortlVenue" positionX="-875" positionY="-27" width="128" height="165"/>
+        <element name="Search" positionX="-423" positionY="-297" width="128" height="90"/>
+        <element name="SearchItem" positionX="-423" positionY="-135" width="128" height="60"/>
+        <element name="SearchPage" positionX="-198" positionY="-237" width="128" height="135"/>
+        <element name="VenueById" positionX="-882" positionY="-162" width="128" height="75"/>
+        <element name="VenueKeywordSearch" positionX="-873" positionY="-153" width="128" height="88"/>
+        <element name="VenueKeywordSearchItem" positionX="-891" positionY="-171" width="128" height="103"/>
+    </elements>
+</model>

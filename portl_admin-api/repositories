@@ -1,0 +1,4 @@
+[repositories]
+  local
+  portl-group: http://nexus.portl.com:8081/repository/portl-group/
+  ivy-proxy: http://nexus.portl.com:8081/repository/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]

@@ -1,0 +1,24 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{title}}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="seededArtistForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-group" [ngClass]="{'has-error': nameField.touched && nameField.invalid}">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Artist Name" formControlName="name">
+      <p class="errortext" *ngIf="nameField.touched && nameField.invalid">
+          This field is required!
+      </p>
+    </div>
+    <div class="mb-4 float-left" *ngIf="seededArtist">
+      <button type="button" class="btn btn-danger" (click)="deleteSeededArtist()">Delete</button>
+    </div>
+    <div class="mb-4 float-right">
+      <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">Cancel</button>
+      <button type="submit" class="btn btn-primary" [disabled]="!canSubmit()">Submit</button>
+    </div>
+  </form>
+</div>

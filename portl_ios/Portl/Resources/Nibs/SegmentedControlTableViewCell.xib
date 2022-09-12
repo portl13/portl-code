@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="3gC-Dg-ehK" customClass="SegmentedControlTableViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3gC-Dg-ehK" id="fNN-tD-KbU">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g1N-QI-Flr">
+                        <rect key="frame" x="16" y="16" width="351" height="27"/>
+                        <segments>
+                            <segment title="Upcoming Events"/>
+                            <segment title="Recent Events"/>
+                        </segments>
+                        <connections>
+                            <action selector="segmentedControlChanged:" destination="3gC-Dg-ehK" eventType="valueChanged" id="Jhi-Eh-mzD"/>
+                        </connections>
+                    </segmentedControl>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="g1N-QI-Flr" secondAttribute="bottom" constant="8" id="Ohc-aF-3HU"/>
+                    <constraint firstAttribute="trailing" secondItem="g1N-QI-Flr" secondAttribute="trailing" constant="16" id="YGd-4t-biT"/>
+                    <constraint firstItem="g1N-QI-Flr" firstAttribute="leading" secondItem="fNN-tD-KbU" secondAttribute="leading" constant="16" id="fOQ-eD-ZY0"/>
+                    <constraint firstItem="g1N-QI-Flr" firstAttribute="top" secondItem="fNN-tD-KbU" secondAttribute="top" constant="16" id="ueI-FU-ett"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="segmentedControl" destination="g1N-QI-Flr" id="EOD-sn-Pf0"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="7"/>
+        </tableViewCell>
+    </objects>
+</document>

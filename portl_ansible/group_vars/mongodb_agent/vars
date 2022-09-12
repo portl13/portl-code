@@ -1,0 +1,3 @@
+mongodb_agent_api_key: "{{ vault_mongodb_agent_api_key }}"
+
+mongodb_agent_group_id: 5b0eeeba96e8212e424899ae

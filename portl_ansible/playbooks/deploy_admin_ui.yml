@@ -1,0 +1,30 @@
+---
+
+- name: Deploy Static UI to S3
+  hosts: local
+  gather_facts: no
+
+  vars:
+    service_name: admin-api
+
+  vars_files:
+    - "{{ inventory_dir }}/group_vars/{{ limit_environment }}/vars"
+    - "{{ inventory_dir }}/group_vars/{{ limit_region }}/vars"
+
+
+  tasks:
+    - name: Sync Artifact to Bucket
+      include_role:
+        name: site_resources
+        tasks_from: sync_artifact_to_bucket.yml
+
+    - name: Activate Config
+      include_role:
+        name: site_resources
+        tasks_from: activate_ui_config.yml
+
+    - name: Clear CloudFront Cache
+      include_role:
+        name: aws_resources
+        tasks_from: invalidate_cloudfront_cache.yml
+      when: invalidate_cache

@@ -1,0 +1,38 @@
+<section>
+  <div class="pt-3 pb-3 mb-0">
+    <div class="container">
+      <h1 class="display-3">Seeded Artists</h1>
+      <p>Add artist names for lookup during data collection.</p>
+      <button class="btn btn-primary" (click)="openModal(null)">Create New</button>
+      <button class="btn btn-primary" (click)="openCSVDialog()">Upload CSV</button>
+    </div>
+  </div>
+  <hr class="mb-4">
+  <div class="container mb-5">
+    <ngx-datatable
+      columnMode="force"
+      class="dark"
+      [rows]="rows"
+      headerHeight="45"
+      rowHeight="45"
+      [columns]="columns"
+      [externalSorting]="true"
+      [sorts]="sorts"
+      (sort)="onSort($event)">
+    </ngx-datatable>
+  </div>
+</section>
+
+<ng-template #actionTmpl let-artist="value">
+  <button class="btn btn-primary btn-sm action-btn" (click)="openModal(artist)">View/Edit</button>
+</ng-template>
+
+<div class="col-xs-12 col-12" *ngIf="totalItems > queryParameters.pageSize">
+  <pagination [totalItems]="totalItems"
+              [itemsPerPage]="queryParameters.pageSize"
+              [(ngModel)]="currentPage"
+              [maxSize]="5"
+              [rotate]="true"
+              (pageChanged)="updateUrl('page', $event.page)">
+  </pagination>
+</div>

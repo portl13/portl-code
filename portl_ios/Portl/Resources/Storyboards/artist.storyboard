@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Artist Details View Controller-->
+        <scene sceneID="I46-CI-LtT">
+            <objects>
+                <viewController storyboardIdentifier="ArtistDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mif-s2-qtp" customClass="ArtistDetailsViewController" customModule="Portl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e2p-eg-FBL"/>
+                        <viewControllerLayoutGuide type="bottom" id="7wV-GW-ka5"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Cc3-bv-NzG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="650"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dhx-3V-6xw">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="650"/>
+                                <color key="backgroundColor" name="color-dark1"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mif-s2-qtp" id="ulx-Qx-v7a"/>
+                                    <outlet property="delegate" destination="mif-s2-qtp" id="xnk-TU-hrX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dhx-3V-6xw" firstAttribute="top" secondItem="e2p-eg-FBL" secondAttribute="bottom" id="4pJ-D7-cLL"/>
+                            <constraint firstItem="7wV-GW-ka5" firstAttribute="top" secondItem="dhx-3V-6xw" secondAttribute="bottom" id="R8F-Jn-TJ0"/>
+                            <constraint firstItem="dhx-3V-6xw" firstAttribute="leading" secondItem="Cc3-bv-NzG" secondAttribute="leadingMargin" constant="-20" id="Uxo-th-SEr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dhx-3V-6xw" secondAttribute="trailing" constant="-20" id="Wx8-gU-ig8"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="650"/>
+                    <connections>
+                        <outlet property="tableView" destination="dhx-3V-6xw" id="SBc-Lg-oH4"/>
+                        <segue destination="QzS-Pt-FEo" kind="show" identifier="eventDetailsSegue" id="AOi-uL-WTA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytU-bO-ESq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2546.4000000000001" y="137.6311844077961"/>
+        </scene>
+        <!--EventDetailsViewController-->
+        <scene sceneID="8Mg-RA-O2p">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="event" storyboardName="event" referencedIdentifier="EventDetailsViewController" id="QzS-Pt-FEo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="o7O-eD-KZA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sty-qg-KJ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3322" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

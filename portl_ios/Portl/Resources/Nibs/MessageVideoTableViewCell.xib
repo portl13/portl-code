@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="218" id="tBs-6o-km2" customClass="MessageVideoTableViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tBs-6o-km2" id="nz2-UG-MPm">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="218"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7U8-YE-neU">
+                        <rect key="frame" x="16" y="16" width="286" height="186"/>
+                        <color key="backgroundColor" name="color-dark3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" secondItem="7U8-YE-neU" secondAttribute="width" multiplier="93:143" id="f2p-pY-Nnk"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRd-7y-MWj">
+                        <rect key="frame" x="127" y="78" width="64" height="62"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="icon_play_video"/>
+                        <connections>
+                            <action selector="startPlayer:" destination="tBs-6o-km2" eventType="touchUpInside" id="het-Dj-V5C"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7U8-YE-neU" firstAttribute="top" secondItem="nz2-UG-MPm" secondAttribute="top" constant="16" id="8MG-DZ-wYU"/>
+                    <constraint firstAttribute="trailing" secondItem="7U8-YE-neU" secondAttribute="trailing" constant="16" id="TEN-23-CFm"/>
+                    <constraint firstAttribute="bottom" secondItem="7U8-YE-neU" secondAttribute="bottom" constant="16" id="aki-Wy-CGH"/>
+                    <constraint firstItem="7U8-YE-neU" firstAttribute="leading" secondItem="nz2-UG-MPm" secondAttribute="leading" constant="16" id="lE3-t5-0Qm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="color-dark1"/>
+            <connections>
+                <outlet property="playButton" destination="aRd-7y-MWj" id="1A7-fT-z9O"/>
+                <outlet property="videoView" destination="7U8-YE-neU" id="qhv-hd-OVJ"/>
+            </connections>
+            <point key="canvasLocation" x="-26.086956521739133" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_play_video" width="64" height="62"/>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-dark3">
+            <color red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

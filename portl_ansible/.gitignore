@@ -1,0 +1,5 @@
+ansible.log
+.idea
+roles/*
+!roles/site_resources
+!roles/task

@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+POST    /events                     com.portl.api.controllers.EventsController.listAll
+POST    /events/search              com.portl.api.controllers.EventsController.search
+POST    /events/byId                com.portl.api.controllers.EventsController.findById
+
+POST    /artists/search             com.portl.api.controllers.ArtistsController.search
+POST    /artists/byId               com.portl.api.controllers.ArtistsController.findById
+
+POST    /venues/search              com.portl.api.controllers.VenuesController.search
+POST    /venues/byId                com.portl.api.controllers.VenuesController.findById
+
+GET     /categories                 com.portl.api.controllers.EventsController.allCategories
+GET     /categories/default         com.portl.api.controllers.EventsController.getDefaultNewUserCategories
+
+#GET     /tests/:msg                 com.portl.api.controllers.TestController.sendBackgroundMessage(msg: String)
+
+GET     /status/buildInfo           com.portl.api.controllers.StatusController.buildInfo
+GET     /status/dbHealth            com.portl.api.controllers.StatusController.dbHealth
+GET     /status/checkIndexes        com.portl.api.controllers.StatusController.checkIndexes

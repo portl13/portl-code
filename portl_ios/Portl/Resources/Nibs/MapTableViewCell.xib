@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="-13" translatesAutoresizingMaskIntoConstraints="NO" id="v4X-63-UBD" customClass="MapTableViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="233"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v4X-63-UBD" id="DpK-KX-RJf">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="233"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yv-Dd-Rzi" userLabel="Map Container">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="233"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sId-Uu-Zub">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sId-Uu-Zub" secondAttribute="height" multiplier="320:233" id="cUM-br-hig"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="v4X-63-UBD" id="jvb-wW-FbM"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sId-Uu-Zub" secondAttribute="trailing" id="6ym-Hf-6iy"/>
+                            <constraint firstItem="sId-Uu-Zub" firstAttribute="top" secondItem="0Yv-Dd-Rzi" secondAttribute="top" id="BBn-lR-G9f"/>
+                            <constraint firstAttribute="bottom" secondItem="sId-Uu-Zub" secondAttribute="bottom" id="Dwg-GB-kLW"/>
+                            <constraint firstItem="sId-Uu-Zub" firstAttribute="leading" secondItem="0Yv-Dd-Rzi" secondAttribute="leading" id="KmL-Z2-TAR"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSN-QC-tmQ">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="T2c-8Z-DA8"/>
+                            <constraint firstAttribute="width" constant="60" id="rOC-Zr-aPz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" image="icon_directions_active">
+                            <color key="titleColor" name="color-interactive1"/>
+                        </state>
+                        <connections>
+                            <action selector="requestDirections:" destination="v4X-63-UBD" eventType="touchUpInside" id="Saq-mh-qWd"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcR-nO-ds5">
+                        <rect key="frame" x="5" y="45" width="50" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" name="color-interactive1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Yv-Dd-Rzi" firstAttribute="top" secondItem="DpK-KX-RJf" secondAttribute="top" id="4Xp-OX-j6A"/>
+                    <constraint firstItem="0Yv-Dd-Rzi" firstAttribute="leading" secondItem="DpK-KX-RJf" secondAttribute="leading" id="5nM-nR-gcG"/>
+                    <constraint firstItem="BSN-QC-tmQ" firstAttribute="top" secondItem="DpK-KX-RJf" secondAttribute="top" id="DpO-Wi-xpJ"/>
+                    <constraint firstAttribute="bottom" secondItem="0Yv-Dd-Rzi" secondAttribute="bottom" id="Oby-Rz-S2O"/>
+                    <constraint firstItem="BcR-nO-ds5" firstAttribute="centerX" secondItem="BSN-QC-tmQ" secondAttribute="centerX" id="bcb-sa-5Pa"/>
+                    <constraint firstItem="BcR-nO-ds5" firstAttribute="top" secondItem="DpK-KX-RJf" secondAttribute="top" constant="45" id="bzg-vb-FkS"/>
+                    <constraint firstItem="BSN-QC-tmQ" firstAttribute="leading" secondItem="DpK-KX-RJf" secondAttribute="leading" id="m73-hl-50i"/>
+                    <constraint firstAttribute="trailing" secondItem="0Yv-Dd-Rzi" secondAttribute="trailing" id="wS1-0C-fNP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="color-dark1"/>
+            <connections>
+                <outlet property="mapView" destination="sId-Uu-Zub" id="uo4-H2-5OQ"/>
+            </connections>
+            <point key="canvasLocation" x="63.768115942028992" y="51.227678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_directions_active" width="24" height="24"/>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-interactive1">
+            <color red="0.92941176470588238" green="0.11764705882352941" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

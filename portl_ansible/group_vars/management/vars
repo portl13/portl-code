@@ -1,0 +1,15 @@
+database_name: "{{ vault_database_name }}"
+database_user: "{{ vault_database_user }}"
+database_host: "{{ vault_database_host }}"
+database_source: "{{ vault_database_source }}"
+database_password: "{{ vault_database_password }}"
+database_root_user: "{{ vault_database_root_user }}"
+database_root_password: "{{ vault_database_root_password }}"
+
+dns_forwarder: 172.22.160.2
+dns_override: portl.com
+
+haversack_data_device: /dev/xvdb
+
+#haversack_data_device: /dev/xvdb
+mysql_local_install: yes

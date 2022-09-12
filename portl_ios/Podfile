@@ -1,0 +1,33 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '12.0'
+use_frameworks!
+
+def shared_pods
+	pod 'CSkyUtil', :git => 'ssh://git@stash.concentricsky.com/internal_ios/csky_util.git'
+	pod 'RxSwift', '~> 5.0'
+end
+
+target 'Portl' do
+	shared_pods
+	
+	pod 'UITextView+Placeholder'
+	pod 'SDWebImage'
+	pod 'Fabric'
+	pod 'Crashlytics'
+	pod 'CropViewController'
+	pod 'Firebase/Core', '6.17'
+	pod 'Firebase/Auth', '<7'
+	pod 'Firebase/Database', '<7'
+	pod 'Firebase/Storage', '<7'
+	pod 'Firebase/Messaging', '<7'
+	pod 'Firebase/Functions', '<7'
+end
+
+target 'Service' do
+	shared_pods
+	
+	pod 'Alamofire', '~> 4.5'
+	pod 'RxAlamofire', '~> 5.0'
+	pod 'APIEngine', :git => 'ssh://git@stash.concentricsky.com/internal_ios/api_engine.git'
+	pod 'APIService', :git => 'ssh://git@stash.concentricsky.com/internal_ios/api_service.git'
+end

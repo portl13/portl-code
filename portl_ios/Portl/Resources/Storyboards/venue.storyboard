@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Jb3-ha-nF0">
+            <objects>
+                <navigationController storyboardIdentifier="VenueScene" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MAB-Bl-her" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="3sj-Dz-O7f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="waD-Qs-JBB" kind="relationship" relationship="rootViewController" id="wSJ-ba-zBC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUL-4i-q2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="857"/>
+        </scene>
+        <!--Venue Details View Controller-->
+        <scene sceneID="yaC-vX-oJf">
+            <objects>
+                <viewController storyboardIdentifier="VenueDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="waD-Qs-JBB" customClass="VenueDetailsViewController" customModule="Portl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mpe-5i-bOg"/>
+                        <viewControllerLayoutGuide type="bottom" id="xgt-KP-12H"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="WFQ-42-74Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CJr-Xz-mfi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <color key="backgroundColor" name="color-dark1"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="waD-Qs-JBB" id="Ck1-Th-rFx"/>
+                                    <outlet property="delegate" destination="waD-Qs-JBB" id="e5r-Ui-1aG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CJr-Xz-mfi" secondAttribute="trailing" id="And-i2-M1F"/>
+                            <constraint firstItem="xgt-KP-12H" firstAttribute="top" secondItem="CJr-Xz-mfi" secondAttribute="bottom" id="bDN-Re-vFy"/>
+                            <constraint firstItem="CJr-Xz-mfi" firstAttribute="leading" secondItem="WFQ-42-74Y" secondAttribute="leading" id="bcC-ep-EqM"/>
+                            <constraint firstItem="CJr-Xz-mfi" firstAttribute="top" secondItem="Mpe-5i-bOg" secondAttribute="bottom" id="k1W-iA-ss7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9bc-7p-CMW"/>
+                    <connections>
+                        <outlet property="tableView" destination="CJr-Xz-mfi" id="YuJ-hJ-2kU"/>
+                        <segue destination="qnf-rU-3kH" kind="show" identifier="eventDetailsSegue" id="f95-Fd-zfN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOi-Wq-ESd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2548" y="856.82158920539734"/>
+        </scene>
+        <!--EventDetailsViewController-->
+        <scene sceneID="eXJ-4f-4T5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="event" referencedIdentifier="EventDetailsViewController" id="qnf-rU-3kH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8TZ-Br-x1G"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vvL-uP-g58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3356" y="739"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

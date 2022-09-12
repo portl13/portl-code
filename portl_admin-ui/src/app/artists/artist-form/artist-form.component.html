@@ -1,0 +1,74 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{title}}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="media" *ngIf="artist">
+    <img class="mr-3" [src]="artist.imageUrl" alt="Artist image">
+    <div class="media-body">
+      <h5 class="mt-0">{{ artist.name }}</h5>
+       {{ artist.description }}
+    </div>
+  </div>
+  <form [formGroup]="artistForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-group" [ngClass]="{'has-error': nameField.touched && nameField.invalid}">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Artist Name" formControlName="name">
+      <p class="errortext" *ngIf="nameField.touched && nameField.invalid">
+          This field is required!
+      </p>
+    </div>
+    <div class="form-group" [ngClass]="{'has-error': imageUploadError}">
+      <label for="image">Image (1242 x 877)</label>
+      <input #imageField type="file"
+             [hidden]="imageChangedEvent"
+             class="form-control mb-2"
+             id="image"
+             placeholder="Upload event image"
+             accept="image/png,image/jpeg"
+             (change)="fileChangeEvent($event)" />
+      <button class="btn btn-sm btn-primary d-block"
+              *ngIf="imageUploadError || imageChangedEvent"
+              (click)="resetImageField()">Reset</button>
+      <progressbar *ngIf="imageUploadStatus"
+                   max="1"
+                   [type]="imageUploadStatus.state === 'complete' ?  'success' : 'info'"
+                   [value]="imageUploadStatus.progress">
+      </progressbar>
+      <p class="errortext" *ngIf="imageUploadError">
+        {{ imageUploadError }}
+      </p>
+      <image-cropper
+        [imageChangedEvent]="imageChangedEvent"
+        [maintainAspectRatio]="true"
+        [aspectRatio]="1242 / 877"
+        [resizeToWidth]="1242"
+        [onlyScaleDown]="true"
+        [cropperMinWidth]="1242"
+        format="jpeg"
+        outputType="file"
+        (imageCropped)="imageCropped($event)"
+      ></image-cropper>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea type="text" class="form-control" id="description" placeholder="Enter Artist Description" formControlName="description"></textarea>
+    </div>
+    <div class="form-group" [ngClass]="{'has-error': url.touched && url.invalid}">
+      <label for="url">External URL</label>
+      <input type="url" class="form-control" id="url" placeholder="Enter Artist External URL" formControlName="url">
+      <p class="errortext" *ngIf="url.touched && url.invalid">
+        Please enter a valid URL.
+      </p>
+    </div>
+    <div class="mb-4 float-left" *ngIf="artist">
+      <button type="button" class="btn btn-danger" (click)="deleteArtist()">Delete</button>
+    </div>
+    <div class="mb-4 float-right">
+      <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">Cancel</button>
+      <button type="submit" class="btn btn-primary" [disabled]="!canSubmit()">Submit</button>
+    </div>
+  </form> 
+</div>

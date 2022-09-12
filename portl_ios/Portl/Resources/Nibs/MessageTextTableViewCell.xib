@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="73" id="cIc-k7-HR6" customClass="MessageTextTableViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cIc-k7-HR6" id="lD5-xF-2Fi">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your comment..." adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rlD-R3-jjz">
+                        <rect key="frame" x="16" y="16" width="343" height="46"/>
+                        <color key="backgroundColor" name="color-dark1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="8rS-Cn-ixi"/>
+                        </constraints>
+                        <color key="textColor" name="color-light2"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="cIc-k7-HR6" id="rQ1-jx-mkx"/>
+                        </connections>
+                    </textField>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHC-Mr-BY1">
+                        <rect key="frame" x="0.0" y="16" width="375" height="46"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="color-dark1"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dHC-Mr-BY1" secondAttribute="trailing" id="0c9-DH-I0o"/>
+                    <constraint firstItem="dHC-Mr-BY1" firstAttribute="top" secondItem="rlD-R3-jjz" secondAttribute="top" id="3i1-3o-0Hx"/>
+                    <constraint firstItem="dHC-Mr-BY1" firstAttribute="bottom" secondItem="rlD-R3-jjz" secondAttribute="bottom" id="649-W7-0Td"/>
+                    <constraint firstAttribute="trailing" secondItem="rlD-R3-jjz" secondAttribute="trailing" constant="16" id="7gC-qz-ZD1"/>
+                    <constraint firstItem="dHC-Mr-BY1" firstAttribute="leading" secondItem="lD5-xF-2Fi" secondAttribute="leading" id="RTm-aD-L93"/>
+                    <constraint firstItem="rlD-R3-jjz" firstAttribute="leading" secondItem="lD5-xF-2Fi" secondAttribute="leading" constant="16" id="ahN-Sx-X56"/>
+                    <constraint firstItem="rlD-R3-jjz" firstAttribute="top" secondItem="lD5-xF-2Fi" secondAttribute="top" constant="16" id="fKi-i7-yca"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rlD-R3-jjz" secondAttribute="bottom" id="tna-wX-XTk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="rlD-R3-jjz" id="sBF-Fb-TBB"/>
+                <outlet property="textFieldBorder" destination="dHC-Mr-BY1" id="SHW-2a-EYa"/>
+            </connections>
+            <point key="canvasLocation" x="40.799999999999997" y="63.418290854572717"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-light2">
+            <color red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

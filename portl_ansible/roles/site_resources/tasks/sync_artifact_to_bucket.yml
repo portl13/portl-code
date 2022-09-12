@@ -1,0 +1,53 @@
+---
+
+- name: SYNC_ARTIFACT_TO_BUCKET | Checking that required variables are set
+  fail: msg="{{ item }} is not defined"
+  when: not item
+  with_items:
+    - artifact_url
+    - aws_profile
+    - aws_region
+    - aws_service_prefix
+
+- name: SYNC_ARTIFACT_TO_BUCKET | Set aws_service_prefix
+  set_fact:
+    aws_service_prefix: "{{ services[service_name].aws_service_prefix }}"
+
+- name: SYNC_ARTIFACT_TO_BUCKET | Create Working Dir
+  tempfile:
+    prefix: tmp
+    state: directory
+  register: work_dir
+
+- name: SYNC_ARTIFACT_TO_BUCKET | Create stage_dir
+  tempfile:
+    prefix: "{{ work_dir.path }}/stage"
+    state: directory
+  register: stage_dir
+
+- name: SYNC_ARTIFACT_TO_BUCKET | Set artifact_name fact
+  set_fact:
+    artifact_name: "{{ artifact_url.split('/') | last }}"
+
+- name: SYNC_ARTIFACT_TO_BUCKET | Unpacking Artifact {{ artifact_name }}
+  unarchive:
+    src: "{{ artifact_url }}"
+    dest: "{{ stage_dir.path }}"
+    remote_src: yes
+    validate_certs: no
+
+#- name: SYNC_ARTIFACT_TO_BUCKET | Removing symlinks from staging directory
+#  clean_symlinks:
+#    path: "{{ work_dir.path }}"
+
+- name: SYNC_ARTIFACT_TO_BUCKET | Sync changes to Bucket s3://{{ aws_s3_bucket }}
+  s3_sync:
+    cache_control: "{{ s3_cache_control }}"
+    bucket: "{{ lookup('csky_aws_parameter', key='aws_s3_bucket') }}"
+    file_root: "{{ stage_dir.path }}/{{ s3_artifact_prefix }}"
+    mode: push
+    mime_map: "{{ s3_mime_map }}"
+    profile: "{{ aws_profile }}"
+    region: "{{ aws_region }}"
+    file_change_strategy: checksum
+

@@ -1,0 +1,72 @@
+{
+  "databases": [
+    {
+      "name": "main",
+      "collections": [
+        {
+          "name": "artists",
+          "indexes": [
+            {
+              "keys": {
+                "name": "text"
+              }
+            }
+          ]
+        },
+        {
+          "name": "venues",
+          "indexes": [
+            {
+              "keys": {
+                "location": "2dsphere"
+              }
+            },
+            {
+              "keys": {
+                "name": "text"
+              }
+            }
+          ]
+        },
+        {
+          "name": "events",
+          "indexes": [
+            {
+              "keys": {
+                "venue.location": "2dsphere"
+              }
+            },
+            {
+              "keys": {
+                "startDateTime": 1
+              }
+            },
+            {
+              "keys": {
+                "artist.name": 1
+              }
+            },
+            {
+              "keys": {
+                "venue.name": 1
+              }
+            },
+            {
+              "keys": {
+                "localStartDate": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "historicalEvents",
+          "indexes": []
+        },
+        {
+          "name": "mongoStatus",
+          "indexes": []
+        }
+      ]
+    }
+  ]
+}

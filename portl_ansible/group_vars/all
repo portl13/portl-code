@@ -1,0 +1,36 @@
+ansible_management_node: 172.22.190.111
+
+ansible_management_node_ssh_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCzo/QaZJ3F10PHykIuIgS86TnrafyusoK7gj31bp/3duKYoMQQged2QDE5z83MJEgAGw/tE52g1Hb8bpVpom/cDNz8H3j4WDzkzdFHU5BCw0Io0O8I5fEEIswUbYpbDNxUP2vG1ojVRqTaSoMEbRs81clvT7iC0PPgY5vPTld5g2BntYIFT1/zZHJs9klWWYKpXSZ2aEEpeFgHRkasG2jhYenkgms7gjI6uz8/CrGCLXO1x8isMlcrzKRFjURSGPfvYIeQZZZN+17g6dxcAG52gGBMQmrtscNMZi6Wf9G8Bc5q94Tww4L+td2oNqfNCVMXCRdtMRzhQ+wGZERg77EeJ/9p38dw74fmccKqi841D5wMlsoUFDlbO83SyuvaN9ejBxn8MSnmjVnlqmiwc2VEiROqjAzuOl6EuPq4O1XbJ+jziyRXVQFcGCzvMFFQgU84ZoEmVrU415K9eSEghOZOb4eHoJeAAd2Juqy4lOHYk1/iJ9UKsbON0r8m/nJOo8laMOAmZeBtuy9UNH8XOZHdNO45MecZNNvK8mq1F+Fw0zZjDJ9fdejdGuCDBrRAbdX6eTw9a3jY0DSjefChUpHAinLdZ/sFM2Bp79g4r0P7/LDR14SlTxkfNcQLZQNROX7Ckb7DEtD+XJNzHZOGW1WLgr3SRxyQOCGC4BpgEjBTBw== jenkins@management.portl.com"
+
+aws_profile: portl
+
+aws_route53_private_zone: portl.com
+aws_route53_public_zone: portl.com
+
+aws_key_name: portl-management
+
+aws_management_ssh_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCc+3PxWuGOIsUS8PPXU7Z1yWO4zDPo1uyXBUA/Nf8ev25OnxkKu2ug7iprZTMaWLzjvH603rQlX+AmSNz1AMbcZP1/dpYwtjYnKMsFgC+djkgfRAZ/6JDoqex0b8DHeLtUeX07DPC5L/L0l2rkxQy3GC8aBjHRzw5SGNmZEMnOkOq5MKWPFo0dc0xtOE6E6Rr4C1UTvjULHX7CcbRxFfuT2ySHn/7A8BIS55wEL40az61Onye4wghdrCWJ04BdzHeYqk9YV4nohuU2BKauFvyPydSZWHElHovzxYoF0ALSjQnt+Zlq2r30AIwg4T2cFmf1sPqbBNyT8TXmezqEvc3t portl-mangagement.pem"
+
+base_use_letsencrypt: yes
+
+docker_port_mappings:
+  - containerPort: 2551
+    hostPort: 0
+  - containerPort: 9000
+    hostPort: 0
+
+invalidate_cache: yes
+
+invalidate_cache_wait: yes
+
+mongodb_version: 3.4
+
+project_name: portl
+
+project_user: web
+
+services:
+  api:
+    aws_service_prefix: "/portl/us-west-2/{{ limit_environment }}/api"
+  admin-api:
+    aws_service_prefix: "/portl/us-west-2/{{ limit_environment }}/admin-api"

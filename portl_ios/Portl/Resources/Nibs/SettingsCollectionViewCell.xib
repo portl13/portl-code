@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RoP-EL-Mz2" customClass="SettingsCollectionViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btz-s3-d3V">
+                        <rect key="frame" x="16" y="17" width="42.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.81176470588235294" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="nd7-LE-GO0">
+                        <rect key="frame" x="335" y="16" width="24" height="24"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="dii-uZ-Cd0"/>
+                            <constraint firstAttribute="width" constant="24" id="sUv-3L-S2N"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmq-8Y-t7n">
+                        <rect key="frame" x="16" y="40.5" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.81176470590000005" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KV9-JG-Pmj">
+                        <rect key="frame" x="16" y="70" width="359" height="1"/>
+                        <color key="backgroundColor" name="color-dark2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="W4R-iN-H9Y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cmq-8Y-t7n" secondAttribute="bottom" constant="16" id="7A7-zz-aQf"/>
+                <constraint firstItem="cmq-8Y-t7n" firstAttribute="leading" secondItem="RoP-EL-Mz2" secondAttribute="leading" constant="16" id="8ka-1h-ckT"/>
+                <constraint firstAttribute="bottom" secondItem="KV9-JG-Pmj" secondAttribute="bottom" id="BVK-Wy-Ism"/>
+                <constraint firstItem="Btz-s3-d3V" firstAttribute="leading" secondItem="RoP-EL-Mz2" secondAttribute="leading" constant="16" id="BfC-H9-Va8"/>
+                <constraint firstAttribute="trailing" secondItem="nd7-LE-GO0" secondAttribute="trailing" constant="16" id="LXQ-KM-AeO"/>
+                <constraint firstItem="KV9-JG-Pmj" firstAttribute="leading" secondItem="RoP-EL-Mz2" secondAttribute="leading" constant="16" id="QLD-b6-o3N"/>
+                <constraint firstItem="nd7-LE-GO0" firstAttribute="top" secondItem="RoP-EL-Mz2" secondAttribute="top" constant="16" id="Ska-IC-iyz"/>
+                <constraint firstItem="nd7-LE-GO0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Btz-s3-d3V" secondAttribute="trailing" constant="16" id="Txk-f4-iwR"/>
+                <constraint firstAttribute="trailing" secondItem="KV9-JG-Pmj" secondAttribute="trailing" id="UUZ-9E-Q2M"/>
+                <constraint firstItem="Btz-s3-d3V" firstAttribute="top" secondItem="RoP-EL-Mz2" secondAttribute="top" constant="17" id="XCr-nd-3Ug"/>
+                <constraint firstItem="cmq-8Y-t7n" firstAttribute="top" secondItem="Btz-s3-d3V" secondAttribute="bottom" constant="4" id="gr5-dH-vNF"/>
+                <constraint firstItem="nd7-LE-GO0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cmq-8Y-t7n" secondAttribute="trailing" constant="16" id="h0X-og-1VP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ELc-LG-X0p"/>
+            <size key="customSize" width="375" height="66"/>
+            <connections>
+                <outlet property="hr" destination="KV9-JG-Pmj" id="Alh-fK-CYU"/>
+                <outlet property="label" destination="Btz-s3-d3V" id="Ex3-a2-dIP"/>
+                <outlet property="subLabel" destination="cmq-8Y-t7n" id="sTu-OH-XtW"/>
+            </connections>
+            <point key="canvasLocation" x="7.2000000000000002" y="54.422788605697157"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_more" width="24" height="24"/>
+        <namedColor name="color-dark2">
+            <color red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

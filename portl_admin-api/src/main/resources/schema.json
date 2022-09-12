@@ -1,0 +1,289 @@
+{
+  "databases": [
+    {
+      "name": "main",
+      "collections": [
+        {
+          "name": "artists",
+          "indexes": [{
+            "keys": {"id": 1},
+            "options": {"unique": true}
+          }, {
+            "keys": {"name":  "text"}
+          }, {
+            "keys": {"externalId":  1}
+          }]
+        },
+        {
+          "name": "events",
+          "indexes": [{
+            "keys": {"id": 1},
+            "options": {"unique": true}
+          }, {
+            "keys": {"title": "text"}
+          }]
+        },
+        {
+          "name": "venues",
+          "indexes": [{
+            "keys": {"id": 1},
+            "options": {"unique": true}
+          }, {
+            "keys": {"name": "text"}
+          }]
+        },
+        {
+          "name": "seededArtists",
+          "indexes": [{
+            "keys": {"id": 1},
+            "options": {"unique": true}
+          }, {
+            "keys": {"name":  "text"}
+          }, {
+            "keys": {"name":  1},
+            "options": {
+              "unique": true,
+              "collation": {"locale": "en", "strength": 2}
+            }
+          }]
+        },
+        {
+          "name": "geocodingResults",
+          "indexes": [{
+            "keys": {"externalId":  1},
+            "options": {"unique":  true}
+          }, {
+            "keys": {"reverseGeocodingResult.formattedAddress":  1}
+          }]
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "collections": [
+        {
+          "name": "artists",
+          "indexes": [
+            {
+              "keys": {
+                "name": "text"
+              }
+            },
+            {
+              "keys": {
+                "externalIdSet.sourceType": 1,
+                "externalIdSet.identifierOnSource": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "venues",
+          "indexes": [
+            {
+              "keys": {
+                "name": "text"
+              }
+            },
+            {
+              "keys": {
+                "location": "2dsphere"
+              }
+            },
+            {
+              "keys": {
+                "externalIdSet.sourceType": 1,
+                "externalIdSet.identifierOnSource": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "events",
+          "indexes": [
+            {
+              "keys": {
+                "externalIdSet.sourceType": 1,
+                "externalIdSet.identifierOnSource": 1
+              }
+            },
+            {
+              "keys": {
+                "venue._id": 1
+              }
+            },
+            {
+              "keys": {
+                "artist._id": 1
+              }
+            },
+            {
+              "keys": {
+                "venue.location": "2dsphere"
+              }
+            },
+            {
+              "keys": {
+                "startDateTime": 1
+              }
+            },
+            {
+              "keys": {
+                "localStartDate": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "historicalEvents",
+          "indexes": []
+        },
+        {
+          "name": "mongoStatus",
+          "indexes": []
+        }
+      ]
+    },
+    {
+      "name": "ticketmaster",
+      "collections": [
+        {
+          "name": "events",
+          "indexes": [
+            {
+              "keys": {
+                "eventId": 1
+              }
+            },
+            {
+              "keys": {
+                "eventStartLocalDate": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ticketfly",
+      "collections": [
+        {
+          "name": "events",
+          "indexes": [
+            {
+              "keys": {
+                "id": 1
+              }
+            },
+            {
+              "keys": {
+                "startDate": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eventbrite",
+      "collections": [
+        {
+          "name": "events",
+          "indexes": [
+            {
+              "keys": {
+                "id": 1
+              }
+            },
+            {
+              "keys": {
+                "start.local": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "songkick",
+      "collections": [
+        {
+          "name": "events",
+          "indexes": [
+            {
+              "keys": {
+                "id": 1
+              }
+            },
+            {
+              "keys": {
+                "start.date": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "meetup",
+      "collections": [
+        {
+          "name": "events",
+          "indexes": [
+            {
+              "keys": {
+                "id": 1
+              }
+            },
+            {
+              "keys": {
+                "time": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bandsintown",
+      "collections": [
+        {
+          "name": "artists",
+          "indexes": [
+            {
+              "keys": {
+                "id": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "events",
+          "indexes": [
+            {
+              "keys": {
+                "id": 1
+              }
+            },
+            {
+              "keys": {
+                "datetime": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "artistDescriptions",
+          "indexes": [
+            {
+              "keys": {
+                "artistId": 1
+              },
+              "options": {"unique": true}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

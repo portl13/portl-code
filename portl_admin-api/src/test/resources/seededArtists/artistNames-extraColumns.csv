@@ -1,0 +1,9 @@
+row,Artist Name,metadata
+1,foo,{}
+2,Foo,123
+3,bar,hi-there
+4,baz,something
+5,Austin Lally,unused
+6,Austin  Lally,
+7,quux ,
+8,	tabbytab,

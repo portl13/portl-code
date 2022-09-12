@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="dashboard">PORTL</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item" routerLinkActive="active" routerLink="events">
+        <a class="nav-link">Events</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" routerLink="artists">
+        <a class="nav-link">Artists</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" routerLink="venues">
+        <a class="nav-link">Venues</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" routerLink="seeded-artists">
+        <a class="nav-link">Seeded Artists</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-3 mb-0 pb-0">
+  <div *ngFor="let alert of alerts">
+    <alert [type]="alert.type"
+           [dismissible]="true"
+           [dismissOnTimeout]="alert.timeout"
+           (onClosed)="alertClosed(alert)">
+      {{ alert.msg }}
+    </alert>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

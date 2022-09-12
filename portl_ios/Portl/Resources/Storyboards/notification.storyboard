@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Livefeed List View Controller-->
+        <scene sceneID="q8E-a7-H0v">
+            <objects>
+                <viewController storyboardIdentifier="LivefeedListViewController" id="m5V-qX-RNO" customClass="LivefeedListViewController" customModule="Portl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jPa-Sm-HRX"/>
+                        <viewControllerLayoutGuide type="bottom" id="2hy-R4-W7U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gnL-e5-Who">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YAI-aO-dvN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" name="color-dark1"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="m5V-qX-RNO" id="L2L-uj-Qix"/>
+                                    <outlet property="delegate" destination="m5V-qX-RNO" id="DW4-ww-KIA"/>
+                                </connections>
+                            </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have no notifications now." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0b-Vr-NZx">
+                                <rect key="frame" x="96.5" y="325" width="182.5" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyb-yt-GGx">
+                                <rect key="frame" x="319" y="611" width="40" height="40"/>
+                                <color key="backgroundColor" name="color-dark1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="DCy-FT-adt"/>
+                                    <constraint firstAttribute="height" constant="40" id="fRJ-9V-FT4"/>
+                                </constraints>
+                                <state key="normal" image="icon_camera_small">
+                                    <color key="titleColor" name="color-light1"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPost:" destination="m5V-qX-RNO" eventType="touchUpInside" id="HpT-i4-cd8"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHZ-Q8-da1" userLabel="Message Button">
+                                <rect key="frame" x="319" y="611" width="40" height="40"/>
+                                <color key="backgroundColor" name="color-dark1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1jX-Mu-BM2"/>
+                                    <constraint firstAttribute="width" constant="40" id="Z10-1T-BKr"/>
+                                </constraints>
+                                <color key="tintColor" name="color-light1"/>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" image="icon_message_small">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPost:" destination="m5V-qX-RNO" eventType="touchUpInside" id="gG6-gr-SCY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNe-Wc-B5P">
+                                <rect key="frame" x="319" y="611" width="40" height="40"/>
+                                <color key="backgroundColor" name="color-interactive1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="R0V-uy-WS3"/>
+                                    <constraint firstAttribute="height" constant="40" id="Yuf-Aq-d8z"/>
+                                </constraints>
+                                <color key="tintColor" name="color-light1"/>
+                                <state key="normal" image="icon_add_experience"/>
+                                <connections>
+                                    <action selector="onPostButtonPress:" destination="m5V-qX-RNO" eventType="touchUpInside" id="fSd-b5-pPI"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjs-e4-Qyr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5j9-dq-FVc">
+                                        <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" name="color-dark1-half-alpha"/>
+                                <constraints>
+                                    <constraint firstItem="5j9-dq-FVc" firstAttribute="centerY" secondItem="Pjs-e4-Qyr" secondAttribute="centerY" id="44T-5n-KNR"/>
+                                    <constraint firstItem="5j9-dq-FVc" firstAttribute="centerX" secondItem="Pjs-e4-Qyr" secondAttribute="centerX" id="lSo-zc-byI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xyb-yt-GGx" firstAttribute="centerX" secondItem="dNe-Wc-B5P" secondAttribute="centerX" id="0v8-je-Gzu"/>
+                            <constraint firstItem="n0b-Vr-NZx" firstAttribute="centerY" secondItem="gnL-e5-Who" secondAttribute="centerY" id="3Yx-Ix-7ED"/>
+                            <constraint firstItem="2hy-R4-W7U" firstAttribute="top" secondItem="Pjs-e4-Qyr" secondAttribute="bottom" id="5pm-BR-otF"/>
+                            <constraint firstItem="YAI-aO-dvN" firstAttribute="top" secondItem="gnL-e5-Who" secondAttribute="top" id="6lD-PH-cdf"/>
+                            <constraint firstItem="Pjs-e4-Qyr" firstAttribute="top" secondItem="jPa-Sm-HRX" secondAttribute="bottom" id="FQH-E7-Dro"/>
+                            <constraint firstItem="bHZ-Q8-da1" firstAttribute="centerY" secondItem="dNe-Wc-B5P" secondAttribute="centerY" id="Fk0-Zg-IT9"/>
+                            <constraint firstItem="2hy-R4-W7U" firstAttribute="top" secondItem="dNe-Wc-B5P" secondAttribute="bottom" constant="16" id="KL8-Uv-5w2"/>
+                            <constraint firstAttribute="trailing" secondItem="dNe-Wc-B5P" secondAttribute="trailing" constant="16" id="Mqu-qu-R39"/>
+                            <constraint firstItem="n0b-Vr-NZx" firstAttribute="centerX" secondItem="gnL-e5-Who" secondAttribute="centerX" id="Mzg-eP-59j"/>
+                            <constraint firstItem="YAI-aO-dvN" firstAttribute="leading" secondItem="gnL-e5-Who" secondAttribute="leading" id="YjF-x3-L55"/>
+                            <constraint firstItem="bHZ-Q8-da1" firstAttribute="centerX" secondItem="dNe-Wc-B5P" secondAttribute="centerX" id="bMS-U7-ZIW"/>
+                            <constraint firstItem="2hy-R4-W7U" firstAttribute="top" secondItem="YAI-aO-dvN" secondAttribute="bottom" id="kXu-AA-EDu"/>
+                            <constraint firstAttribute="trailing" secondItem="YAI-aO-dvN" secondAttribute="trailing" id="l1A-1K-DEB"/>
+                            <constraint firstItem="Xyb-yt-GGx" firstAttribute="centerY" secondItem="dNe-Wc-B5P" secondAttribute="centerY" id="rad-wz-7H4"/>
+                            <constraint firstAttribute="trailing" secondItem="Pjs-e4-Qyr" secondAttribute="trailing" id="uTy-QH-UNq"/>
+                            <constraint firstItem="Pjs-e4-Qyr" firstAttribute="leading" secondItem="gnL-e5-Who" secondAttribute="leading" id="uob-VI-Jfz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="Xyb-yt-GGx" id="V8t-SO-MFa"/>
+                        <outlet property="cameraYConstraint" destination="rad-wz-7H4" id="KON-7q-roJ"/>
+                        <outlet property="emptyLabel" destination="n0b-Vr-NZx" id="jDA-QS-fVM"/>
+                        <outlet property="messageButton" destination="bHZ-Q8-da1" id="6PJ-nT-5KS"/>
+                        <outlet property="messageYConstraint" destination="Fk0-Zg-IT9" id="c1j-QH-DOS"/>
+                        <outlet property="postButton" destination="dNe-Wc-B5P" id="KER-Vh-J7p"/>
+                        <outlet property="spinnerView" destination="Pjs-e4-Qyr" id="Scv-jb-jUZ"/>
+                        <outlet property="tableView" destination="YAI-aO-dvN" id="MH3-k8-P2x"/>
+                        <segue destination="jFu-j3-vZC" kind="show" identifier="friendProfileSegue" id="CY5-pG-X0G"/>
+                        <segue destination="B0o-RR-nBW" kind="show" identifier="communityPostDetailSegue" id="Cyh-gB-4sg"/>
+                        <segue destination="1E2-ub-aQi" kind="show" identifier="eventDetailSegue" id="Rhl-mp-xbO"/>
+                        <segue destination="pbl-aO-f3N" kind="show" identifier="communitySegue" id="Ghn-ha-sPN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXp-yN-qvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2696.8000000000002" y="375.56221889055473"/>
+        </scene>
+        <!--CommunityRepliesViewController-->
+        <scene sceneID="XRs-Yo-ZUv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="message" referencedIdentifier="CommunityRepliesViewController" id="B0o-RR-nBW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xil-Av-fDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3524" y="309"/>
+        </scene>
+        <!--ProfileViewController-->
+        <scene sceneID="VSM-kT-WKM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="profile" referencedIdentifier="ProfileViewController" id="jFu-j3-vZC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paP-lM-730" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3467" y="375"/>
+        </scene>
+        <!--EventDetailsViewController-->
+        <scene sceneID="9qa-M1-sJ8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="event" referencedIdentifier="EventDetailsViewController" id="1E2-ub-aQi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBY-Nc-Gwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3494" y="445"/>
+        </scene>
+        <!--CommunityViewController-->
+        <scene sceneID="nzN-8B-rGT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="message" referencedIdentifier="CommunityViewController" id="pbl-aO-f3N" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UjZ-m0-Ui9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJF-62-aee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3488" y="244"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_add_experience" width="19" height="19"/>
+        <image name="icon_camera_small" width="22" height="20"/>
+        <image name="icon_message_small" width="22" height="21"/>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-dark1-half-alpha">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-interactive1">
+            <color red="0.92941176470588238" green="0.11764705882352941" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-light1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

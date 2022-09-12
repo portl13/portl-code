@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Izu-yo-dz5" customClass="AttendingUserCollectionViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qbS-VY-yLZ">
+                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" name="color-dark1"/>
+            <constraints>
+                <constraint firstItem="qbS-VY-yLZ" firstAttribute="top" secondItem="Izu-yo-dz5" secondAttribute="top" id="3a4-DY-zau"/>
+                <constraint firstAttribute="trailing" secondItem="qbS-VY-yLZ" secondAttribute="trailing" id="EEN-6Y-vuP"/>
+                <constraint firstItem="qbS-VY-yLZ" firstAttribute="leading" secondItem="Izu-yo-dz5" secondAttribute="leading" id="Iq6-u0-GlB"/>
+                <constraint firstAttribute="bottom" secondItem="qbS-VY-yLZ" secondAttribute="bottom" id="Njb-9g-nUe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="KSR-gt-gZo"/>
+            <connections>
+                <outlet property="profileImageView" destination="qbS-VY-yLZ" id="T6u-LL-K4M"/>
+            </connections>
+            <point key="canvasLocation" x="89.599999999999994" y="68.365817091454275"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

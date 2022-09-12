@@ -1,0 +1,51 @@
+version: '3'
+services:
+  portl-api:
+    build: .
+    ports:
+      - "9000:9000"
+    entrypoint: [ "/usr/share/portl-api/bin/portl-api", "-Dconfig.file=/root/docker-compose.application.conf" ]
+    depends_on:
+      - mongo1
+      - mongo2
+      - mongo3
+  mongo1:
+    image: "mongo:3.4"
+    ports:
+      - "30001:27017"
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--replSet", "rs", "--rest", "--httpinterface" ]
+  mongo2:
+    image: "mongo:3.4"
+    ports:
+      - "30002:27017"
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--replSet", "rs", "--rest", "--httpinterface" ]
+  mongo3:
+    image: "mongo:3.4"
+    ports:
+      - "30003:27017"
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--replSet", "rs", "--rest", "--httpinterface" ]
+  mongosetup:
+    image: "mongo:3.4"
+    volumes:
+      - ./scripts:/scripts
+    restart: always
+    entrypoint: [ "bash", "/scripts/mongosetup.sh" ]
+  influxdb:
+    image: "influxdb:latest"
+    ports:
+      - "8086:8086"
+    environment:
+      INFLUXDB_DB: portl_api_kamon
+      INFLUXDB_ADMIN_USER: admin
+  zipkin:
+    image: "openzipkin/zipkin:latest"
+    ports:
+      - "9411:9411"
+  chronograf:
+    image: "chronograf:latest"
+    ports:
+      - "8888:8888"
+    entrypoint: [ "chronograf", "--influxdb-url=http://influxdb:8086" ]

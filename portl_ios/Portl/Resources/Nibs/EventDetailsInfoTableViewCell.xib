@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="oEv-OC-7ir" customClass="EventDetailsInfoTableViewCell" customModule="Portl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oEv-OC-7ir" id="gg8-H8-NY8">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="192"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tomorrow at 7:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBk-Jf-a7R" userLabel="Date Label">
+                        <rect key="frame" x="16" y="29" width="165.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" name="color-light1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hi-Fi Lounge" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dk6-MW-s78" userLabel="Venue Label">
+                        <rect key="frame" x="16" y="51.5" width="73" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="color-light1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="icon_location_pin_red" translatesAutoresizingMaskIntoConstraints="NO" id="ymI-EF-uL0">
+                        <rect key="frame" x="16" y="71.5" width="11" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Qqb-Dr-mUY"/>
+                            <constraint firstAttribute="width" constant="11" id="ogc-Fn-Zom"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86d-JL-RdP" userLabel="Distance Label">
+                        <rect key="frame" x="34" y="71.5" width="51" height="15"/>
+                        <attributedString key="attributedText">
+                            <fragment content="0.2 Miles">
+                                <attributes>
+                                    <color key="NSColor" name="color-interactive1"/>
+                                    <font key="NSFont" metaFont="cellTitle"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4c5-eO-v1F" userLabel="About Label">
+                        <rect key="frame" x="16" y="94.5" width="319" height="57.5"/>
+                        <string key="text">Plaid ramps viral humblebrag neutra tote bag beard unicorn venmo. Cronut brunch meditation small batch taiyaki gentrify swag single-origin coffee. Photo booth kitsch pok pok tattooed lumbersexual portland lo-fi forage. Post-ironic copper mug 8-bit, pitchfork deep v farm-to-table microdosing messenger bag fingerstache helvetica la croix synth tote bag.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="color-light1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hck-5D-GCa">
+                        <rect key="frame" x="16" y="149.5" width="64" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="F8O-cp-4O1"/>
+                        </constraints>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="Show More">
+                                    <attributes>
+                                        <color key="NSColor" name="color-interactive1"/>
+                                        <font key="NSFont" metaFont="cellTitle"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                        <connections>
+                            <action selector="toggleShowMore:" destination="oEv-OC-7ir" eventType="touchUpInside" id="cNF-kI-c9y"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" ambiguous="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwc-B7-gwh">
+                        <rect key="frame" x="16" y="0.0" width="50" height="29"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <color key="textColor" name="color-light1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="86d-JL-RdP" firstAttribute="top" secondItem="Dk6-MW-s78" secondAttribute="bottom" constant="5.5" id="2C5-Ec-Dk8"/>
+                    <constraint firstAttribute="bottom" secondItem="4c5-eO-v1F" secondAttribute="bottom" constant="39.5" id="36q-t6-GWY"/>
+                    <constraint firstItem="4c5-eO-v1F" firstAttribute="leading" secondItem="gg8-H8-NY8" secondAttribute="leading" constant="16" id="3EK-h6-9SQ"/>
+                    <constraint firstItem="hck-5D-GCa" firstAttribute="leading" secondItem="gg8-H8-NY8" secondAttribute="leading" constant="16" id="8GE-54-IgA"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LBk-Jf-a7R" secondAttribute="trailing" constant="40" id="DN4-HA-RoE"/>
+                    <constraint firstItem="ymI-EF-uL0" firstAttribute="top" secondItem="Dk6-MW-s78" secondAttribute="bottom" constant="5.5" id="EzQ-7S-Xbt"/>
+                    <constraint firstItem="86d-JL-RdP" firstAttribute="leading" secondItem="ymI-EF-uL0" secondAttribute="trailing" constant="7" id="Lar-iE-B8W"/>
+                    <constraint firstItem="ymI-EF-uL0" firstAttribute="leading" secondItem="gg8-H8-NY8" secondAttribute="leading" constant="16" id="NWy-mX-1d3"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dk6-MW-s78" secondAttribute="trailing" constant="40" id="Ufe-pu-7RL"/>
+                    <constraint firstItem="Dk6-MW-s78" firstAttribute="top" secondItem="LBk-Jf-a7R" secondAttribute="bottom" constant="3" id="bbo-bV-MPT"/>
+                    <constraint firstItem="Dk6-MW-s78" firstAttribute="leading" secondItem="gg8-H8-NY8" secondAttribute="leading" constant="16" id="ca6-Lm-eaW"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4c5-eO-v1F" secondAttribute="trailing" constant="40" id="fes-U7-x4E"/>
+                    <constraint firstItem="qwc-B7-gwh" firstAttribute="leading" secondItem="gg8-H8-NY8" secondAttribute="leading" constant="16" id="itq-bW-VGw"/>
+                    <constraint firstItem="LBk-Jf-a7R" firstAttribute="top" secondItem="qwc-B7-gwh" secondAttribute="bottom" id="kbo-LX-a4y"/>
+                    <constraint firstAttribute="bottom" secondItem="hck-5D-GCa" secondAttribute="bottom" constant="15.5" id="lti-Ew-qiC"/>
+                    <constraint firstItem="LBk-Jf-a7R" firstAttribute="leading" secondItem="gg8-H8-NY8" secondAttribute="leading" constant="16" id="m57-99-s3C"/>
+                    <constraint firstItem="4c5-eO-v1F" firstAttribute="top" secondItem="86d-JL-RdP" secondAttribute="bottom" constant="8" id="mp1-LD-4Kj"/>
+                    <constraint firstItem="qwc-B7-gwh" firstAttribute="top" secondItem="gg8-H8-NY8" secondAttribute="top" id="t71-I2-x1o"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qwc-B7-gwh" secondAttribute="trailing" constant="16" id="upb-ai-eNE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="color-dark1"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLabel" destination="LBk-Jf-a7R" id="NFu-qX-4Mo"/>
+                <outlet property="distanceLabel" destination="86d-JL-RdP" id="dza-eO-r81"/>
+                <outlet property="expandableLabel" destination="4c5-eO-v1F" id="h8T-pQ-nMh"/>
+                <outlet property="showMoreButton" destination="hck-5D-GCa" id="xYb-st-tiR"/>
+                <outlet property="titleLabel" destination="qwc-B7-gwh" id="mrn-Pq-y5z"/>
+                <outlet property="venueLabel" destination="Dk6-MW-s78" id="B6g-pP-hOZ"/>
+            </connections>
+            <point key="canvasLocation" x="-476" y="-37.331334332833585"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_location_pin_red" width="12" height="12"/>
+        <namedColor name="color-dark1">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-interactive1">
+            <color red="0.92156862745098034" green="0.0" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-light1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

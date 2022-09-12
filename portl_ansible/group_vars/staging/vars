@@ -1,0 +1,9 @@
+invalidate_cache: yes
+
+invalidate_cache_wait: yes
+
+mongodb_data_device: /dev/nvme1n1
+
+project_environment: staging
+
+s3_artifact_prefix: dist/

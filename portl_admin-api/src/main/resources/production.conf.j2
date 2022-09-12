@@ -1,0 +1,124 @@
+include "akka"
+
+play.modules.enabled += "com.portl.admin.modules.ServiceModule"
+play.modules.enabled += "play.modules.reactivemongo.ReactiveMongoModule"
+
+play.filters.disabled += play.filters.csrf.CSRFFilter
+play.filters.disabled += play.filters.hosts.AllowedHostsFilter
+play.filters.enabled += play.filters.cors.CORSFilter
+
+play.filters.cors {
+  allowedOrigins = ["https://admin.portl.com"]
+}
+
+play.i18n.langs = [ "en" ]
+
+mongodb {
+  username = "{{ mongodb_username }}"
+  password = "{{ mongodb_password }}"
+
+  dbs {
+    main = portlAdmin
+    data = portl
+
+    bandsintown = bandsintown
+    eventbrite = eventbrite
+    meetup = meetup
+    ticketmaster = ticketmaster
+    songkick = songkick
+    ticketfly = ticketfly
+
+    backgroundTasks = backgroundTasks
+  }
+  baseUri = "{{ mongodb_uri }}"
+
+  uri = ${mongodb.baseUri}${mongodb.dbs.main}${mongodb.uriParams}
+  data.uri = ${mongodb.baseUri}${mongodb.dbs.data}${mongodb.uriParams}
+  eventbrite.uri = ${mongodb.baseUri}${mongodb.dbs.eventbrite}${mongodb.uriParams}
+  meetup.uri = ${mongodb.baseUri}${mongodb.dbs.meetup}${mongodb.uriParams}
+  ticketmaster.uri = ${mongodb.baseUri}${mongodb.dbs.ticketmaster}${mongodb.uriParams}
+  songkick.uri = ${mongodb.baseUri}${mongodb.dbs.songkick}${mongodb.uriParams}
+  ticketfly.uri = ${mongodb.baseUri}${mongodb.dbs.ticketfly}${mongodb.uriParams}
+  backgroundTasks.uri = ${mongodb.baseUri}${mongodb.dbs.backgroundTasks}${mongodb.uriParams}
+}
+
+apiKeys =
+{ "iOSv2" = "9c5a73bb-0313-4d26-8ac2-dff475adf4b3" }
+
+
+com.portl.integrations.bandsintown.token = "{{ bandsintown_token }}"
+com.portl.integrations.eventbrite.token = "{{ eventbrite_token }}"
+com.portl.integrations.opencage.token = "{{ opencage_token }}"
+{% if opencage_rate_limit_per_day %}
+    com.portl.integrations.opencage.rateLimitPerDay = "{{ opencage_rate_limit_per_day }}"
+{% endif %}
+{% if opencage_rate_limit_per_second %}
+    com.portl.integrations.opencage.rateLimitPerSecond = "{{ opencage_rate_limit_per_second }}"
+{% endif %}
+
+com.portl.integrations.songkick.token = "{{ songkick_token }}"
+com.portl.integrations.ticketmaster.token = "{{ ticketmaster_token }}"
+com.portl.integrations.meetup {
+  token = "{{ meetup_token }}"
+  // run MeetupService.MeetupFeedCollector on startup
+  autoStartFeed = true
+}
+
+play.http.secret.key = "{{ application_token }}"
+
+kamon {
+  environment {
+    service = "admin-api"
+
+    tags {
+      env = "production"
+    }
+  }
+
+  influxdb {
+
+    # Hostname and port in which your InfluxDB is running
+    hostname = "influxdb.portl.com"
+    port = 8086
+    authentication = {
+      user = "{{ influxdb_user }}"
+      password = "{{ influxdb_password }}"
+    }
+
+    # The database where to write in InfluxDB.
+    database = "portl"
+
+    # For histograms, which percentiles to count
+    percentiles = [50.0, 70.0, 90.0, 95.0, 99.0, 99.9]
+
+    # Allow including environment information as tags on all reported metrics.
+    additional-tags {
+
+      # Define whether specific environment settings will be included as tags in all exposed metrics. When enabled,
+      # the service, host and instance tags will be added using the values from Kamon.environment().
+      service = yes
+      host = yes
+      instance = yes
+
+      # Specifies which Kamon environment tags should be ignored. All unmatched tags will be always added to al metrics.
+      blacklisted-tags = []
+    }
+  }
+
+  metric {
+    tick-interval = 10 seconds
+  }
+
+  modules {
+    kamon-mongo {
+      requires-aspectj = yes
+    }
+  }
+
+  reporters = ["kamon.influxdb.InfluxDBReporter"]
+}
+
+// AWS S3
+s3.region = "{{ s3_region }}"
+s3.bucketName = "{{ s3_media_bucket }}"
+cloudfront.baseUrl = "{{ cloudfront_base_url }}"

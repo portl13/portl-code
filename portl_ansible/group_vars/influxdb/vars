@@ -1,0 +1,3 @@
+influxdb_data_device: /dev/nvme1n1
+
+influxdb_wal_device: /dev/nvme2n1

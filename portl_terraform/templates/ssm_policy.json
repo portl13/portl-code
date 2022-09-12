@@ -1,0 +1,56 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ssm:GetAutomationExecution",
+                "ssm:DescribePatchGroups",
+                "ssm:ListDocumentVersions",
+                "ssm:ListCommands",
+                "ssm:ListAssociationVersions",
+                "ssm:DescribeInstancePatches",
+                "ssm:ListInstanceAssociations",
+                "ssm:DescribePatchGroupState",
+                "ssm:GetMaintenanceWindowExecutionTaskInvocation",
+                "ssm:DescribeAutomationExecutions",
+                "ssm:GetManifest",
+                "ssm:DescribeMaintenanceWindowExecutionTaskInvocations",
+                "ssm:DescribeMaintenanceWindowExecutionTasks",
+                "ssm:DescribeAutomationStepExecutions",
+                "ssm:DescribeInstancePatchStates",
+                "ssm:DescribeInstancePatchStatesForPatchGroup",
+                "ssm:DescribeParameters",
+                "ssm:ListResourceDataSync",
+                "ssm:GetInventorySchema",
+                "ssm:ListDocuments",
+                "ssm:DescribeInstanceAssociationsStatus",
+                "ssm:ListInventoryEntries",
+                "ssm:GetMaintenanceWindowExecutionTask",
+                "ssm:GetDeployablePatchSnapshotForInstance",
+                "ssm:GetMaintenanceWindowExecution",
+                "ssm:DescribePatchBaselines",
+                "ssm:DescribeEffectiveInstanceAssociations",
+                "ssm:GetInventory",
+                "ssm:DescribeActivations",
+                "ssm:GetCommandInvocation",
+                "ssm:DescribeMaintenanceWindows",
+                "ssm:ListAssociations",
+                "ssm:ListCommandInvocations",
+                "ssm:DescribeAvailablePatches"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "ssm:Get*",
+                "ssm:Describe*",
+                "ssm:List*"
+            ],
+            "Resource": [ "${parameter_arn}" ]
+        }
+    ]
+}

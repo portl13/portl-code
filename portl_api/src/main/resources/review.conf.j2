@@ -1,0 +1,93 @@
+include "clustered-akka"
+
+akka {
+  #log-config-on-start = true
+}
+
+play.modules.enabled += "com.portl.api.modules.ServiceModule"
+play.modules.enabled += "play.modules.reactivemongo.ReactiveMongoModule"
+play.modules.enabled += "com.portl.api.modules.LocalBackgroundServiceModule"
+
+play.filters.disabled += play.filters.hosts.AllowedHostsFilter
+play.filters.disabled += play.filters.csrf.CSRFFilter
+
+play.i18n.langs = [ "en" ]
+
+mongodb {
+  host = "mongo1.staging.portl.com:27017,mongo2.staging.portl.com:27017,mongo3.staging.portl.com:27017"
+  username = "{{ mongodb_username }}"
+  password = "{{ mongodb_password }}"
+  dbs {
+    main = portl_review
+  }
+  baseUri = "mongodb://"${mongodb.username}":"${mongodb.password}"@"${mongodb.host}"/"
+{#  uriParams = "?ssl=true&replicaSet={{ replica_set }}"#}
+  uriParams = "?replicaSet={{ replica_set }}&authenticationDatabase=admin"
+  uri = ${mongodb.baseUri}${mongodb.dbs.main}${mongodb.uriParams}
+}
+
+apiConsumers = {
+  iOSv2 = {
+    key = 9c5a73bb-0313-4d26-8ac2-dff475adf4b3
+  }
+  web = {
+      key = 306a2ac0-0e4d-11eb-adc1-0242ac120002
+  }
+}
+
+com.portl.api.defaultSearchRadiusMiles = 25
+com.portl.api.defaultStartTimeWindowDays = 3
+{#akka.remote.netty.tcp.hostname = "{{ base_hostname }}"#}
+play.http.secret.key = "{{ application_token }}"
+
+kamon {
+  environment {
+    service = "portl-api"
+
+    tags {
+      env = "review"
+    }
+  }
+
+  influxdb {
+
+    # Hostname and port in which your InfluxDB is running
+    hostname = "influxdb.portl.com"
+    port = 8086
+    authentication = {
+      user = "{{ influxdb_user }}"
+      password = "{{ influxdb_password }}"
+    }
+
+    # The database where to write in InfluxDB.
+    database = "portl"
+
+    # For histograms, which percentiles to count
+    percentiles = [50.0, 70.0, 90.0, 95.0, 99.0, 99.9]
+
+    # Allow including environment information as tags on all reported metrics.
+    additional-tags {
+
+      # Define whether specific environment settings will be included as tags in all exposed metrics. When enabled,
+      # the service, host and instance tags will be added using the values from Kamon.environment().
+      service = yes
+      host = yes
+      instance = yes
+
+      # Specifies which Kamon environment tags should be ignored. All unmatched tags will be always added to al metrics.
+      blacklisted-tags = []
+    }
+  }
+
+  metric {
+    tick-interval = 10 seconds
+  }
+
+  modules {
+    kamon-mongo {
+      requires-aspectj = yes
+    }
+  }
+
+  reporters = ["kamon.influxdb.InfluxDBReporter"]
+}

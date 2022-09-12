@@ -1,0 +1,165 @@
+{
+    "profile_v2": {
+        {uid} : {
+            "events": {
+                "going": {
+                    event_id: {
+                        "action_date": date_joined,
+                        "status": string (g, i),
+                        "event_date": string
+                    }
+                },
+                "favorite": {
+                    event_id: {
+                        "action_date": date_joined,
+                        "event_date": string
+                    }
+                },
+                "share": {
+                    [action_date]: event_id
+                }
+            },
+
+            "friends": {
+
+            },
+            
+            "unseen_livefeed": {
+                (auto_id_from_livefeed): date
+            },
+
+            "conversations": {
+                {id} : {
+                    "notification": bool,
+                    "has_new": bool,
+                    "last_read": string,
+                    "is_archived": bool
+                }
+            },
+
+            "following": {
+                "artist":  {
+                    {id}: true
+                },
+                "venue": {
+                    {id}: true
+                }
+            }
+        }
+    },
+
+    "profile_private": {
+        {uid}: {
+            "votes": {
+                "conversation": {
+                    {conversation_id}: {
+                        {message_id}: bool
+                    }
+                },
+                "experience": {
+                    {profile_id}: {
+                        {experience_id}: bool
+                    }
+                }
+            }
+        }
+    },
+
+    "event_v2": { 
+        {id} : {
+            "going_count": 0,
+            "interested_count": 0,
+            "going": {
+                profile_id: {
+                    status: string,
+                    date: string
+                }
+            }
+        }
+    },
+
+    "livefeed": {
+        [profile_id]: {
+            [auto_id]: {
+                "date": "",
+                "profile_id": "",
+                "type": "",
+                "event_id": "",
+                "message": ""?,
+                "image_url": ""?,
+                "message_key": "",
+                "reply_thread_key": ""
+            }
+        }
+    }
+    /*
+    conversation keys
+    =======
+    type- c(ommunity), d(irect), s(hare)
+    eid = event id
+    pid = profile id
+    adate = action date
+
+    community - c_eid
+    direct - d_pid_pid (pids alphabetical)
+    share - s_eid_pid_adate
+    reply - r_messageid
+    */
+
+    "conversation": {
+        {id} : {
+            "senders": {
+                [profile_id]: date
+            },
+            "overview": {
+                "message_count": 0,
+                "sender_count": 0,
+                "comment_count": 0,
+                "image_count": 0,
+                "first_message": "",
+                "last_message": "",
+                "last_sender": "",
+                "last_activity": ""
+            },
+            "messages": {
+                [auto_id]: {
+                    "profile_id": "",
+                    "sent": "",
+                    "message": "",
+                    "is_html": "",
+                    "image_url": "",
+                    "image_height": 0,
+                    "image_width": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "vote_total": 0
+                }
+            }
+        }
+    },
+
+    "experience": {
+        [profile_id]: {
+            [auto_id]: {
+                "profile_id": "",
+                "sent": "",
+                "message": "",
+                "is_html": "",
+                "image_url": "",
+                "image_height": 0,
+                "image_width": 0,
+                "upvotes": 0,
+                "downvotes": 0     
+            }
+        }
+    }, 
+
+    "following": {
+        "artist": {
+            {id} : [{user_id}]
+        },
+        "venue": {
+            {id} : [{user_id}]
+        }
+    }
+}

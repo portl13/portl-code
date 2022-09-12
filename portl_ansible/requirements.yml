@@ -1,0 +1,85 @@
+---
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/apache.git
+  version: v1.0.1
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/apache_mod_mpm_prefork.git
+  version: v0.1.1
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/apache_mod_mpm_worker.git
+  version: v0.1.1
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/apache_mod_fcgid.git
+  version: v0.1.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/apache_mod_proxy.git
+  version: v0.1.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/apache_mod_ssl.git
+  version: v0.1.1
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/apache_mod_wsgi.git
+  version: v0.1.1
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/archive_mysql_db.git
+  version: v0.1.5
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/aws_resources.git
+  version: v1.0.3
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/base.git
+  version: v2.7.1
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/docker.git
+  version: v1.2.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/dns_forwarder.git
+  version: v0.2.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/grafana.git
+  version: v1.2.1
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/graylog.git
+  version: v1.5.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/golden_image.git
+  version: v0.4.1
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/haversack.git
+  version: v1.3.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/influxdb.git
+  version: v1.0.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/jenkins.git
+  version: v1.6.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/letsencrypt_resources.git
+  version: v0.5.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/mongodb.git
+  version: v1.3.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/mongodb_agent.git
+  version: v0.2.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/mongodb_cluster.git
+  version: v1.2.1
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/mysql.git
+  version: v1.1.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/nexus.git
+  version: v1.5.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/oracle_java.git
+  version: v0.4.3
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/python_pip.git
+  version: v0.1.1
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/zabbix_agent.git
+  version: v1.3.0
+
+- src: git+ssh://git@stash.concentricsky.com/ansible/zabbix_server.git
+  version: v1.5.0

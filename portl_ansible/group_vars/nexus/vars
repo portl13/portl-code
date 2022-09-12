@@ -1,0 +1,5 @@
+nexus_data_device: /dev/xvdb
+
+nexus_java_min_mem: -Xms1200m
+
+nexus_java_max_mem: -Xmx1200m

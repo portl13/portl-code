@@ -1,0 +1,252 @@
+PODS:
+  - Alamofire (4.9.1)
+  - APIEngine (1.0.0):
+    - Alamofire (~> 4.5)
+    - RxAlamofire (~> 5.0)
+    - RxSwift (~> 5.0)
+  - APIService (1.0.0)
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - CropViewController (2.5.2)
+  - CSkyUtil (1.0.0)
+  - Fabric (1.10.2)
+  - Firebase/Auth (6.17.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 6.4.3)
+  - Firebase/Core (6.17.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.2.2)
+  - Firebase/CoreOnly (6.17.0):
+    - FirebaseCore (= 6.6.2)
+  - Firebase/Database (6.17.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 6.1.4)
+  - Firebase/Functions (6.17.0):
+    - Firebase/CoreOnly
+    - FirebaseFunctions (~> 2.5.1)
+  - Firebase/Messaging (6.17.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 4.2.1)
+  - Firebase/Storage (6.17.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 3.5.0)
+  - FirebaseAnalytics (6.2.2):
+    - FirebaseCore (~> 6.6)
+    - FirebaseInstanceID (~> 4.3)
+    - GoogleAppMeasurement (= 6.2.2)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - FirebaseAnalyticsInterop (1.5.0)
+  - FirebaseAuth (6.4.3):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.5)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.1.0)
+  - FirebaseCore (6.6.2):
+    - FirebaseCoreDiagnostics (~> 1.2)
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+  - FirebaseCoreDiagnostics (1.2.4):
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleDataTransportCCTSupport (~> 3.0)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseDatabase (6.1.4):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - leveldb-library (~> 1.22)
+  - FirebaseFunctions (2.5.1):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseInstallations (1.2.0):
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/Environment (~> 6.6)
+    - GoogleUtilities/UserDefaults (~> 6.6)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstanceID (4.3.4):
+    - FirebaseCore (~> 6.6)
+    - FirebaseInstallations (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/UserDefaults (~> 6.5)
+  - FirebaseMessaging (4.2.1):
+    - FirebaseAnalyticsInterop (~> 1.5)
+    - FirebaseCore (~> 6.6)
+    - FirebaseInstanceID (~> 4.3)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.5)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Reachability (~> 6.5)
+    - GoogleUtilities/UserDefaults (~> 6.5)
+    - Protobuf (>= 3.9.2, ~> 3.9)
+  - FirebaseStorage (3.5.0):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleAppMeasurement (6.2.2):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleDataTransport (6.0.0)
+  - GoogleDataTransportCCTSupport (3.0.0):
+    - GoogleDataTransport (~> 6.0)
+    - nanopb (~> 0.3.901)
+  - GoogleUtilities/AppDelegateSwizzler (6.6.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.6.0):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.6.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.6.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.6.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.6.0)"
+  - GoogleUtilities/Reachability (6.6.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.6.0):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.4.0)
+  - leveldb-library (1.22)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - PromisesObjC (1.2.8)
+  - Protobuf (3.11.4)
+  - RxAlamofire (5.1.0):
+    - RxAlamofire/Core (= 5.1.0)
+  - RxAlamofire/Core (5.1.0):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 5.0)
+  - RxSwift (5.1.1)
+  - SDWebImage (5.7.3):
+    - SDWebImage/Core (= 5.7.3)
+  - SDWebImage/Core (5.7.3)
+  - "UITextView+Placeholder (1.4.0)"
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - "APIEngine (from `ssh://git@stash.concentricsky.com/internal_ios/api_engine.git`)"
+  - "APIService (from `ssh://git@stash.concentricsky.com/internal_ios/api_service.git`)"
+  - Crashlytics
+  - CropViewController
+  - "CSkyUtil (from `ssh://git@stash.concentricsky.com/internal_ios/csky_util.git`)"
+  - Fabric
+  - Firebase/Auth (< 7)
+  - Firebase/Core (= 6.17)
+  - Firebase/Database (< 7)
+  - Firebase/Functions (< 7)
+  - Firebase/Messaging (< 7)
+  - Firebase/Storage (< 7)
+  - RxAlamofire (~> 5.0)
+  - RxSwift (~> 5.0)
+  - SDWebImage
+  - "UITextView+Placeholder"
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Crashlytics
+    - CropViewController
+    - Fabric
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAnalyticsInterop
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseDatabase
+    - FirebaseFunctions
+    - FirebaseInstallations
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FirebaseStorage
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - leveldb-library
+    - nanopb
+    - PromisesObjC
+    - Protobuf
+    - RxAlamofire
+    - RxSwift
+    - SDWebImage
+    - "UITextView+Placeholder"
+
+EXTERNAL SOURCES:
+  APIEngine:
+    :git: "ssh://git@stash.concentricsky.com/internal_ios/api_engine.git"
+  APIService:
+    :git: "ssh://git@stash.concentricsky.com/internal_ios/api_service.git"
+  CSkyUtil:
+    :git: "ssh://git@stash.concentricsky.com/internal_ios/csky_util.git"
+
+CHECKOUT OPTIONS:
+  APIEngine:
+    :commit: 87c27200ed373f5c1bf7014e81d252bc75cf36cf
+    :git: "ssh://git@stash.concentricsky.com/internal_ios/api_engine.git"
+  APIService:
+    :commit: 2736fc187a061a669d8ef307a2cb312886b7ffd4
+    :git: "ssh://git@stash.concentricsky.com/internal_ios/api_service.git"
+  CSkyUtil:
+    :commit: 6ca0e3794a227a78d982470bc790fe223a152f16
+    :git: "ssh://git@stash.concentricsky.com/internal_ios/csky_util.git"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  APIEngine: 75293ad2ace55862c66411598994dcdd9dc593aa
+  APIService: b010608cd5281a47a90471a4e91e3bcc08492c95
+  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
+  CropViewController: 1aac40093c5739e60d992b04724a55d12a689a4c
+  CSkyUtil: 09ba842517608240333ed882a4119f35283756d0
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  Firebase: 2672e5636b42f977177716317e68346ae5e9de25
+  FirebaseAnalytics: cf95d3aab897612783020fbd98401d5366f135ee
+  FirebaseAnalyticsInterop: 3f86269c38ae41f47afeb43ebf32a001f58fcdae
+  FirebaseAuth: 5ce2b03a3d7fe56b7a6e4c5ec7ff1522890b1d6f
+  FirebaseAuthInterop: a0f37ae05833af156e72028f648d313f7e7592e9
+  FirebaseCore: a1dd9dd6355a8356dd30a8f076839e242285a81c
+  FirebaseCoreDiagnostics: b59c024493a409f8aecba02c99928d0d8431d159
+  FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseDatabase: 0144e0706a4761f1b0e8679572eba8095ddb59be
+  FirebaseFunctions: 5af7c35d1c5e41608fecbb667eb6c4e672e318d0
+  FirebaseInstallations: 2119fb3e46b0a88bfdbf12562f855ee3252462fa
+  FirebaseInstanceID: cef67c4967c7cecb56ea65d8acbb4834825c587b
+  FirebaseMessaging: 9e23f9d603b1fb71ccbeb48d79bf0d4ba0272c84
+  FirebaseStorage: 6c5263796af3b1be82ed173598aade47535fe125
+  GoogleAppMeasurement: d0560d915abf15e692e8538ba1d58442217b6aff
+  GoogleDataTransport: 061fe7d9b476710e3cd8ea51e8e07d8b67c2b420
+  GoogleDataTransportCCTSupport: 0f39025e8cf51f168711bd3fb773938d7e62ddb5
+  GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+  RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SDWebImage: 97351f6582ceca541ea294ba66a1fcb342a331c2
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+
+PODFILE CHECKSUM: 109622681d8b639723f46da3cef7b3010ce39f29
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+    environment {
+        projectName = 'portl-commons'
+    }
+    stages {
+        stage('Setup') {
+            steps {
+                script {
+                    gitHash = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%H'").trim()
+                    hasTag = sh(returnStatus: true, script: "git describe --exact-match --tags ${gitHash}")
+                    if (hasTag == 0) {
+                        gitVersion = sh(returnStdout: true, script: "git describe --exact-match --tags ${gitHash}").trim()
+                    } else {
+                        gitVersion = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
+                    }
+                    echo gitVersion
+                }
+            }
+        }
+        stage('Compile') {
+            steps {
+                sh "${tool name: 'sbt-0.13.15', type: 'org.jvnet.hudson.plugins.SbtPluginBuilder$SbtInstallation'}/bin/sbt -Dsbt.repository.config=repositories -Dsbt.override.build.repos=true -Dsbt.log.noformat=true compile"
+            }
+        }
+        stage('Test') {
+            steps {
+                sh "${tool name: 'sbt-0.13.15', type: 'org.jvnet.hudson.plugins.SbtPluginBuilder$SbtInstallation'}/bin/sbt -Dsbt.repository.config=repositories -Dsbt.override.build.repos=true -Dsbt.log.noformat=true test"
+            }
+        }
+        stage('Publish') {
+            steps {
+                sh "${tool name: 'sbt-0.13.15', type: 'org.jvnet.hudson.plugins.SbtPluginBuilder$SbtInstallation'}/bin/sbt -Dsbt.repository.config=repositories -Dsbt.override.build.repos=true -Dsbt.log.noformat=true publish"
+            }
+        }
+    }
+}

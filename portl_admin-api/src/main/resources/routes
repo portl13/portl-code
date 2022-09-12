@@ -1,0 +1,87 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET      /testCode                   com.portl.admin.controllers.TestSomeCodeController.runSomeCode
+GET      /fixMeetupPhotos            com.portl.admin.controllers.MeetupPhotosFixController.addGroupPhotoToMeetupEvents
+
+# Artist API
+GET      /api/v1/artist              com.portl.admin.controllers.ArtistsController.listAll(page: Int ?= 0, pageSize: Int ?= 50)
+POST     /api/v1/artist              com.portl.admin.controllers.ArtistsController.create
+PUT      /api/v1/artist/:id          com.portl.admin.controllers.ArtistsController.update(id: java.util.UUID)
+DELETE   /api/v1/artist/:id          com.portl.admin.controllers.ArtistsController.delete(id: java.util.UUID)
+POST     /api/v1/artist/bulkCreate   com.portl.admin.controllers.ArtistsController.bulkCreate
+
+# Venue API
+GET      /api/v1/venue               com.portl.admin.controllers.VenueController.listAll(page: Int ?= 0, pageSize: Int ?= 50)
+POST     /api/v1/venue               com.portl.admin.controllers.VenueController.create
+PUT      /api/v1/venue/:id           com.portl.admin.controllers.VenueController.update(id: java.util.UUID)
+DELETE   /api/v1/venue/:id           com.portl.admin.controllers.VenueController.delete(id: java.util.UUID)
+
+# Event API
+GET      /api/v1/event               com.portl.admin.controllers.EventController.listAll(page: Int ?= 0, pageSize: Int ?= 50)
+GET      /api/v1/event/:id           com.portl.admin.controllers.EventController.detail(id: java.util.UUID)
+POST     /api/v1/event               com.portl.admin.controllers.EventController.create
+PUT      /api/v1/event/:id           com.portl.admin.controllers.EventController.update(id: java.util.UUID)
+DELETE   /api/v1/event/:id           com.portl.admin.controllers.EventController.delete(id: java.util.UUID)
+POST     /api/v1/event/bulkCreate    com.portl.admin.controllers.EventController.bulkCreate
+
+# SeededArtist API
+GET      /api/v1/seededArtist        com.portl.admin.controllers.SeededArtistsController.listAll(page: Int ?= 0, pageSize: Int ?= 50)
+POST     /api/v1/seededArtist        com.portl.admin.controllers.SeededArtistsController.create
+PUT      /api/v1/seededArtist/:id    com.portl.admin.controllers.SeededArtistsController.update(id: java.util.UUID)
+DELETE   /api/v1/seededArtist/:id    com.portl.admin.controllers.SeededArtistsController.delete(id: java.util.UUID)
+POST     /api/v1/seededArtist/bulkCreate    com.portl.admin.controllers.SeededArtistsController.bulkCreate
+
+# Shared
+POST     /api/v1/fileUploadConfig    com.portl.admin.controllers.FileUploadController.createFileUploadConfig
+
+# Integrations
+POST    /aggregation/:eventSource/start      com.portl.admin.controllers.AggregationController.startAggregation(eventSource: com.portl.commons.models.EventSource)
+POST    /aggregation/:eventSource/stop       com.portl.admin.controllers.AggregationController.stopAggregation(eventSource: com.portl.commons.models.EventSource)
+GET     /aggregation/:eventSource/status     com.portl.admin.controllers.AggregationController.getAggregationStatus(eventSource: com.portl.commons.models.EventSource)
+GET     /aggregation/:eventSource/schedule   com.portl.admin.controllers.AggregationController.getAggregationSchedule(eventSource: com.portl.commons.models.EventSource)
+
+POST    /collection/:eventSource/start      com.portl.admin.controllers.CollectionController.startCollection(eventSource: com.portl.commons.models.EventSource)
+POST    /collection/:eventSource/stop       com.portl.admin.controllers.CollectionController.stopCollection(eventSource: com.portl.commons.models.EventSource)
+GET     /collection/:eventSource/status     com.portl.admin.controllers.CollectionController.getCollectionStatus(eventSource: com.portl.commons.models.EventSource)
+GET     /collection/:eventSource/schedule   com.portl.admin.controllers.CollectionController.getCollectionSchedule(eventSource: com.portl.commons.models.EventSource)
+
+POST    /geocoding/:eventSource/start      com.portl.admin.controllers.GeocodingController.startGeocoding(eventSource: com.portl.commons.models.EventSource)
+POST    /geocoding/:eventSource/stop       com.portl.admin.controllers.GeocodingController.stopGeocoding(eventSource: com.portl.commons.models.EventSource)
+GET     /geocoding/:eventSource/status     com.portl.admin.controllers.GeocodingController.getGeocodingStatus(eventSource: com.portl.commons.models.EventSource)
+GET     /geocoding/:eventSource/schedule   com.portl.admin.controllers.GeocodingController.getGeocodingSchedule(eventSource: com.portl.commons.models.EventSource)
+
+POST    /periodicTasks/offloadEvents/start          com.portl.admin.controllers.PeriodicTasksController.start
+GET     /periodicTasks/offloadEvents/status         com.portl.admin.controllers.PeriodicTasksController.getStatus
+GET     /periodicTasks/offloadEvents/schedule       com.portl.admin.controllers.PeriodicTasksController.getSchedule
+POST    /periodicTasks/cacheArtistImages/start      com.portl.admin.controllers.PeriodicTasksController.startArtistImageCacher
+GET     /periodicTasks/cacheArtistImages/status     com.portl.admin.controllers.PeriodicTasksController.getArtistImageCacherStatus
+GET     /periodicTasks/cacheArtistImages/schedule   com.portl.admin.controllers.PeriodicTasksController.getArtistImageCacherSchedule
+POST    /periodicTasks/cacheArtistImages/stop       com.portl.admin.controllers.PeriodicTasksController.stopArtistImageCacher
+POST    /periodicTasks/pruneDuplicateVenues/start          com.portl.admin.controllers.PeriodicTasksController.startPruneVenues
+GET     /periodicTasks/pruneDuplicateVenues/status         com.portl.admin.controllers.PeriodicTasksController.getPruneVenuesStatus
+GET     /periodicTasks/pruneDuplicateVenues/schedule       com.portl.admin.controllers.PeriodicTasksController.getPruneVenuesSchedule
+POST    /periodicTasks/pruneDuplicateEvents/start          com.portl.admin.controllers.PeriodicTasksController.startPruneEvents
+GET     /periodicTasks/pruneDuplicateEvents/status         com.portl.admin.controllers.PeriodicTasksController.getPruneEventsStatus
+GET     /periodicTasks/pruneDuplicateEvents/schedule       com.portl.admin.controllers.PeriodicTasksController.getPruneEventsSchedule
+
+POST    /integrations/bt/importDescriptions         com.portl.admin.controllers.IntegrationsController.importBandsintownDescriptions
+GET     /integrations/eb/:lng/:lat/:radius          com.portl.admin.controllers.IntegrationsController.getEventbrite(lat: String, lng: String, radius: String, raw: Boolean ?= false)
+GET     /integrations/mu/:lng/:lat                  com.portl.admin.controllers.IntegrationsController.getMeetup(lat: Double, lng: Double, offset: Int ?=0, raw: Boolean ?= false)
+GET     /integrations/sk/:lng/:lat                  com.portl.admin.controllers.IntegrationsController.getSongkick(lat: Double, lng: Double, page: Int ?= 1, raw: Boolean ?= false)
+GET     /integrations/tm/:lng/:lat                  com.portl.admin.controllers.IntegrationsController.getTicketmaster(lat: String, lng: String, raw: Boolean ?= false)
+GET     /integrations/tf/:orgId                     com.portl.admin.controllers.IntegrationsController.getTicketfly(orgId: Int, pageNum: Int ?= 1, raw: Boolean ?= false)
+
+# Admin
+GET     /admin/counts                               com.portl.admin.controllers.AdminController.counts()
+POST /admin/pruneDuplicateVenues/:venueName com.portl.admin.controllers.AdminController.pruneDuplicateVenuesByName(venueName: String, matchName: Boolean ?= true)
+POST /admin/pruneDuplicateVenues            com.portl.admin.controllers.AdminController.pruneDuplicateVenues
+POST /admin/pruneDuplicateArtists com.portl.admin.controllers.AdminController.pruneDuplicateArtists()
+POST /admin/pruneDuplicateEvents/:eventName com.portl.admin.controllers.AdminController.pruneDuplicateEventsByName(eventName: String)
+POST /admin/pruneDuplicateEvents com.portl.admin.controllers.AdminController.pruneDuplicateEvents()
+POST /admin/pruneVenuesWithNoEvents         com.portl.admin.controllers.AdminController.pruneVenuesWithNoEvents
+
+GET     /status/buildInfo           com.portl.admin.controllers.StatusController.buildInfo
+GET     /status/dbHealth            com.portl.admin.controllers.StatusController.dbHealth
+GET     /status/checkIndexes        com.portl.admin.controllers.StatusController.checkIndexes

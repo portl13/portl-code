@@ -1,0 +1,29 @@
+{
+  "name": "portl_firebase_admin",
+  "version": "0.0.1",
+  "description": "admin tools for managing PORTL firebase resources",
+  "main": "index.js",
+  "scripts": {
+    "migrate1_2": "firebase use default && FROM_MODEL=1 TO_MODEL=2 ts-node portl_firebase_migrate.ts && firebase deploy",
+    "migrate1_2_prod": "firebase use production && PRODUCTION=1 FROM_MODEL=1 TO_MODEL=2 ts-node portl_firebase_migrate.ts && firebase deploy",
+    "functions_only": "firebase use default && GOOGLE_APPLICATION_CREDENTIALS='./service_account/portl-dev-1d042-firebase-adminsdk-zodob-15e4ff44de.json' firebase deploy --only functions",
+    "functions_only_prod": "firebase use production && firebase deploy --only functions",
+    "rules_only": "firebase use default && firebase deploy --only database",
+    "rules_only_prod": "firebase use production && firebase deploy --only database",
+    "rules_and_functions": "firebase use default && firebase deploy",
+    "rules_and_functions_prod": "firebase use production && firebase deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jcreed",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "~8.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "engines": {
+    "node": "8"
+  }
+}

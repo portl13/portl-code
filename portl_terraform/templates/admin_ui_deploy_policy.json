@@ -1,0 +1,39 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket"],
+      "Resource": ["${s3_bucket_arn}"]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:DeleteObject"
+      ],
+      "Resource": ["${s3_bucket_arn}/*"]
+    },
+    {
+       "Effect":"Allow",
+       "Action":[
+          "acm:ListCertificates",
+          "cloudfront:GetDistribution",
+          "cloudfront:GetDistributionConfig",
+          "cloudfront:ListDistributions",
+          "cloudfront:ListCloudFrontOriginAccessIdentities",
+          "cloudfront:CreateInvalidation",
+          "cloudfront:GetInvalidation",
+          "cloudfront:ListInvalidations",
+          "elasticloadbalancing:DescribeLoadBalancers",
+          "iam:ListServerCertificates",
+          "sns:ListSubscriptionsByTopic",
+          "sns:ListTopics",
+          "waf:GetWebACL",
+          "waf:ListWebACLs"
+       ],
+       "Resource":"*"
+    }
+  ]
+}

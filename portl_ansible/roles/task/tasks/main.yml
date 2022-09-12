@@ -1,0 +1,13 @@
+---
+
+- name: TASK | Install MongoDB Tools
+  include_role:
+    name: mongodb_resources
+    tasks_from: install_mongodb_tools.yml
+  tags: task
+
+- name: TASK | Create Developers
+  include_role:
+    name: site_resources
+    tasks_from: create_developers.yml
+  tags: task

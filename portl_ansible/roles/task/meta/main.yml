@@ -1,0 +1,5 @@
+---
+
+dependencies:
+  - { role: site_resources }
+  - { role: mongodb_resources }

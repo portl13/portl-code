@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Id": "PolicyForCloudFrontPrivateContent",
+  "Statement": [
+    {
+      "Sid": " Grant a CloudFront Origin Identity access to support private content",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "${CF_access_identity_arn}"
+      },
+      "Action": "s3:GetObject",
+      "Resource": "${admin_ui_s3_arn}/*"
+    }
+  ]
+}

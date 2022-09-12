@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="1">
+    <entity name="Conversation" representedClassName=".Conversation" syncable="YES">
+        <attribute name="key" attributeType="String"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ConversationMessage" inverseName="conversation" inverseEntity="ConversationMessage"/>
+        <relationship name="overview" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ConversationOverview" inverseName="conversation" inverseEntity="ConversationOverview"/>
+        <relationship name="senders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ConversationSender" inverseName="conversation" inverseEntity="ConversationSender"/>
+    </entity>
+    <entity name="ConversationMessage" representedClassName=".ConversationMessage" syncable="YES">
+        <attribute name="eventIdentifier" optional="YES" attributeType="String"/>
+        <attribute name="imageHeightValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="imageWidthValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isHTML" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="key" attributeType="String"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="profileID" attributeType="String"/>
+        <attribute name="sent" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="videoDuration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="videoURL" optional="YES" attributeType="String"/>
+        <attribute name="voteTotal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="conversation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Conversation" inverseName="messages" inverseEntity="Conversation"/>
+    </entity>
+    <entity name="ConversationOverview" representedClassName=".ConversationOverview" syncable="YES">
+        <attribute name="commentCount" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="conversationKey" optional="YES" attributeType="String"/>
+        <attribute name="firstMessage" optional="YES" attributeType="String"/>
+        <attribute name="imageCount" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastActivity" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastImageURL" optional="YES" attributeType="String"/>
+        <attribute name="lastMessage" optional="YES" attributeType="String"/>
+        <attribute name="lastMessageKey" optional="YES" attributeType="String"/>
+        <attribute name="lastSender" attributeType="String"/>
+        <attribute name="lastVideoURL" optional="YES" attributeType="String"/>
+        <attribute name="messageCount" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="senderCount" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="videoCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="conversation" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Conversation" inverseName="overview" inverseEntity="Conversation"/>
+        <relationship name="directProfile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="conversationOverviews" inverseEntity="Profile"/>
+    </entity>
+    <entity name="ConversationSender" representedClassName=".ConversationSender" syncable="YES">
+        <attribute name="lastActivity" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="profileID" attributeType="String"/>
+        <relationship name="conversation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Conversation" inverseName="senders" inverseEntity="Conversation"/>
+    </entity>
+    <entity name="Livefeed" representedClassName=".Livefeed" syncable="YES">
+        <attribute name="userID" attributeType="String"/>
+        <relationship name="notifications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LivefeedNotification" inverseName="livefeeds" inverseEntity="LivefeedNotification"/>
+    </entity>
+    <entity name="LivefeedNotification" representedClassName=".LivefeedNotification" syncable="YES">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="eventID" optional="YES" attributeType="String"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="markedForDeletion" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="messageKey" optional="YES" attributeType="String"/>
+        <attribute name="notificationKey" attributeType="String"/>
+        <attribute name="notificationTypeValue" attributeType="String"/>
+        <attribute name="replyThreadKey" optional="YES" attributeType="String"/>
+        <attribute name="userID" attributeType="String"/>
+        <attribute name="videoDuration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="videoURL" optional="YES" attributeType="String"/>
+        <attribute name="voteTotal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="livefeeds" toMany="YES" deletionRule="Nullify" destinationEntity="Livefeed" inverseName="notifications" inverseEntity="Livefeed"/>
+    </entity>
+    <entity name="Profile" representedClassName=".Profile" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String"/>
+        <attribute name="bio" optional="YES" attributeType="String"/>
+        <attribute name="birthDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="email" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="genderValue" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="showJoined" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="uid" attributeType="String"/>
+        <attribute name="username" attributeType="String"/>
+        <attribute name="website" optional="YES" attributeType="String"/>
+        <attribute name="zipcode" optional="YES" attributeType="String"/>
+        <relationship name="conversationOverviews" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ConversationOverview" inverseName="directProfile" inverseEntity="ConversationOverview"/>
+        <relationship name="conversations" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ProfileConversationInfo" inverseName="profile" inverseEntity="ProfileConversationInfo"/>
+        <relationship name="events" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ProfileEvents" inverseName="profile" inverseEntity="ProfileEvents"/>
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ProfileFriendData" inverseName="profile" inverseEntity="ProfileFriendData"/>
+        <relationship name="votes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProfileVote" inverseName="profile" inverseEntity="ProfileVote"/>
+    </entity>
+    <entity name="ProfileConversationInfo" representedClassName=".ProfileConversationInfo" syncable="YES">
+        <attribute name="conversationKey" optional="YES" attributeType="String"/>
+        <attribute name="hasNew" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lastSeen" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="notification" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="profile" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="conversations" inverseEntity="Profile"/>
+    </entity>
+    <entity name="ProfileEvents" representedClassName=".ProfileEvents" syncable="YES">
+        <relationship name="favorites" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ProfileFavoriteData" inverseName="profileEvents" inverseEntity="ProfileFavoriteData"/>
+        <relationship name="going" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ProfileGoingData" inverseName="profileEvents" inverseEntity="ProfileGoingData"/>
+        <relationship name="profile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="events" inverseEntity="Profile"/>
+        <relationship name="share" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ProfileShare" inverseName="profileEvents" inverseEntity="ProfileShare"/>
+    </entity>
+    <entity name="ProfileFavoriteData" representedClassName=".ProfileFavoriteData" syncable="YES">
+        <attribute name="actionDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="eventDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="eventID" attributeType="String"/>
+        <relationship name="profileEvents" maxCount="1" deletionRule="Nullify" destinationEntity="ProfileEvents" inverseName="favorites" inverseEntity="ProfileEvents"/>
+    </entity>
+    <entity name="ProfileFriendData" representedClassName=".ProfileFriendData" syncable="YES">
+        <attribute name="friendProfileID" attributeType="String"/>
+        <attribute name="sinceDate" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="profile" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="friends" inverseEntity="Profile"/>
+    </entity>
+    <entity name="ProfileGoingData" representedClassName=".ProfileGoingData" syncable="YES">
+        <attribute name="actionDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="eventDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="eventID" attributeType="String"/>
+        <attribute name="statusValue" optional="YES" attributeType="String"/>
+        <relationship name="profileEvents" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProfileEvents" inverseName="going" inverseEntity="ProfileEvents"/>
+    </entity>
+    <entity name="ProfileShare" representedClassName=".ProfileShare" syncable="YES">
+        <attribute name="actionDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="eventID" attributeType="String"/>
+        <relationship name="profileEvents" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProfileEvents" inverseName="share" inverseEntity="ProfileEvents"/>
+    </entity>
+    <entity name="ProfileVote" representedClassName=".ProfileVote" syncable="YES">
+        <attribute name="conversationKey" optional="YES" attributeType="String"/>
+        <attribute name="experienceProfileID" optional="YES" attributeType="String"/>
+        <attribute name="messageKey" attributeType="String"/>
+        <attribute name="value" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="profile" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="votes" inverseEntity="Profile"/>
+    </entity>
+    <elements>
+        <element name="Conversation" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="ConversationMessage" positionX="-54" positionY="0" width="128" height="238"/>
+        <element name="ConversationOverview" positionX="-36" positionY="99" width="128" height="268"/>
+        <element name="ConversationSender" positionX="-18" positionY="162" width="128" height="88"/>
+        <element name="Livefeed" positionX="0" positionY="171" width="128" height="73"/>
+        <element name="LivefeedNotification" positionX="18" positionY="180" width="128" height="253"/>
+        <element name="Profile" positionX="36" positionY="189" width="128" height="298"/>
+        <element name="ProfileConversationInfo" positionX="-9" positionY="135" width="128" height="118"/>
+        <element name="ProfileEvents" positionX="0" positionY="144" width="128" height="103"/>
+        <element name="ProfileFavoriteData" positionX="9" positionY="153" width="128" height="103"/>
+        <element name="ProfileFriendData" positionX="18" positionY="162" width="128" height="88"/>
+        <element name="ProfileGoingData" positionX="27" positionY="171" width="128" height="118"/>
+        <element name="ProfileShare" positionX="36" positionY="180" width="128" height="88"/>
+        <element name="ProfileVote" positionX="45" positionY="189" width="128" height="118"/>
+    </elements>
+</model>
